@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chloe Ng - Wing It</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="assets/js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="project-header minitext-h">
+		<nav id="menu">
+			<a href="index.html"><img id="navhome" src="assets/img/homecutie.svg"></a>
+			<a class="navitem" href="about.html">ABOUT</a>
+			<a class="navitem" href="fun.html">FUN</a>
+			<a class="navitem" href="index.html">WORK</a>
+		</nav>
+	</div>
+	<div class="project-writeup clearfix" id="project-writeup-header">
+		<div class="project-left">
+			<div class="project-role minitext"><div class="minitext-h">ROLE</div>Product Designer</div>
+			<div class="project-team minitext"><div class="minitext-h"><br>TEAM</div>Kate Lee <br> James McCauley <br> Sophie Park<br>Madeline Wu   <br> </div>
+		</div>
+		<div class="project-right clearfix">
+			<div class="project-title">Wing It</div>
+			<div class="bodytext">As part of a User Interfaces class at UC Berkeley's School of Information, I collaborated with a team to take on the challenge of gamifying the travel experience. Our team was mentored by Rob Youmans, the head of UX Research Sciences at YouTube. We delved deep into user research and usability testing to create Wing It.</div>
+			<div class="project-hero" id="wingit-hero"></div>
+		</div>
+	</div>
+<!-- 	<div class="project-hero" id="wingit-hero"></div> -->
+	<div id="writeup-first"></div>
+	<div class="project-writeup clearfix">
+		<div class="project-nav minitext">
+			<p><a class="project-nav-item" href="#wingit-challenge">1 - Challenge</a></p>
+			<p><a class="project-nav-item" href="#wingit-hifi">2 - Solution</a></p>
+			<p><a class="project-nav-item" href="#wingit-research">3 - Research</a></p>
+			<p><a class="project-nav-item" href="#wingit-defining">4 - Defining Wing It</a></p>
+			<p><a class="project-nav-item" href="#wingit-iterations">5 - Iterations</a></p>
+			<p><a class="project-nav-item" href="#wingit-reflection">6 - Reflection</a></p>
+			<div class="minitext-h" id="project-nav-top"> &ShortUpArrow; TOP</div>
+		</div>
+		<div class="project-right clearfix">
+			<div class="writeup-section">
+				<div class="subheader" id="wingit-challenge">Challenge</div>
+				<div class="bodytext">
+					<div class="bigtext">"Gamify the travel experience, specifically detailing a method and system for making pain points of the travel experience more enjoyable."</div>
+					<p>As a team, we were interested in gamification as a motivating factor. We felt that there are actions that people can take to make the airport journey better, but also realized that there wasn't a framework to encourage people.</p> 
+				</div>
+			</div>
+			<div class="writeup-section" id="wingit-hifi">
+				<div class="subheader">Our Solution</div>
+				<div class="writeup-img clearfix">
+					<video id="wingit-animate-1" src="assets/img/wingit-animate-search.mov" autoplay=true loop=true></video>
+					<video id="wingit-animate-2" src="assets/img/wingit-animate-quests.mov" autoplay=true loop=true></video>
+				</div>
+				<div class="bodytext">
+					<p>Wing It helps guide people through the airport, providing them all the information they need at their fingertips. Not only that, Wing It users can also win Rewards redeemable at airport businesses by completing Quests related to their airport journey.</p>
+					<br>
+					<ul>
+						<li><p class="bodytext-h">Quests</p> Quests fit naturally into the flow of people's needs at an airport. For example, a person looking for food can complete a quest to leave a rating at a restaurant. By completing Quests, people also help fellow travelers by providing them valuable data.</li>
+						<br>
+						<li><p class="bodytext-h">Rewards</p>By completing many Quests, users earn gold that they can spend on Rewards. Promotional rewards provide a marketing opportunity to airport businesses.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="writeup-section" id="wingit-research">
+				<div class="subheader">User Research</div>
+				<div class="bodytext">
+					<p>Our team began tackling the challenge by interviewing twenty five people on their air travel experience. We found some key overarching issues that people encountered.</p> 
+					<br>
+					<ul>
+						<li>People forget or don't have time to prepare everything they optimally would have for traveling (28.8% of people forget to charge devices)</li>
+						<br>
+						<li>It's tough to find what you want and where to go in airports, with so much signage (much of which isn't directly relevant)</li>
+						<br>
+						<li>There is a lot of time based stress, especially in regards to things outside of a traveler's control, such as the security line</li>
+						<br>
+						<li>Food is expensive; people don't expect a good food experience</li>
+						<br>
+						<li>Nobody likes anything about security screening</li>
+						<br>
+						<li>A million ways to be bored</li>
+					</ul>
+					<br>
+					<p>Based on this initial research, we generated personas to better understand our target audience.</p>
+					<div class="writeup-subsection">
+						<div class="persona-img" id="persona-img-wingit1"></div>
+						<div class="subsection-text">
+							<p class="minitext-h">GRACE</p>
+							<p class="minitext">A grad student who flies 3-6 times a year for conferences or vacation. She usually arrives as late as possible because she's short on time. She travels on a budget, so usually flies light, with only a carry-on.</p>
+						</div>
+					</div>
+					<div class="writeup-subsection">
+						<div class="persona-img" id="persona-img-wingit2"></div>
+						<div class="subsection-text">
+							<p class="minitext-h">MOLLY & CHRISTIAN</p>
+							<p class="minitext">Molly and Christian are a mom and child. They fly 1-2 times a year to visit family. Molly is stressed out navigating the airport as she has to juggle many things, including looking after Christian. She therefore arrives very early to the airport.</p>
+						</div>
+					</div>
+					<div class="writeup-subsection">
+						<div class="persona-img" id="persona-img-wingit3"></div>
+						<div class="subsection-text">
+							<p class="minitext-h">ALEX</p>
+							<p class="minitext">A 17 year old athlete who flies often with his team to many different airports. He's on the road a lot, with a strict traveling schedule due to traveling in a group. This means he's often bored waiting at the airport.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="writeup-section" id="wingit-defining">
+				<div class="subheader">Defining Wing It</div>
+				<div class="bodytext">
+					<p>From this research, we came up with a first iteration of our app. This first iteration focused on planning, guiding users through preparing for air travel all the way through to the airport gate. However, early feedback was not positive and the app felt "heavy-handed." We learned an important lesson from this first iteration. </p>
+					<p class="bigtext">Let users come to the app. Instead of telling people what to do and forcing attention, we should be providing information relevant to their context.</p>
+					<p>For our next iteration, we decided to narrow our focus to the specific problem of boredom on airports. Based on Google surveys we sent out, we found that many people spend up to two hours waiting in airports!</p> 
+					<p>Therefore, we came up with the concept of Wing It.</p>
+					<p>At this point, we returned to the drawing board and created a mid fidelity clickable prototype to start testing. We based our design around the framework of a map, as navigation and location is essential for a persons's journey through the airport.</p>
+					<iframe class="writeup-img" src="https://marvelapp.com/15g018c?emb=1" width="250" height="600" allowTransparency="true" frameborder="0"></iframe>
+				</div>
+			</div>
+			<div class="writeup-img-overlay"></div>
+			<div class="writeup-section" id="wingit-iterations">
+				<div class="subheader">Iterations</div>
+				<div class="bodytext">
+					<p>Now with a clearer idea of our app in mind, we dove into iterating and user testing. In this process, we used methods such as  RITE testing,  think-aloud user testing, and retrospective recall. We also referred back to heuristics. Below are some of the decisions we made.</p>
+					<br>
+					<p class="bodytext-h">Quests Landing</p>
+					<p>For the Quests Landing page, we needed to display quests and quest categories in a way that would be easily scannable. We wanted to make sure users could easily compare relevant information between quests when choosing a quest. </p>
+					<img class="writeup-img" src="assets/img/wingit-questlanding.png">
+					<ul> 
+						<li><p class="bodytext-h">Variation 1</p>Our initial categorizations were pretty rudimentary; we knew that location would be particularly important for travelers weighed down by luggage, so a majority of the screen is taken up by a map</li>
+						<br>
+						<li><p class="bodytext-h">Variation 2</p>We tried a different method of displaying the categories, where users can see a preview quest of each category; our hope was that would give users a general idea of the possibilities out there; we also began fleshing out nuanced quest categories​</li>
+						<br>
+						<li><p class="bodytext-h">Variation 3</p>After AB testing, we found that users were generally open to clicking on different tabs to check out different categories; to preserve the highlighting feature that variation 2 allowed for, we included "Featured" as a category; the top bar layout also made navigation into quest category names organic; we continued testing quest category names, and considered including images to feature quests</li>
+						<br>
+						<li><p class="bodytext-h">Variation 4</p>Taking a page from Google Maps, the Quests panel as a whole can be dragged up or down, such that the user has control over how central the map is on the screen; this is particularly relevant for categories such as "Simple," that don't require a user to leave their seat; to improve scanning on an already packed page, we decided against the images and instead opted for a cleaner UI where the rewards and time estimate would stand out (important decision factors for users)</li>
+					</ul>
+					<br>
+					<p class="bodytext-h">Quests Flow</p>
+					<p>One initial consideration was for all the steps of a quest to be displayed on one scrolling page. While this laid out the future steps very clearly, it was also overwhelming for users and made the expected user interaction unclear. Therefore, we chose to split the various steps of a quest into separate pages. This also allowed us to include the map only where it made sense for the user to refer to it.</p>
+					<img class="writeup-img" src="assets/img/wingit-questflow.png">
+					<br>
+					<p class="bodytext-h">Rewards Section</p>
+					<p>We played around with wording quite a bit in the Rewards section, as users in testing were rather confused regarding the different categories. Accounting for the limitations in our testing, we found that "Spend Gold" helped establish a stronger correlation between the gold that people earned in quests, and buying rewards through gold. We also found that users interpreted the greyed out reward--initially meant to show a reward that wasn't applicable in a current airport--in vastly different ways. We therefore went for a more clear defined layout categorization.</p>
+					<img class="writeup-img" src="assets/img/wingit-rewards.png">
+					<p class="bodytext-h">Contextual Solutions</p>
+					<p>In our usability tests, we also discovered that users at the airport had a whole different set of needs than users normally might regarding a restaurant. Given that they are just passing through the airport, they are only interested in what's currently open. The location of the restaurant also plays a huge factor, as people are limited to a specific terminal.</p>
+					<p>Due to this, people are not likely to become loyal customers of an airport eatery, so we decided to go for a rating system over a review system. While the rating system limits feedback to certain constraints, users in general will also be approaching these restaurants with a different mindset with the time constraints and stress of air travel. The rating system therefore provides a quick and dirty way of evaluating a restaurant that provides the necessary information fast, and also makes it simple for users to evaluate a restaurant.</p>
+					<img class="writeup-img" src="assets/img/wingit-contextual.png">
+					<p class="bodytext-h">Global Search</p>
+					<p>Through talking to users, we realized that we were missing a key feature-- a global search. By having a global search, we could also organically suggest people quests related to what they were searching, rather than requiring them to specifically look up quests. We realized that it didn't make much sense in the user journey for people to look up quests randomly while walking through the airport. However, users will naturally want to look up a coffee place. In the search, we can alert them of a coffee place with a Quest partnership with us, therefore directing the user to try out the restaurant.</p>
+					<img class="writeup-img" src="assets/img/wingit-globalsearch.png">
+				</div>
+			</div>
+			<div class="writeup-section" id="wingit-reflection">
+				<div class="subheader">Reflection</div>
+				<div class="bodytext">
+					<p>Through Rob's class, I learned how to conduct user research and usability tests, as well as how to apply findings effectively to our app. In particular, it's important to consider the user's context when they use the app, as they have specific needs and emotions in the moment that can effect how they approach your app. We strove hard to create an app that met the user where they were, rather than add more cognitive load to the user.</p>
+					<p>If given more time, I would want to test this app in-situation. Given our limited resources, we weren't able to actually have travelers use the app naturally. Therefore, our adjustments are based on users' hypothetical feedback. There's also question whether or not this app may be too overwhelming for an already stressed out traveler. We could probably do with more simplification.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Footer -->
+	<footer class="footer clearfix">
+		<div class="minitext-h" id="contact">
+			<a href="https://www.linkedin.com/in/chloekng/" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+   	 			<path class="contact-icon" fill="#2B3F38" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/>
+			</svg></a>
+			<a href="https://www.instagram.com/gloweeing" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    			<path class="contact-icon" fill="#2B3F38" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+			</svg></a>
+			<a href="https://www.pinterest.com/chloeeeing/" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    			<path class="contact-icon"  fill="#2B3F38" d="M13,16.2C12.2,16.2 11.43,15.86 10.88,15.28L9.93,18.5L9.86,18.69L9.83,18.67C9.64,19 9.29,19.2 8.9,19.2C8.29,19.2 7.8,18.71 7.8,18.1C7.8,18.05 7.81,18 7.81,17.95H7.8L7.85,17.77L9.7,12.21C9.7,12.21 9.5,11.59 9.5,10.73C9.5,9 10.42,8.5 11.16,8.5C11.91,8.5 12.58,8.76 12.58,9.81C12.58,11.15 11.69,11.84 11.69,12.81C11.69,13.55 12.29,14.16 13.03,14.16C15.37,14.16 16.2,12.4 16.2,10.75C16.2,8.57 14.32,6.8 12,6.8C9.68,6.8 7.8,8.57 7.8,10.75C7.8,11.42 8,12.09 8.34,12.68C8.43,12.84 8.5,13 8.5,13.2A1,1 0 0,1 7.5,14.2C7.13,14.2 6.79,14 6.62,13.7C6.08,12.81 5.8,11.79 5.8,10.75C5.8,7.47 8.58,4.8 12,4.8C15.42,4.8 18.2,7.47 18.2,10.75C18.2,13.37 16.57,16.2 13,16.2M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+			</svg></a>
+			<div id="email">NGKCHLOE@GMAIL.COM</div>
+		</div>
+		<div class="minitext-h" id="copyright">
+			&copy CHLOE NG 2017
+		</div>
+	</footer>
+</body>
