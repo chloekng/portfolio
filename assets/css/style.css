@@ -126,7 +126,6 @@ a:active {
 
 #header {
 	margin: 0;
-	height: 400px;
 	padding: 1% 10% 5% 10%;
 	position: relative;
 
@@ -140,6 +139,7 @@ a:active {
 	display: inline-block;
 	padding-top: 5%;
 	padding-left: .1%;
+	margin-bottom: 20%;
 
 }
 
@@ -164,9 +164,8 @@ a:active {
 }
 
 #info {
-	width: 32%;
-	top: 45%;
-	position: absolute;
+	width: 35%;
+	margin-top: -13%;
 	animation: fadeInUp 1.5s;
 
 }
@@ -209,11 +208,12 @@ a svg:hover .contact-icon {
 
 #animation {
 	width: 50%;
-	left: 44%;
-	top: 60%;
-	position: absolute;
+	left: 50%;
+	margin-top: -3%;
+	position: relative;
 	animation: fadeInUp 1.5s;
 }
+
 
 .item {
 	position: absolute;
@@ -1276,6 +1276,11 @@ a svg:hover .contact-icon {
 	font-size: 40px;
 }
 
+#menu {
+	border: 1px solid tomato;
+}
+
+
 
 }
 
@@ -1288,13 +1293,6 @@ a svg:hover .contact-icon {
 	padding-right: 50%;
 }
 
-#animation {
-	margin-top: -15%;
-}
-
-#info {
-	margin-top: -15%;
-}
 
 #copyright {
 	float: left;
@@ -1323,6 +1321,8 @@ a svg:hover .contact-icon {
 
 }
 
+
+
 /*Project Pages*/
 
 .project-right {
@@ -1346,16 +1346,16 @@ a svg:hover .contact-icon {
 }
 
 
-@media screen and (max-width: 833px) {
 
-#header {
-	height: 550px;
+@media screen and (max-width: 990px) {
 
+#menu {
+	margin-bottom: 30%;
 }
 
 #info {
 	width: 100%;
-	padding-top: 30%;
+	margin-top: 35%;
 	position: relative;
 
 }
@@ -1363,20 +1363,10 @@ a svg:hover .contact-icon {
 #animation {
 	width: 80%;
 	left: 5%;
-	top: 50%;
+	position: relative;
 
 }
 
-
-
-
-}
-
-@media screen and (max-width: 960px) {
-
-#projects {
-	padding-top: 15%;
-}
 
 .column-right {
 	width: 100%;
