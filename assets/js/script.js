@@ -116,7 +116,7 @@ $(document).ready(function(){
 
 
 	window.onscroll = function(ev) {
-    	if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+    	if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 400) {
         	$('.project-nav').hide();
     	}
 
