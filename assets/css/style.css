@@ -161,9 +161,8 @@ a:active {
 
 .navitem {
 	text-align: center;
-	padding: 5px 0px 0px 50px;
+	padding: 5% 0px 0px 50px;
 	float: right;
-	padding-top: 5%;
 
 }
 
@@ -1304,7 +1303,8 @@ a svg:hover .contact-icon {
 @media screen and (max-width: 360px) {
 
 .navitem {
-	padding: 5px 0px 0px 30px;
+	padding-left: 30px;
+	padding-top: 8%;
 
 }
 
@@ -1313,12 +1313,12 @@ a svg:hover .contact-icon {
 }
 
 
-
 }
 
 
 
 @media screen and (max-width: 600px) {
+
 
 
 .footer {
@@ -1387,7 +1387,6 @@ a svg:hover .contact-icon {
 
 
 
-
 /*Project Pages*/
 
 .project-right {
@@ -1413,6 +1412,7 @@ a svg:hover .contact-icon {
 
 #menu {
 	margin-bottom: 10%;
+	margin-top: 5%;
 }
 
 #info {
