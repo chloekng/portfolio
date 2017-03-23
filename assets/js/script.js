@@ -30,65 +30,65 @@ $(document).ready(function(){
 
 // Project Hovers
 	$('#fulldive').hover(function() {
-		$('#fulldive-overlay').stop(true, true).fadeIn(700);
+		$('#fulldive-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#fulldive-overlay').stop(true, true).fadeOut(700);
+		$('#fulldive-overlay').stop(true, true).fadeOut(400);
 	});
 
 	$('#beyondsmartphones').hover(function() {
-		$('#beyondsmartphones-overlay').stop(true, true).fadeIn(700);
+		$('#beyondsmartphones-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#beyondsmartphones-overlay').stop(true, true).fadeOut(700);
+		$('#beyondsmartphones-overlay').stop(true, true).fadeOut(400);
 	});
 
 	$('#trackslash').hover(function() {
-		$('#trackslash-overlay').stop(true, true).fadeIn(700);
+		$('#trackslash-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#trackslash-overlay').stop(true, true).fadeOut(700);
+		$('#trackslash-overlay').stop(true, true).fadeOut(400);
 	});
 
 
 	$('#wingit').hover(function() {
-		$('#wingit-overlay').stop(true, true).fadeIn(700);
+		$('#wingit-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#wingit-overlay').stop(true, true).fadeOut(700);
+		$('#wingit-overlay').stop(true, true).fadeOut(400);
 	});
 
 	$('#twinkle').hover(function() {
-		$('#twinkle-overlay').stop(true, true).fadeIn(700);
+		$('#twinkle-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#twinkle-overlay').stop(true, true).fadeOut(700);
+		$('#twinkle-overlay').stop(true, true).fadeOut(400);
 	});
 
 	$('#dayrise').hover(function() {
-		$('#dayrise-overlay').stop(true, true).fadeIn(700);
+		$('#dayrise-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#dayrise-overlay').stop(true, true).fadeOut(700);
+		$('#dayrise-overlay').stop(true, true).fadeOut(400);
 	});
 
 	$('#taug').hover(function() {
-		$('#taug-overlay').stop(true, true).fadeIn(700);
+		$('#taug-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#taug-overlay').stop(true, true).fadeOut(700);
+		$('#taug-overlay').stop(true, true).fadeOut(400);
 	});
 
 	$('#joybook').hover(function() {
-		$('#joybook-overlay').stop(true, true).fadeIn(700);
+		$('#joybook-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#joybook-overlay').stop(true, true).fadeOut(700);
+		$('#joybook-overlay').stop(true, true).fadeOut(400);
 	});
 
 	$('#hkcafe').hover(function() {
-		$('#hkcafe-overlay').stop(true, true).fadeIn(700);
+		$('#hkcafe-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#hkcafe-overlay').stop(true, true).fadeOut(700);
+		$('#hkcafe-overlay').stop(true, true).fadeOut(400);
 	});
 
 
 	$('#lasercut').hover(function() {
-		$('#lasercut-overlay').stop(true, true).fadeIn(700);
+		$('#lasercut-overlay').stop(true, true).fadeIn(400);
 	}, function(){
-		$('#lasercut-overlay').stop(true, true).fadeOut(700);
+		$('#lasercut-overlay').stop(true, true).fadeOut(400);
 	});
 
 // Cutie Animation

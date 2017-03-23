@@ -1276,6 +1276,7 @@ a svg:hover .contact-icon {
 }
 
 
+
 }
 
 
@@ -1313,6 +1314,35 @@ a svg:hover .contact-icon {
 .about-writeup {
 	margin-left: -5%;
 
+}
+
+
+@keyframes floatingpencap {
+	0% {
+		transform: translateY(0px);	
+		animation-timing-function: ease-in;
+	}
+	50% {
+		transform: translateY(10px);	
+	}	
+	100% {
+		transform: translateY(0px);
+		animation-timing-function: ease-out;
+	}			
+}
+
+@-webkit-keyframes floatingpencap {
+	0% {
+		-webkit-transform: translateY(0%);	
+		animation-timing-function: ease-in;
+	}
+	50% {
+		-webkit-transform: translateY(10px);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+		animation-timing-function: ease-out;
+	}			
 }
 }
 
