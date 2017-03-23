@@ -23,7 +23,8 @@ $(document).ready(function(){
 		});
 	}, function(){
 		$('#navhome').css('animation', '');
-	});	
+	});
+
 
 
 
@@ -138,10 +139,6 @@ $(document).ready(function(){
 			$('.project-nav').hide();
 		}
 
-	});
-
-	$("#project-nav-top").click(function(){
- 		scroll(0,0);
 	});
 
 
