@@ -141,6 +141,10 @@ $(document).ready(function(){
 
 	});
 
+	$("#project-nav-top").click(function(){
+ 		scroll(0,0);
+	});
+
 
 
 //Slides
