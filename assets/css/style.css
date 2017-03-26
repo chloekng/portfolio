@@ -768,8 +768,9 @@ a svg:hover .contact-icon {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-	background-color: rgba(255, 255, 255, .9);
+    overflow-y: auto; /* Enable scroll if needed */
+    overflow-x: hidden;
+	background-color: rgba(255, 255, 255, .95);
 }
 
 #img-overlaid {
@@ -942,7 +943,7 @@ a svg:hover .contact-icon {
 }
 
 
-/*Project Page - Beyond Smartphones*/
+/*Project Page - Dayrise*/
 
 #dayrise-hero {
 	background-image: url(../img/dayrise-hero.jpg);
@@ -953,6 +954,15 @@ a svg:hover .contact-icon {
 
 #joybook-hero {
 	background-image: url(../img/joybook_hero.jpg);
+
+}
+/*
+Project Page - HkCafe*/
+
+#hkcafe-animate {	
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 30px;
 
 }
 
@@ -1449,6 +1459,12 @@ a svg:hover .contact-icon {
 }
 
 
+#img-overlaid {
+	padding-top: 20%;
+}
+
+
+
 }
 
 
@@ -1474,7 +1490,6 @@ a svg:hover .contact-icon {
 	position: relative;
 
 }
-
 
 .column-right {
 	width: 100%;
