@@ -112,6 +112,30 @@ $(document).ready(function(){
 	});
 	});
 
+
+// Project Image
+
+	var modalImg = document.getElementById('img-overlaid')
+
+
+	$('.writeup-img').click(function() {
+		$('#img-overlay').show();
+		modalImg.src = this.src;
+		$('body').addClass('noscroll');
+
+	});
+
+	var span = document.getElementsByClassName("close")[0];
+
+
+	span.onclick = function() { 
+  		$('#img-overlay').hide();
+  		$('body').removeClass('noscroll');
+	}
+
+
+
+
 // Project Scroll
 
 

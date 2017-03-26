@@ -5,7 +5,13 @@ body {
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 	margin: 0px;  
+	height: 100%;
 
+}
+
+html {
+	min-width: 100%;
+	position: relative;
 }
 
 /*Text Styles*/
@@ -746,7 +752,47 @@ a svg:hover .contact-icon {
 	width: 100%;
 	margin-top: 50px;
 	margin-bottom: 30px;
+	cursor: pointer;
 
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+#img-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(255, 255, 255, .9);
+}
+
+#img-overlaid {
+	margin: auto;
+	display: block;
+	width: 70%;
+	padding: 5%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #90B224;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #476E61;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
