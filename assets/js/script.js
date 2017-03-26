@@ -118,10 +118,14 @@ $(document).ready(function(){
 	var modalImg = document.getElementById('img-overlaid')
 
 
+
 	$('.writeup-img').click(function() {
-		$('#img-overlay').show();
-		modalImg.src = this.src;
-		$('body').addClass('noscroll');
+		if ($(window).width() > 800) {
+			$('#img-overlay').show();
+			modalImg.src = this.src;
+			$('body').addClass('noscroll');
+
+		}
 
 	});
 
