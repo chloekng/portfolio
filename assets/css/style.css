@@ -14,6 +14,7 @@ html {
 	position: relative;
 }
 
+
 /*Text Styles*/
 
 .title {
@@ -41,9 +42,13 @@ html {
 	font-size: 28px;
 	line-height: 150%;
 	font-weight: 400;
+	text-align: center;
 	color: #2B3F38;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
+
 }
 
 
