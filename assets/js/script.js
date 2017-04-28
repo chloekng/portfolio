@@ -149,7 +149,7 @@ $(document).ready(function(){
     	}
 
     	else if (document.body.scrollTop >= 600) {
-    		$('.project-nav').fadeIn(400);
+    		$('.project-nav').show();
     	}
 
     	else {
@@ -161,9 +161,34 @@ $(document).ready(function(){
 
 
 	$("#project-nav-top").click(function(){
- 		scroll(0,0);
+ 		$('html, body').animate({scrollTop : 0},800);
 	});
 
+
+// Smooth Scroll
+
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 3000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 
 
 
