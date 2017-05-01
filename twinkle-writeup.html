@@ -37,8 +37,8 @@
 			<p><a class="project-nav-item" href="#twinkle-challenge">1 - Challenge</a></p>
 <!-- 			<p><a class="project-nav-item" href="#twinkle-solution">2 SOLUTION</a></p> -->
 			<p><a class="project-nav-item" href="#twinkle-research">2 - Research</a></p>
-			<p><a class="project-nav-item" href="#twinkle-iterations">3 - Iterations</a></p>
-			<p><a class="project-nav-item" href="#twinkle-testing">4 - Usability Tests</a></p>
+			<p><a class="project-nav-item" href="#twinkle-ideation">3 - Ideation</a></p>
+			<p><a class="project-nav-item" href="#twinkle-decisions">4 - Design Decisions</a></p>
 			<p><a class="project-nav-item" href="#twinkle-userflows">5 - User Flows</a></p>
 			<p><a class="project-nav-item" href="#twinkle-branding">6 - Branding</a></p>
 			<p><a class="project-nav-item" href="#twinkle-reflection">7 - Reflection</a></p>
@@ -75,62 +75,65 @@
 				</div>
 			</div>
 			<div class="writeup-section">
-				<div class="subheader" id="twinkle-iterations">Iterations</div>
+				<div class="subheader" id="twinkle-ideation">Ideation to Testing</div>
 				<div class="bodytext">
 					<p>Our team diverged to create initial sketches for the app, then converged to discuss and create the mid-fidelity. With this method, we explored a range of possible ideas before committing to our first iteration. We then created a clickable prototype on POP.
 					<img class="writeup-img" src="assets/img/twinkle-figma.png">
 					<p class="minitext">Our collaborative Figma of the low-fidelity. </p>
 					</p>
 					<br>
-					<p class="bodytext-h">Integrating Parent & Kid Sections</p>
-					<p>One key challenge of this app was that it had to house both a kid's section where they can play games, and a parent's section where they can keep track of their kid's progress. One way we accounted for these two audiences was through PIN locking the parent section.</p>
-					<p>Our initial landing page had two buttons for users to choose either the kid section or the "Parental Dashboard." We made the kid section button large, as we wanted to make it easy for kids to access.  However, in user testing we found this layout to be confusing.</p>
-					<img class="writeup-img" src="assets/img/twinkle-sections.png">
-					<br>
-					<p class="bodytext-h">Games Navigation</p>
-					<p>A unique challenge of this app was figuring out how the kid would navigate while brushing their teeth. In our user scenarios, we envisioned the parent handing off the app to the kid with the front facing camera activated. In this situation, it made sense for the kid to have control over what game to choose via the camera mode. This scenario provided particular gestural constraints. We wanted to make sure that the navigation was easy, as it would be completely through gesture and would lack certain functions of touch control, such as tapping.</p>
-					<img class="writeup-img" src="assets/img/twinkle-gamegesture.png">
-					<br>
-					<p class="bodytext-h">In-Game Positioning</p>
-					<p>As the app's tracking depends on kids staying within the frame of the camera, we also had to figure out how to communicate to energetic kids that they needed to stay within a range. Our solution was to have the frame flash red and make warning sounds once a kid was outside the range. The screen would also show a green silhouette of a person in the center, to encourage the kid to return to the center of the screen.</p>
-					<img class="writeup-img" src="assets/img/twinkle-positioning.png">
-					<br>
-					<p class="bodytext-h">Data Included in Parent Dashboard</p>
-					<p>For the parent dashboard, we wanted to quickly and visually show relevant data to them. In our interviews, we found that many parents 'settled' when it came to their kid's brushing. "I just make sure she brushed, hopefully for somewhere around two minutes. I don't have the energy to even make sure she's brushing the right areas." Based on this, our aim was to quickly provide parents with key data. However, we wanted to balance this out with more in-depth information as well, such that parents can get a better sense of their kid's brushing habits &mdash; a holistic view that is hard to track without an app.</p>
-					<img class="writeup-img" src="assets/img/twinkle-parentdash.png">
-					<br>
-					<p class="bodytext-h">Designing UI for Both Kids & Parents</p>
-					<p>While we needed the UI to be cohesive, we also had to cater to both kids and parents. For the kids section, we incorporated larger buttons illustrated by icons, for younger children who may not know how to read yet. We also avoided hiding elements &mdash;  for example, how a hamburger icon hides a menu as we wanted to make navigation as clear as possible. Though we used bright colors throughout the app, we kept the parents' section more muted in comparison to the kids' section.
-					<img class="writeup-img" src="assets/img/twinkle-kidvparent.png">
-					Side by side comparison of a page in the parent section vs. a page in the kid section. Note the large buttons, bright colors, and icons of the kid page. We also used metaphors such as "Treasure Chest" to injects some playfulness for the kids.</p>
-				</div>
-			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="twinkle-testing">Usability Tests</div>
-				<div class="bodytext">
 					<p>We tested our clickable prototype with seven families through in-person usability tests at a local mall. While we initially had some difficulties finding people willing to talk, we ultimately found that talking to families at the rest area was effective. In general, these families were low-income, a part of  Twinkle's primary target audience. Through these tests, we uncovered some overarching issues.</p>
 					<br>
 					<a href="https://marvelapp.com/4ffcij0/screen/23569449" target="_blank"><div class="button minitext">Clickable Prototype</div></a>
 					<br>
+				</div>
+			</div>
+			<div class="writeup-section">
+				<div class="subheader" id="twinkle-decisions">Key Design Decisions</div>
+				<div class="bodytext">
+					<p class="bodytext-h">How do we integrate the parent and kid's sections?</p>
+						<p>We decided on a home page where both are accessible. We decided to PIN lock the parent section so that kids can't access it.</p>
+						<p>Our first iteration was confusing as the landing didn't communicate as a homepage.</p>
+						<img class="writeup-img" src="assets/img/twinkle-sections.png">
+						<p>We instead decided for a landing page that prompted users to swipe up or down to access each section. This helped give users context and a better understanding of the app's architecture.</p>
+						<img class="writeup-img" src="assets/img/twinkle-newlanding.png">
+						<p>A concern was whether or not swiping would be intuitive for kids.  Therefore, if the user taps on either arrow, they will also be transported to the respective area of the app.</p>
 					<br>
-					<p class="bodytext-h">Integrating Parent & Kid Sections</p>
-					<p>Many users were confused by how we initially separated the parent and kid sections in the app. The architecture of the app was not immediately apparent to them, especially as the parent and kid sections had different navigation systems. Our solution was to have the user enter on a landing page, where they could either swipe up or down to access the parent or kid section. While this added an extra step when entering the app, we felt that it was a natural way entry point for users into the flow of the app, making it clear at first entrance what the app encompasses. The unique structure of this page helped users better grasp the overall architecture of the app vs. the original landing page.
-					<img class="writeup-img" src="assets/img/twinkle-newlanding.png">
-					A concern was whether or not swiping would be intuitive for kids.  Therefore, if the user taps on either arrow, they will also be transported to the respective area of the app.</p>
+					<p class="bodytext-h">How does a kid navigate while holding a toothbrush?</p>
+						<p>In our user scenarios, we envisioned the parent handing off the app to the kid with the front facing camera activated. In this situation, it made sense for the kid to have control over what game to choose via the camera mode. </p>
+						<p>This scenario provided particular gestural constraints. We wanted to make sure that the navigation was easy, as it would be completely through gesture and would lack certain functions of touch control, such as tapping.</p>
+						<img class="writeup-img" src="assets/img/twinkle-gamegesture.png">
 					<br>
-					<p class="bodytext-h">Reward System</p>
-					<p>The in-game reward system was confusing as it was unclear how kids would be motivated. Parents were also concerned about motivating their kids via digital rewards, as they felt the focus wasn't on forming good habits. In order to enhance parent-kid relationships, and not replace them with the app, we decided to implement a reward system that required the parent to reward the kid. By having the parent in control of the rewards, we also promoted opportunities for parents to discuss why having good brushing habits were essential.
-					<img class="writeup-img" src="assets/img/twinkle-rewardsystem.png">
-					Upon reviewing their kid's brushing, parents can choose to reward their kids or not. This gives parents the control to teach their kids good habits. The kids can spend these rewards on stickers to decorate their selfies.</p>
+					<p class="bodytext-h">How do you make sure the kid stays in front of the phone?</p>
+						<p>As the app's tracking depends on kids staying within the frame of the camera, we also had to figure out how to communicate to energetic kids that they needed to stay within a range.</p>
+						<img class="writeup-img" src="assets/img/twinkle-positioning.png">
+						<ul>
+							<li>The frame flashes red and makes warning sounds once a kid is outside the range</li>
+							<br>
+							<li>The screen also shows a green silhouette of a person in the center, to encourage the kid to return to the center of the screen</li>
+						</ul>
 					<br>
-					<p class="bodytext-h">Onboarding Adding Kid Profiles</p>
-					<p>Making an overall account and then an individual account for the kid was confusing for people. Its initial placement on the landing made it unclear that the profile was also an element of the parent dashboard. Therefore, we changed decided to make it a part of the initial onboarding process.
-					<img class="writeup-img" src="assets/img/twinkle-onboardingkid.png">
-					The initial language on the left was confusing. People weren't sure what the benefits for adding a kid's profile was, or how that related to the rest of the app. </p>
+					<p class="bodytext-h">What data do we include in the parent dashboard?</p>
+						<p>In our interviews, we found that many parents 'settled' when it came to their kid's brushing. "I just make sure she brushed, hopefully for somewhere around two minutes. I don't have the energy to even make sure she's brushing the right areas."</p>
+						<p> Based on this, our aim was to quickly provide parents with key data. However, we wanted to balance this out with more in-depth information as well, such that parents can get a better sense of their kid's brushing habits &mdash; a holistic view that is hard to track without an app.
+						<img class="writeup-img" src="assets/img/twinkle-parentdash.png"></p>
 					<br>
-					<p class="bodytext-h">Animal Mascot</p>
-					<p>The series of instructions that came prior to brushing  wasn’t engaging. We therefore decided to include an animal mascot that 	interacted with kids. This also helped us tie the brand closely with the app.
-					<img class="writeup-img" src="assets/img/twinkle-mascot.png"></p>
+					<p class="bodytext-h">How can we make the UI attractive to both kids and parents?</p>
+						<p>For the kids section, we incorporated larger buttons illustrated by icons, for younger children who may not know how to read yet. We also avoided hiding elements &mdash;  for example, how a hamburger icon hides a menu as we wanted to make navigation as clear as possible. Though we used bright colors throughout the app, we kept the parents' section more muted in comparison to the kids' section. We also used metaphors such as "Treasure Chest" to inject some playfulness for the kids.
+						<img class="writeup-img" src="assets/img/twinkle-kidvparent.png">
+					<br>
+					<p class="bodytext-h">How do we reward kids?</p>
+						<p>Parents were concerned about motivating their kids via digital rewards, as they felt the focus wasn't on forming good habits. In order to enhance parent-kid relationships, and not replace them with the app, we decided to implement a reward system that required the parent to reward the kid. By having the parent in control of the rewards, we also promoted opportunities for parents to discuss why having good brushing habits were essential.</p>
+						<img class="writeup-img" src="assets/img/twinkle-rewardsystem.png">
+					<br>
+					<p class="bodytext-h">How can we onboard adding kid profiles?</p>
+						<p>Making an overall account and then an individual account for the kid was confusing for people. Its initial placement on the landing made it unclear that the profile was also an element of the parent dashboard. Therefore, we changed decided to make it a part of the initial onboarding process.
+						<img class="writeup-img" src="assets/img/twinkle-onboardingkid.png">
+						The initial language on the left was confusing. People weren't sure what the benefits for adding a kid's profile was, or how that related to the rest of the app.</p>
+					<br>
+					<p class="bodytext-h">How can we make instructions attractive to kids?</p>
+						<p>The series of instructions that came prior to brushing  wasn't engaging. We therefore decided to include an animal mascot that 	interacted with kids. This also helped us tie the brand closely with the app.
+						<img class="writeup-img" src="assets/img/twinkle-mascot.png"></p>
 				</div>
 			</div>
 			<div class="writeup-section">

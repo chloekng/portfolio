@@ -115,7 +115,7 @@ $(document).ready(function(){
 
 // Project Image
 
-	var modalImg = document.getElementById('img-overlaid')
+	var modalImg = document.getElementById('img-overlaid');
 
 
 
@@ -139,7 +139,6 @@ $(document).ready(function(){
 
 
 
-
 // Project Scroll
 
 
@@ -160,7 +159,7 @@ $(document).ready(function(){
 
 
 
-	$("#project-nav-top").click(function(){
+	$('#project-nav-top').click(function(){
  		$('html, body').animate({scrollTop : 0},800);
 	});
 
@@ -168,10 +167,10 @@ $(document).ready(function(){
 // Smooth Scroll
 
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $('a').on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+    if (this.hash !== '') {
       // Prevent default anchor click behavior
       event.preventDefault();
 
@@ -199,17 +198,15 @@ $(document).ready(function(){
 
 	function carousel() {
 	    var i;
-	    var x = document.getElementsByClassName("trackslash-slides");
+	    var x = document.getElementsByClassName('trackslash-slides');
 	    for (i = 0; i < x.length; i++) {
-	      x[i].style.display = "none"; 
+	      x[i].style.display = 'none'; 
 	    }
 	    slideIndex++;
 	    if (slideIndex > x.length) {slideIndex = 1} 
-	    x[slideIndex-1].style.display = "block"; 
+	    x[slideIndex-1].style.display = 'block'; 
 	    setTimeout(carousel, 2000); // Change image every 2 seconds
 	}
-
-
 
 
 
