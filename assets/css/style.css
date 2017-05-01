@@ -746,8 +746,8 @@ a svg:hover .contact-icon {
 }
 
 .project-right {
-	width: 60%;
-	margin: 0% 0% 5% 30%;
+	width: 70%;
+	margin: 0% 0% 5% 25%;
 	animation: fadeInUp 1.5s;
 }
 
@@ -1449,35 +1449,6 @@ Project Page - HkCafe*/
 }
 }
 
-@media screen and (max-width: 800px) {
-
-
-
-/*Project Pages*/
-
-.project-right {
-	width: 90%;
-	margin: 0% 0% 5% 5%;
-}
-
-.project-left {
-	display: none;
-}
-
-.project-nav {
-	margin-left: -100%;
-}
-
-.writeup-img {
-	cursor: auto;
-}
-
-
-
-
-}
-
-
 
 
 @media screen and (max-width: 990px) {
@@ -1552,6 +1523,22 @@ Project Page - HkCafe*/
 
 }
 
+.project-right {
+	width: 90%;
+	margin: 0% 0% 5% 5%;
+}
+
+.project-left {
+	display: none;
+}
+
+.project-nav {
+	margin-left: -100%;
+}
+
+.writeup-img {
+	cursor: auto;
+}
 
 
 }
