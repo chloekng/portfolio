@@ -198,7 +198,7 @@ $(document).ready(function(){
 
 	function carousel() {
 	    var i;
-	    var x = document.getElementsByClassName('trackslash-slides');
+	    var x = document.getElementsByClassName('slides');
 	    for (i = 0; i < x.length; i++) {
 	      x[i].style.display = 'none'; 
 	    }
@@ -210,4 +210,4 @@ $(document).ready(function(){
 
 
 
-});
+});    

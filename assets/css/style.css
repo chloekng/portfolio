@@ -92,16 +92,28 @@ html {
 .home-project-title {
 	color: white;
 	font-size: 36px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	transition: opacity 1s;
+}
+
+.home-project-misc {
+	color: white;
+	font-size: 14px;
+	font-variant: small-caps;
+	transition: opacity 1s;
+	font-weight: 400;
+	padding-bottom: 20px;
+
 }
 
 .home-project-desc {
 	color: white;
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.5;
 	transition: opacity 1s;
+	padding-bottom: 20px;
+	letter-spacing: .05em;
 }
 
 .project-title {
@@ -510,7 +522,7 @@ a svg:hover .contact-icon {
 
 #beyondsmartphones-overlaybg {
 	height: 100%;
-	opacity: .5;
+	opacity: .7;
 	background: #BDBDBD; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #D6D3D9 , #BDBDBD); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #D6D3D9 , #BDBDBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -701,7 +713,7 @@ a svg:hover .contact-icon {
 	background-position: center center;
 	background-size: cover;
 	width: 100%;
-	height: 360px;
+	height: 420px;
 	margin-bottom: 20%;
 	margin-top: 10%;
 
@@ -746,8 +758,8 @@ a svg:hover .contact-icon {
 }
 
 .project-right {
-	width: 70%;
-	margin: 0% 0% 5% 25%;
+	width: 80%;
+	margin: 0% 0% 5% 20%;
 	animation: fadeInUp 1.5s;
 }
 
