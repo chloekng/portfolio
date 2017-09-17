@@ -1,5 +1,5 @@
 body {
-	background-color: #FEFCFC; 
+	background-color: #ffffff; 
 	font-family: 'Work Sans', sans-serif;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -12,23 +12,61 @@ body {
 html {
 	min-width: 100%;
 	position: relative;
+	font-size: 2vw;
 }
 
 
 /*Text Styles*/
 
-.title {
-	font-size: 48px;
+.h1 {
+	font-size: 40px;
 	font-weight: 500;
-	color: #2B3F38;
-	padding-bottom: 20px;
+	line-height: 1.75em;
+}
+
+.h2 {
+	font-size: 24px;
+	margin: .75em 0 .75em 0;
+	font-weight: 500;
+	line-height: 1.75em;
+}
+
+.h3 {
+	font-size: 16px;
+	margin: .75em 0 .75em 0;
+	font-weight: 500;
+	line-height: 1.75em;
+	letter-spacing: .02em;
+
 }
 
 .bodytext {
-	font-size: 14px;
-	line-height: 1.6em;
-	color: #2B3F38;
+	font-size: 16px;
 	font-weight: 400;
+	line-height: 2;
+
+}
+
+.bodytext-b {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 2;
+
+}
+
+.bodytext-o {
+	font-size: 16px;
+	line-height: 2;
+	opacity: .6;
+
+}
+
+.highlight {
+	background: #00173D; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, rgba(128,214,227,0.8) , rgba(92,162,199,.8)); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, rgba(128,214,227,0.8), rgba(92,162,199,.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 50%;
+
 }
 
 .bodytext-h {
@@ -38,18 +76,6 @@ html {
 	font-weight: 500;
 }
 
-.bigtext {
-	font-size: 28px;
-	line-height: 150%;
-	font-weight: 400;
-	text-align: center;
-	color: #2B3F38;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-left: 40px;
-	margin-right: 40px;
-
-}
 
 #lefttext {
 	text-align: left;
@@ -61,15 +87,15 @@ html {
 
 .minitext {
 	font-size: 12px;
-	color: #2B3F38;
-	line-height: 150%;
+	line-height: 1.75em;
+	opacity: .5;
 }
 
 .minitext-h {
 	font-size: 12px;
 	line-height: 150%;
-	color: #2B3F38;
-	font-weight: 500;
+	color: #474B51;
+	font-weight: 400;
 	letter-spacing: .1em;
 }
 
@@ -77,8 +103,8 @@ html {
 	font-size: 12px;
 	line-height: 150%;
 	color: white;
-	font-weight: 500;
-	letter-spacing: .1em;
+	font-weight: 400;
+	letter-spacing: .3em;
 }
 
 .subheader {
@@ -89,12 +115,6 @@ html {
 	padding-bottom: 20px;
 }
 
-.home-project-title {
-	color: white;
-	font-size: 36px;
-	padding-bottom: 20px;
-	transition: opacity 1s;
-}
 
 .home-project-misc {
 	color: white;
@@ -107,40 +127,47 @@ html {
 
 .home-project-desc {
 	color: white;
-	font-size: 14px;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: 300;
 	line-height: 1.5;
-	transition: opacity 1s;
-	padding-top: 20px;
 	letter-spacing: .03em;
+	opacity: 0;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 2000;
+/*    filter: drop-shadow(4px 4px 10px #474B51)*/
 }
 
-.project-title {
+/*.project-title {
 	font-size: 60px;
 	font-weight: 500;
 	color: #2B3F38;
 	padding-bottom: 5%;
 }
-
+*/
 a:link {
-	color: #90B224;
+	color: #474B51;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #90B224;
+	color: #474B51;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #476E61;
+
 	transition: .3s;
 }
 
-a:active {
-	color: #B5CB3F;
+/*a:active {
+	color: #A09ECA;
 }
-
+*/
 
 .button {
 	width: 200px;
@@ -165,7 +192,7 @@ a:active {
 	margin: 0;
 	padding: 1% 10% 5% 10%;
 	position: relative;
-	margin-top: 10%;
+	margin-top: 12%;
 
 }
 
@@ -197,12 +224,12 @@ a:active {
 
 
 #navitem-active {
-	color: #476E61;
+	color: #474B51;
 
 }
 
 #info {
-	width: 40%;
+	width: 45%;
 	margin-top: -12%;
 	animation: fadeInUp 1.5s;
 
@@ -212,7 +239,7 @@ a:active {
 
 .footer {
 	height: 60px;
-	padding: 5% 10% 5% 10%;
+	padding: 10% 10% 5% 10%;
 	bottom: 0;
 	position: relative;
 	display: block;
@@ -237,7 +264,9 @@ a:active {
 }
 
 a svg:hover .contact-icon {
-	fill: #90B224;
+	
+/*	contact icon hover!!
+fill: #90B224;*/
 	transition: .3s;
 }
 
@@ -247,7 +276,7 @@ a svg:hover .contact-icon {
 #animation {
 	width: 50%;
 	left: 50%;
-	margin-top: -3%;
+/*	margin-top: -3%;*/
 	position: relative;
 	animation: fadeInUp 1.5s;
 }
@@ -354,7 +383,7 @@ a svg:hover .contact-icon {
 }
 
 #isopencap {
-	width: 2.5%;
+	width: 2.3%;
 	top: 50%;
 	left: 50%;
 	margin: -10% 0 0 26.7%;
@@ -444,7 +473,7 @@ a svg:hover .contact-icon {
 /*Projects*/
 
 #projects {
-	padding: 8% 10% 5% 10%;
+	padding: 5% 10% 5% 10%;
 	animation: fadeInUp 1.5s;
 
 }
@@ -456,24 +485,18 @@ a svg:hover .contact-icon {
 }
 
 .column-left {
-	width: 50%;
+	width: 46%;
 	float: left;
 	height: 400px;
 	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
 	cursor: pointer;
 }
 
 .column-right {
-	width: 50%;
+	width: 46%;
 	float: right;
 	height: 400px;
 	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
 	cursor: pointer;
 
 }
@@ -486,32 +509,338 @@ a svg:hover .contact-icon {
 	z-index: 1000;
 }
 
+.home-img {
+	width: 100%;
+	height: 300px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+}
+
+.proj-home:hover .home-img {
+	filter: drop-shadow(4px 4px 10px #e6e6e6);
+	transition: .5s;
+	transform: scale(1.01);
+
+}
+
+
+
+
 
 
 /*Project- Fulldive*/
 
 #fulldive {
-	background-image: url(../img/fulldive_home.png);
+	height: 100%;
+	margin-top: 8%;
 }
 
-#fulldive-overlay {
-	height: 100%;
-	position: relative;
-        
-}
 
 #fulldive-overlaybg {
-	height: 100%;
-	opacity: .7;
 	background: #00173D; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #00173D , #33B9DB); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #00173D , #33B9DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to left, #80D6E3 , #5CA2C7); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #80D6E3, #5CA2C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: 0;
+	z-index: 1000;
+	height: 100%;
+
 }
+
+#fulldive-home-img {
+	background-image: url(../img/fulldive_home.svg);
+	position: relative;
+	height: 500px;
+}
+
+#fulldive:hover #fulldive-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#fulldive-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #5CA2C7 50%, #80D6E3 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #5CA2C7 50%, #80D6E3 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+
+#fulldive:hover #fulldive-title {
+    background-position: left;
+
+}
+
+
+#fulldive:hover #fulldive-overlaybg {
+	opacity: .85;
+	transition: opacity .2s;
+}
+
+/*Project- FulldiveMobile*/
+
+#fulldivemobile {
+	height: 100%;
+	margin-top: 15%;
+}
+
+
+#fulldivemobile-overlaybg {
+	background: #00173D; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #80D6E3 , #5CA2C7); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #80D6E3, #5CA2C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: 0;
+	z-index: 1000;
+	height: 100%;
+
+}
+
+#fulldivemobile-home-img {
+	background-image: url(../img/fulldivemobile_home.png);
+	position: relative;
+	height: 500px;
+}
+
+#fulldivemobile:hover #fulldivemobile-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#fulldivemobile-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #5CA2C7 50%, #80D6E3 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #5CA2C7 50%, #80D6E3 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+
+#fulldivemobile:hover #fulldivemobile-title {
+    background-position: left;
+
+}
+
+
+#fulldivemobile:hover #fulldivemobile-overlaybg {
+	opacity: .8;
+	transition: opacity .2s;
+}
+
+
+/*Project- FulldiveSaves*/
+
+#fulldivesaves {
+	height: 100%;
+/*	margin-top: 150px;*/
+}
+
+
+#fulldivesaves-overlaybg {
+	background: #00173D; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #80D6E3 , #5CA2C7); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #80D6E3, #5CA2C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: 0;
+	z-index: 1000;
+	height: 100%;
+
+}
+
+#fulldivesaves-home-img {
+	background-image: url(../img/fdsaves-hero.png);
+	position: relative;
+	height: 500px;
+}
+
+#fulldivesaves:hover #fulldivesaves-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#fulldivesaves-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #5CA2C7 50%, #80D6E3 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #5CA2C7 50%, #80D6E3 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+
+#fulldivesaves:hover #fulldivesaves-title {
+    background-position: left;
+
+}
+
+
+#fulldivesaves:hover #fulldivesaves-overlaybg {
+	opacity: .8;
+	transition: opacity .2s;
+}
+
+
+/*Project- WingIt*/
+
+#wingit {
+	height: 100%;
+	margin-top: 8%;
+}
+
+#wingit-overlaybg {
+	height: 100%;
+	opacity: 0;
+	background: #E8CBC0; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #E8CBC0 , #636FA4); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #E8CBC0 , #636FA4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	z-index: 1000;
+
+}
+
+
+#wingit-home-img {
+	background-image: url(../img/wingit_home.png);
+	position: relative;
+	height: 500px;
+}
+
+#wingit:hover #wingit-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#wingit-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #E8CBC0 50%, #636FA4 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #E8CBC0 50%, #636FA4 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .2s;
+}
+
+#wingit:hover #wingit-title {
+    background-position: left;
+
+}
+
+#wingit:hover #wingit-overlaybg {
+	opacity: .8;
+	transition: opacity .2s;
+}
+
+
+/*Project- Twinkle */
+
+#twinkle {
+	height: 100%;
+	margin-top: 8%;
+
+}
+
+#twinkle-home-img {
+	background-image: url(../img/twinkle_home.png);
+	position: relative;
+	height: 500px;
+}
+
+#twinkle-overlaybg {
+	height: 100%;
+	opacity: 0;
+	background: #2ad7f4; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #7EC2AB , #48B1BF); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #7EC2AB , #48B1BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
+}
+
+#twinkle:hover #twinkle-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#twinkle-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #7EC2AB 50%, #48B1BF 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #7EC2AB 50%, #48B1BF 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .2s;
+}
+
+#twinkle:hover #twinkle-title {
+    background-position: left;
+
+}
+
+#twinkle-overlay {
+	height: 100%;
+	position: relative;
+}
+
+#twinkle:hover #twinkle-overlaybg {
+	opacity: .9;
+	transition: opacity .2s;
+}
+
+
+
 
 /*Project- Beyond Smartphones*/
 
 #beyondsmartphones {
+	height: 100%;
+	margin-top: 8%;
+}
+
+#beyondsmartphones-home-img {
 	background-image: url(../img/beyondsmartphones_home.jpg);
+	position: relative;
+	height: 350px;
+
+}
+
+#beyondsmartphones-overlaybg {
+	height: 100%;
+	opacity: 0;
+	background: #BDBDBD; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #D6D3D9 , #BDBDBD); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #D6D3D9 , #BDBDBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
+}
+
+#beyondsmartphones:hover #beyondsmartphones-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#beyondsmartphones-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #D6D3D9 50%, #BDBDBD 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #D6D3D9 50%, #BDBDBD 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .2s;
+}
+
+#beyondsmartphones:hover #beyondsmartphones-title {
+    background-position: left;
+
 }
 
 #beyondsmartphones-overlay {
@@ -519,14 +848,12 @@ a svg:hover .contact-icon {
 	position: relative;
 }
 
-#beyondsmartphones-overlaybg {
-	height: 100%;
+#beyondsmartphones:hover #beyondsmartphones-overlaybg {
 	opacity: .7;
-	background: #BDBDBD; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #D6D3D9 , #BDBDBD); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #D6D3D9 , #BDBDBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	transition: opacity .2s;
 }
+
+
 
 
 /*Project- Track & Slash*/
@@ -548,49 +875,7 @@ a svg:hover .contact-icon {
 	background: linear-gradient(to left, #F23719 , #FF7201); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/*Project- WingIt*/
 
-#wingit {
-	background-image: url(../img/wingit_home.jpg);
-}
-
-#wingit-overlay {
-	height: 100%;
-	position: relative;
-        
-}
-
-#wingit-overlaybg {
-	height: 100%;
-	opacity: .8;
-	background: #E8CBC0; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #E8CBC0 , #636FA4); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #E8CBC0 , #636FA4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-
-/*Project- Twinkle */
-
-#twinkle {
-	background-image: url(../img/twinkle_home.jpg);
-
-}
-
-#twinkle-overlay {
-	height: 100%;
-	position: relative;
-}
-
-#twinkle-overlaybg {
-	height: 100%;
-	opacity: .8;
-	background: #2ad7f4; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #2ad7f4 , #49C0B7); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #2ad7f4 , #49C0B7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-
-}
 
 /*Project- Dayrise*/
 
@@ -702,27 +987,26 @@ a svg:hover .contact-icon {
 
 .project-header {
 	margin: 0;
-	height: 40px;
-	padding: 1% 10% 5% 10%;
+	width: 100%;
 	position: relative;
 }
 
-.project-hero {
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+.writeup-img {
 	width: 100%;
-	height: 420px;
-	margin-bottom: 20%;
-	margin-top: 10%;
+	margin: 0;
+	position: relative;
+	cursor: pointer;
+	animation: fadeInUp 1.5s;
 
 }
+
 
 .project-writeup {
 	position: relative;
-	width: 80%;
-	padding: 3% 10% 0% 10%;
+	width: 50%;
+	padding: 0% 25% 0% 25%;
 	margin: 0;
+	animation: fadeInUp 1.5s;
 }
 
 .project-left {
@@ -762,24 +1046,12 @@ a svg:hover .contact-icon {
 	animation: fadeInUp 1.5s;
 }
 
-.project-img {
-	width: 100%;
-}
-
 .writeup-section {
 	margin-bottom: 100px;
 }
 
 
-.writeup-img {
-	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 30px;
-	cursor: pointer;
-	margin-left: auto;
-	margin-right: auto;
 
-}
 
 .noscroll {
 	overflow: hidden;
@@ -824,15 +1096,10 @@ a svg:hover .contact-icon {
 
 .writeup-subsection {
 	margin-top: 30px;
-	border-left: 3px solid #CBA854;
-	margin-left: 4%;
+	border-left: 3px solid;
+	padding-left: 4%;
 }
 
-.subsection-text {
-	width: 80%;
-	padding-left: 20px;
-	padding-top: 0;
-}
 
 .persona-img {
 	width: 100px;
@@ -841,7 +1108,6 @@ a svg:hover .contact-icon {
 	background-position: center center;
 	background-size: cover;
 	border-radius: 3px;
-	margin-left: 20px;
 }
 
 .project-next {
@@ -875,7 +1141,7 @@ a svg:hover .contact-icon {
 /*Project Page - Fulldive*/
 
 #fulldive-hero {
-	background-image: url(../img/fulldive_home.jpg);
+	background-image: url(../img/fulldive_home.png);
 
 }
 

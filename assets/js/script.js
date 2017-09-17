@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 // Hiding Things
-	$('#fulldive-overlay').hide();
+	// $('#fulldive-overlay').hide();
 	$('#beyondsmartphones-overlay').hide();
 	$('#trackslash-overlay').hide();
 	$('#wingit-overlay').hide();
@@ -29,11 +29,11 @@ $(document).ready(function(){
 
 
 // Project Hovers
-	$('#fulldive').hover(function() {
-		$('#fulldive-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#fulldive-overlay').stop(true, true).fadeOut(400);
-	});
+	// $('#fulldive').hover(function() {
+	// 	$('#fulldive-overlay').stop(true, true).fadeIn(400);
+	// }, function(){
+	// 	$('#fulldive-overlay').stop(true, true).fadeOut(400);
+	// });
 
 	$('#beyondsmartphones').hover(function() {
 		$('#beyondsmartphones-overlay').stop(true, true).fadeIn(400);

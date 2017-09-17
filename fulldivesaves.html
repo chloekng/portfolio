@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chloe Ng - Saving on Fulldive</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="assets/js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+</head>
+<body>
+	<div id="img-overlay">
+		<img id="img-overlaid">
+		<span class="close">&times;</span>		
+	</div>
+	<nav class="h3" id="menu">
+		<a href="index.html"><img id="navhome" src="assets/img/homecutie.svg"></a>
+		<a class="navitem" href="about.html">ABOUT</a>
+		<a class="navitem" href="fun.html">FUN</a>
+		<a class="navitem" href="index.html">WORK</a>
+	</nav>
+	<div class="project-writeup clearfix">
+			<div class="h1">Saving on Fulldive - <p class="h2"> making content aggregation less overwhelming</p></div>
+			<br>
+			<div class="bodytext">
+				<p>As Fulldive <a href="fulldivemobile.html">evolved to become a content aggregation app</a>, we realized that we needed a more powerful way for users to save and sort their content. A drawback of aggregating content from all over is that it can overwhelm the user. Our answer to this was developing Saving on Fulldive.</p>
+				<br>
+			</div>
+	</div>
+	<video class="writeup-img" src="assets/img/fdsaves-hero.mp4" autoplay=true loop=true></video>
+	<div class="project-writeup" clearfix>
+			<div class="bodytext">
+				<p class="minitext">Interaction for saving a post.</p>
+				<br>
+				<p class="h3">ROLE</p>
+				<p>I was particularly excited to work on this feature. As an avid Pinterest and Tumblr user, I felt that combining our bookmarking with tagging had a lot of potential. In conversation with the co-founder, I fleshed out the initial concept. I then worked with Grant (our design manager) and our CTO to perfect the flow and visual details. I finished off with some interactions made in Principle. From initial concept to exporting assets, the process took about 3 weeks.</p>
+				<br>
+				<p class="h3">GOALS</p>
+				<p>Help people take control of their content by allowing them to save and sort</p>
+				<br>
+				<p>Encourage users to use the tag system so that Fulldive can better sort content</p>
+				<Br>
+			</div>
+	</div>
+	<img class="writeup-img" src="assets/img/fulldivesaves-dev.png">
+	<div class="project-writeup" clearfix>
+			<div class="bodytext">
+				<p class="minitext">Consolidating our bookmarks and tags system into one save feature.</p>
+				<Br>
+				<p class="h3">IDENTIFYING OPPORTUNITY</p>
+					<p class="h2">How can we make content aggregation less overwhelming?</p>
+						<p>As a content aggregator app that draws from all sorts of sources, we knew that organization on our platform was key to helping users navigate content. Our initial solution to this was a tagging system.</p>
+						<br>
+					<p class="h2">Why do people tag content? &mdash; to sort it for themselves and others.</p>
+						<p>A big question we had then was what motivated people to tag. Tagging is pretty widespread so I turned to popular platforms like Twitter, Facebook, Instagram, and Tumblr for inspiration. On Instagram and Twitter, people tag their posts so that others can find them. Our platform doesn't involve content generation though.</p>
+						<br>
+						<p>On Tumblr, I found an alternative use for tags. I noticed that many Tumblr users use tags to create detailed navigation systems on their blogs. Though there's some public-facing motivation behind that, there's also vested personal interest in keeping track of the content they've reblogged. We want Fulldive to enable people to find the content that matters to them amidst all the clutter. People on Tumblr were using tags exactly for that.</p>
+						<br>
+						<img class="writeup-img" src="assets/img/fdsaves-tumblrtags.png">
+						<p class="minitext">Tags page from tumblr soyouwanttowatchfs. This person is the MVP when it comes to figure skating &mdash; it's amazing how detailed they get with their tags.</p>
+						<br>
+					<p class="h2">Bookmarking and tagging come from similar motivations.</p>
+						<p>For Tumblr, tagging happens when a post is generated or reblogged onto a person's blog. Fulldive, as more of a consumption platform than a sharing platform, had no such function. The motivation for tagging to curate and share that was on other platforms didn't exist on ours. As I looked at the problem though, I realized that tagging comes from a similar motivation as bookmarking. Both involve saving a piece of content to refer to later. We had a bookmark feature, we had a tagging system &mdash; why not combine them? Conveniently, we also had validation this worked &mdash; Pinterest is essentially this.</p>
+						<br> 
+						<p>I talked with the co-founders and the design team about combining our tag system with bookmarks. They were onboard, so I got to designing.</p>
+				<br>
+				<p class="h3">ITERATION</p>
+					<P class="h2">Designing with a plan</P>
+						<p>To help guide my design process and make sure that I was comprehensive, I first made a list of all the components I needed to consider. In addition to the saving flow, I needed to consider a new icon, where people's saves lived, how public saves should be, how tag pages may change, how new tags might be created, how saving in-video would work...among other things. I made a quick checklist on Trello that I could update and refer back to.</p>
+						<Br>
+						<p>I first tackled the big stuff, such as the primary flow and the main pages tags would live in. Having the checklist was really handy in making sure that I had a holistic vision of the feature.</p>
+						<br>
+						<img class="writeup-img" src="assets/img/saveonfeed-1.png">
+						<p class="minitext">Initial explorations for the save on feed flow. In hindsight, I wish I did this at a lower fidelity so that I wasn't so bogged down thinking about visual details when I needed to be focusing on the user flow.</p>
+						<Br>
+						<img class="writeup-img" src="assets/img/bookmarkstags-1.png">
+						<p class="minitext">Initial explorations for how combining bookmarks and tags would change existing tag and bookmark pages.</p>
+						<br>
+						<p class="h2">Making intentional design decisions</p>
+						<p>I presented my designs to the co-founders and the design team. This meeting was an opportunity for me to surface some higher-level questions and decisions that influenced the design.</p>
+						<br>
+						<p>For example, we were framing saving from a personal motivation. How does that influence the publicness of tags and vice versa? We decided to allow people to save privately with the caveat that their private saves won't be sorted into tags. We considered allowing private saves to tags, but it was too complicated (especially development wise) for our current needs. I also added a toggle to the tags page so people could filter for posts they've saved. </p>
+						<br>
+						<p>In addition, we were using people's personal tags to categorize content. It's likely that people may tag things incorrectly, or simply based on personal whim. We decided that we would categorize content based on a critical mass of tags rather than all tags. That is, a piece of content tagged "#virtualreality" 5x, "#technology" 3x, and "#wowthisiscool" 1x would be categorized under "#virtualreality" and "#technology" in our backend. It will still show up in the "#wowthisiscool" tag page, but greatly deprioritized. Therefore, a content's categorization depends on a crowdsourced consensus.</p>
+						<br>
+					<p class="h2">Revising the initial design</p>
+						<p>With a clear idea on higher-level decisions, I began getting into the details of the design. For saving on feed, I came up with a detailed flow flushing out mechanics to present to the engineers.</p>
+						<br>
+						<img class="writeup-img" src="assets/img/fdsaves-flow1.png">
+						<p class="minitext">Flow for saving on feed with notes on functionality.</p>
+						<br>
+						<p>After showing these initial designs though, some key issues arose. I decided to rehaul my initial design. I initially prioritized minimizing steps in the flow, but in doing so made it more confusing for people. </p>
+						<br>
+						<img class="writeup-img" src="assets/img/fdsaves-flow1-breakdown.png">
+						<p class="minitext">The initial pull-up for Saving was confusing due to too many CTAs.</p>
+						<br> 
+						<p class="h3">SOLUTION</p>
+						<p class="h2">Be explicit with the main action on each page</p>
+						<p>To solve for these problems, I made sure to be more explicit on the expected action for each screen. This meant separating out the flow for saving to a new tag and polishing up the writing on each screen to make sure actions were clear. </p>
+						<br>
+				</div>
+			</div>
+			<img class="writeup-img" src="assets/img/fdsaves-flow2.png">
+			<div class="project-writeup" clearfix>
+				<div class="bodytext">
+					<br>
+					<p>The second iteration involved more steps, but communicated the steps clearer. This made users feel more confident while going through the flow. Additionally, we anticipated that people wouldn't be going through the whole flow for saving to a new tag often, so it was alright if there were more screens.</p>
+					<br>
+					<img class="writeup-img" src="assets/img/fdsaves-flow2-breakdown.png">
+					<p class="minitext">Some key changes from the initial flow.</p>
+					<br>
+					<p class="h3">INTERACTION</p>
+						<p class="h2">Communicating design intention clearly</p>
+						<p>To better communicate the flow with engineers, I made some interactions on Principle.</p> 
+						<br>
+						<video class="writeup-img" src="assets/img/fdsaves-interaction1.mp4" autoplay=true loop=true></video>
+						<p class="minitext">Saving from the feed</p>
+						<br>
+						<p class="h2">Rules for naming tags</p>
+						<p>Along the way, I formulated a set of rules for tagging on the platform to minimize too many similarly named tags.</p>
+						<Br>
+						<video class="writeup-img" src="assets/img/fdsaves-naming.mp4" autoplay=true loop=true></video>
+						<p class="minitext">Interaction for how the platform treats various cases of naming. Tags don't have spaces and aren't case sensitive, so space and capitalization differences are ignored.</p>
+						<Br>
+						<p class="h2">Unsaving from the video player</p>
+						<p>I also had to consider how Saving worked with other areas of the app, such as the video player.</p>
+						<br>
+						<video class="writeup-img" src="assets/img/fdsaves-video.mp4" autoplay=true loop=true></video>
+						<p class="minitext">The blue tags are ones the person has saved to a video. While a tap leads to the tag page, a long press allows them to unsave the video. If their's is the only tag of that name on the video, then the tag is completely removed. If others have tagged the video the same name, then the tag just fades color to gray. </p>
+						<br>
+					<p class="h3">RESULT</p>
+						<p>After much discussion between the co-founders, the design team, and the CTO, we came to a consensus on this design. In one last meeting, I presented the final flow and interactions and got the go-ahead to export all the assets to Zeplin where it's currently awaiting development.</p>
+						<br>
+						<p>Designing this feature challenged me to think broadly in terms of how the decisions we made influenced user behavior but also in detail in terms of the design itself. Talking to the CTO was helpful in understanding what sort of things engineers need to consider when developing. I'm excited to see where this goes once it's launched.</p>
+						<Br>
+				</div>
+			</div>
+
+
+	</div>
+
+
+	</div>
+
+		</div>
+	</div>
+<!-- Project Next -->
+<!-- 	<div class="project-next clearfix">
+		<div class="bigtext" id="lefttext">See More Like This</div>
+		<div class="row clearfix">
+			<div class="column-left-next" id="wingit">
+				<a href="wingit-writeup.html">
+					<div id="wingit-overlay">
+					<div class="home-project-text">
+						<div class="home-project-title">Wing It</div>
+						<div class="home-project-misc">mobile ui/ux &middot; user research &middot; user testing</div>
+					</div>
+					<div id="wingit-overlaybg"></div>
+				</div></a>			
+			</div>
+			<div class="column-right-next" id="trackslash">
+				<a href="trackslash-writeup.html">
+					<div id="trackslash-overlay">
+					<div class="home-project-text">
+						<div class="home-project-title">Track & Slash</div>
+						<div class="home-project-misc">product design &middot; mobile ui/ux &middot; branding</div>
+					</div>
+					<div id="trackslash-overlaybg"></div>
+				</div></a>			
+				</div>
+		</div>
+	</div> -->
+<!-- Footer -->
+	<footer class="footer clearfix">
+		<div class="minitext-h" id="contact">
+			<a href="https://www.linkedin.com/in/chloekng/" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+   	 			<path class="contact-icon" fill="#2B3F38" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/>
+			</svg></a>
+			<a href="https://www.instagram.com/gloweeing" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    			<path class="contact-icon" fill="#2B3F38" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+			</svg></a>
+			<a href="https://www.pinterest.com/chloeeeing/" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    			<path class="contact-icon"  fill="#2B3F38" d="M13,16.2C12.2,16.2 11.43,15.86 10.88,15.28L9.93,18.5L9.86,18.69L9.83,18.67C9.64,19 9.29,19.2 8.9,19.2C8.29,19.2 7.8,18.71 7.8,18.1C7.8,18.05 7.81,18 7.81,17.95H7.8L7.85,17.77L9.7,12.21C9.7,12.21 9.5,11.59 9.5,10.73C9.5,9 10.42,8.5 11.16,8.5C11.91,8.5 12.58,8.76 12.58,9.81C12.58,11.15 11.69,11.84 11.69,12.81C11.69,13.55 12.29,14.16 13.03,14.16C15.37,14.16 16.2,12.4 16.2,10.75C16.2,8.57 14.32,6.8 12,6.8C9.68,6.8 7.8,8.57 7.8,10.75C7.8,11.42 8,12.09 8.34,12.68C8.43,12.84 8.5,13 8.5,13.2A1,1 0 0,1 7.5,14.2C7.13,14.2 6.79,14 6.62,13.7C6.08,12.81 5.8,11.79 5.8,10.75C5.8,7.47 8.58,4.8 12,4.8C15.42,4.8 18.2,7.47 18.2,10.75C18.2,13.37 16.57,16.2 13,16.2M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+			</svg></a>
+			<a href="https://medium.com/@chloeng" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    			<path class="contact-icon" fill="#2B3F38" d="M21.93,6.62L15.89,16.47L11.57,9.43L15,3.84C15.17,3.58 15.5,3.47 15.78,3.55L21.93,6.62M22,19.78C22,20.35 21.5,20.57 20.89,20.26L16.18,17.91L22,8.41V19.78M9,19.94C9,20.5 8.57,20.76 8.07,20.5L2.55,17.76C2.25,17.6 2,17.2 2,16.86V4.14C2,3.69 2.33,3.5 2.74,3.68L8.7,6.66L9,7.12V19.94M15.29,17.46L10,14.81V8.81L15.29,17.46Z" />
+			</svg></a>
+			<div id="email">NGKCHLOE@GMAIL.COM</div>
+		</div>
+		<div class="minitext-h" id="copyright">
+			&copy CHLOE NG 2017
+		</div>
+	</footer>
+</body>

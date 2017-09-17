@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chloe Ng - Fulldive</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="assets/js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+</head>
+<body>
+	<div id="img-overlay">
+		<img id="img-overlaid">
+		<span class="close">&times;</span>		
+	</div>
+	<nav class="h3" id="menu">
+		<a href="index.html"><img id="navhome" src="assets/img/homecutie.svg"></a>
+		<a class="navitem" href="about.html">ABOUT</a>
+		<a class="navitem" href="fun.html">FUN</a>
+		<a class="navitem" href="index.html">WORK</a>
+	</nav>
+	<div class="project-writeup clearfix">
+			<div class="h1">Fulldive VR - <p class="h2"> introducing new features in mobile VR</p></div>
+			<br>
+			<div class="bodytext">
+				<p>Fulldive is a mobile VR platform that aggregates VR videos, games, and apps. As of May 2017, we have over 4.1 million downloads and a 4.3 rating on Google Play. We serve people who are new to VR and want to explore all the space has to offer, but may not own a phone that is compatible with higher end mobile VR experiences.</p>
+				<br>
+			</div>
+	</div>
+	<video class="writeup-img" src="assets/img/fd-followtip.mov" autoplay=true loop=true></video>
+	<div class="project-writeup" clearfix>
+			<div class="bodytext">
+				<p class="minitext">I designed the "Recommended for you to follow" section to encourage people to follow others.</p>
+				<br>
+				<p class="h3">ROLE</p>
+				<p>Over summer 2016, I worked as Fulldive's second product designer, designing the mobile flat component to their VR platform. In January 2017, I joined our three person design team full-time. In this time, I took lead on user research and usability tests to ensure that we were keeping users central to our design process. Based on our findings, I designed several components for introducing new features on our mobile VR platform. I worked closely with Grant, our Design Manager, and Anna, a fellow product designer.</p>
+				<br>
+				<p class="h3">GOALS</p>
+				<p>Conduct a usability audit of our current Fulldive VR platform to determine pain points and areas of improvement. As our target audience involves people new to VR, we decided to specifically test on people with less experience in VR.</p>
+				<br>
+				<p> Redesign areas of our platform that are particularly difficult to use based on issues uncovered during the usability testing. Due to our limited resources, we had to keep our redesigns to specific areas of our platform rather than redesigning from scratch. In our usability tests, we identified that the introduction for the following feed needed to be redesigned.</p>
+				<br>
+			</div>
+	</div>
+	<img class="writeup-img" src="assets/img/fulldive-testing.png">
+	<div class="project-writeup" clearfix>
+			<div class="bodytext">
+				<Br>
+				<p class="h3">USABILITY TESTING</p>
+					<p class="h2">What are people's first impressions?</p>
+						<p>We kicked off our usability testing by carefully defining our goals in testing. I identified specific flows that we wanted to test, translating them into usability tasks. One key question we wanted to answer was how users perceived our platform on first opening it. Rather than strictly setting up tasks, we decided to first observe people's reactions at first open and encourage them to explore the app as they would if they had opened it at home. Only after they engaged with specific features would we set them specific tasks.</p>
+						<br>
+						<p>We also had to consider how the medium of mobile VR affected how we would usually run usability tests. See the <a href="">Medium Writeup</a> on how we set up our mobile VR study!</p>
+						<br>
+						<p>Over a week, I facilitated 5 usability test sessions, each 90 minutes long. Our usability testers included people who either had no experience in virtual reality, or had only tried it once or twice.</p>
+						<Br>
+				<img class="writeup-img" src="assets/img/fulldive-testnotes.png">
+				<p class="minitext">Our color coded feature completion spreadsheet for a session. We used this spreadsheet to compare how successful users were at various tasks. This helped us prioritize the features we needed to tackle.</p>
+				<br>
+				<br>
+				<p class="h3">USABILITY TEST RESULTS</p>
+					<P class="h2">Time to fix things!</P>
+						<p>Overall, we surfaced 37 usability issues that we wanted to fix. These ranged from changes in language and interaction to fixing up flows. Grant, Anna, and I worked together with our cofounders and the CTO to determine the priority and feasibility for the design changes we wanted to implement.</p>
+						<Br>
+						<img class="writeup-img" src="assets/img/fulldive-usabilityfixes.png">
+						<p class="minitext">A snippet of our usability fixes spreadsheet which we shared with the engineering team.</p>
+						<Br>
+					<p class="h2">Establishing mobile VR design principles</p>
+						<p>To ensure that we continued designing with users in mind, I also assembled a short list of insights for the design team to keep central when designing for mobile VR.</p>
+						<ul>
+							<br>
+							<li>Consider neck movements in relation to eyeline when you design - it's easier for people to look side to side rather than up and down</li>
+							<br>
+							<li>Don't overwhelm the user! It might be tempting to use all that space, but user's view ports are very narrow and they're in a new environment</li>
+							<br>
+							<li>Have a clearly defined hierarchy so users know where they are in the app</li>
+							<br>
+							<li>Consider distance when designing. Uncomfortably close UI is offputting. Changes in depth are an opportunity to draw attention to things</li>
+							<br>
+							<li>Clear tap targets prevent accidental misclicking, a prevalent problem with autoclicking</li>
+							<br>
+							<li>Smooth voice control is more important than ever in VR</li>
+							<br>
+							<li>No one likes to read, and they like to read even less in VR</li>
+						</ul>
+						<Br>
+						<br>
+					<p class="h3">DEFINING THE PROBLEM</p>
+						<p class="h2">How can we introduce features to users in a non-obtrusive and informative manner?</p>
+						<p>One persistent issue we found was that people really don't like reading in mobile VR. In many places throughout our app, we had overlaid tutorial cards to explain features to people. Only one out of our testers read anything on the cards. We found that if people don't like modals in their current browsing experience, they hate it even more when it's right in their face like in mobile VR. Not surprising, in hindsight.</p>
+						<br>
+						<p>The question then was how to introduce new features in a way that wasn't obtrusive, but still provided some context for users. </p>
+						<br>
+						<p class="h2">More specifically &mdash; how do we introduce the Feed?</p>
+						<p>At the time, we were introducing a new section of our app &mdash; the Feed. During our testing sessions, people were confused by how the feed was different from the main homepage of the app. When asked, they would respond vaguely with superficial answers about how the UI was different. However, they couldn't clearly articulate how the content on it was any different than the content they would see on the homepage. We also knew that the feed wouldn't have much content if people weren't following anyone. Following was a new feature on our platform, so it was likely that our current users weren't seeing much.</p>
+						<br>
+				</div>
+			</div>
+			<img class="writeup-img" src="assets/img/fulldive-followingfeed.png">
+			<div class="project-writeup" clearfix>
+				<div class="bodytext">
+					<p class="minitext">Our following feed prior to testing, designed by Grant Lin.</p>
+					<br>
+					<p>The following feed was a key area for us to increase retention, as it was the primary area for personalized content. We therefore decided this was a key feature to make sure we were introducing right. Based on discussion with the design team, I broke the problem down into three main parts:</p>
+						<ol>
+						<br>
+						<li>Introduce people to the idea that content on their feed was what people they were following were watching</li>
+						<br>
+						<li>Encourage people to follow others in order to populate their feed</li>
+						<br>
+						<li>Establish patterns for introducing features in mobile VR that don't involve modal overlays</li>
+						</ol>
+					<br>
+					<p class="h3">IDEATION</p>
+<!-- 						reference: https://trello.com/c/cX99CF0o/245-tutorial-card-tips-in-feed-vr-library -->
+						<p>I started off by researching how other apps introduced features in mobile VR and evaluating their effectiveness. I liked how many apps drew from gaming conventions, such as by highlighting features, or providing interactive elements. Mobile app conventions also proved to still be applicable! I mocked up some potential directions, choosing to do so in high fidelity since experiencing UI live is so essential in mobile VR. I was able to do this fairly quickly with our existing assets. Along the way, I worked with Grant on polishing up visual details. Following are some of the more viable options.</p>
+						<br>
+						<p class="h2">Onboarding Setup</p>
+							<video class="writeup-img" src="assets/img/fd-feedrec.mp4" autoplay=true loop=true></video>
+							<p class="minitext">Feed designed by Grant Lin, follow recommendations by me.</p>
+							<br>
+							<p>I figured a way of introducing people to the feed while also encouraging them to follow others was to provide some suggestions upfront. To make the suggestions more personal, I included a line that explained why someone might be recommended to them - for example, if they both watched a certain video.</p>
+							<br>
+							<p><span class="bodytext-b">PROS:</span> contextual setup to the following feed, encourages people to follow others, action oriented</p>
+							<br>
+							<p><span class="bodytext-b">CONS:</span> people may not want to follow others so fast without first previewing the following feed, this may also seem similar to a modal in the sense that it's blocking their access to content</p>
+							<Br>
+						<p class="h2">In-feed content</p>
+							<video class="writeup-img" src="assets/img/fulldive-infeed.mp4" autoplay=true loop=true></video>
+							<p class="minitext">Feed designed by Grant Lin, "Recommended for you to follow" section and interaction by me.</p>
+							<br>
+							<p>In-Feed tool tips occur within the feed itself. These tooltips should be related to the content of the feed itself, and push for greater engagement.</p>
+							<br>
+							<p><span class="bodytext-b">PROS:</span> contextual so can easily show the benefit of a certain behavior, within the flow of content consumption so guaranteed to be seen and interacted with to a certain extent, space to elaborate on feature and push for an action</p>
+							<br>
+							<p><span class="bodytext-b">CONS:</span> can seem ad-like by breaking up the flow of content consumption, takes up space of content so should be used sparingly, may not be able to demonstrate action as well</p>
+							<Br>
+
+						<p class="h2">Attention Dot & Pointers</p>
+							<video class="writeup-img" src="assets/img/vr-attnpointer.mp4" autoplay=true loop=true></video>
+							<p class="minitext">Profile designed by Grant Lin, attention dot & pointer interaction by me.</p>
+							<br>
+							<p>Attention dots draw people's attention to specific features. When hovered over, they expand to include more information.</p>
+							<Br>
+							<p><span class="bodytext-b">PROS:</span> lightweight way of directing attention, low cognitive load that only expands when a user opts into interacting with it, exists within the context of the feature</p>
+							<br>
+							<p><span class="bodytext-b">CONS:</span> can be obtrusive or annoying if there are too many, limited to a small area, purely verbal which may have limited impact on a user</p>
+							<br>
+						<p class="h2">Mini tutorials</p>
+							<video class="writeup-img" src="assets/img/fulldive-minitut.mp4" autoplay=true loop=true></video>
+							<p class="minitext">Home & Profile designed by Grant Lin, overlaid tutorial designed by me.</p>
+							<Br>
+							<p>Taking a page from game tutorials, I also played with having more immersive and interactive tutorials. Though a common feature like following may not benefit from this, this is where more intensive flows can be explained in great detail. Though there are overlays involved, I wanted to explore how the medium of VR could allow for more interesting ways of presenting tutorials. </p>
+							<br>
+							<p><span class="bodytext-b">PROS:</span> allows for detailed explanations of how to interact with a feature, if we have users opt in to these they're likely looking for detailed information</p>
+							<br>
+							<p><span class="bodytext-b">CONS:</span> if lengthy it can be fatiguing for a user, uncertain how much a user may retain from a tutorial, tutorials don't necessarily encourage habits</p>
+							<br>
+					<p class="h3">COMING TO A DECISION</p>
+						<p>I evaluated these options based on implementation time and their effectiveness before presenting to the team. After talking with the design team, our cofounder, and our CTO, we determined that a combination of the onboarding setup and the in-feed prompter was the most viable decision to go forward with for our current needs.</p>
+						<br>
+						<p>To account for the fact that people may be hesitant to start following people before seeing the feed, we decided to allow for people to skip the onboarding overlay if they wanted to. Once inside the feed, the in-feed prompters would be there to continuously encourage people to follow others. To prevent them from taking up undue space, we would have these prompters only show up on the first page. </p>
+						<br>
+						<p>We saved the design explorations from the other directions on our Trello board. Hopefully one day we'll have the development time to use them! </p>
+					<br>
+					<p class="h3">RESULTS</p>						
+						<p>Unfortunately, we haven't launched the design for this just yet due to development time being spent on our mobile side.</p>
+
+
+				</div>
+			</div>
+
+
+	</div>
+
+
+	</div>
+
+		</div>
+	</div>
+<!-- Project Next -->
+<!-- 	<div class="project-next clearfix">
+		<div class="bigtext" id="lefttext">See More Like This</div>
+		<div class="row clearfix">
+			<div class="column-left-next" id="wingit">
+				<a href="wingit-writeup.html">
+					<div id="wingit-overlay">
+					<div class="home-project-text">
+						<div class="home-project-title">Wing It</div>
+						<div class="home-project-misc">mobile ui/ux &middot; user research &middot; user testing</div>
+					</div>
+					<div id="wingit-overlaybg"></div>
+				</div></a>			
+			</div>
+			<div class="column-right-next" id="trackslash">
+				<a href="trackslash-writeup.html">
+					<div id="trackslash-overlay">
+					<div class="home-project-text">
+						<div class="home-project-title">Track & Slash</div>
+						<div class="home-project-misc">product design &middot; mobile ui/ux &middot; branding</div>
+					</div>
+					<div id="trackslash-overlaybg"></div>
+				</div></a>			
+				</div>
+		</div>
+	</div> -->
+<!-- Footer -->
+	<footer class="footer clearfix">
+		<div class="minitext-h" id="contact">
+			<a href="https://www.linkedin.com/in/chloekng/" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+   	 			<path class="contact-icon" fill="#2B3F38" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/>
+			</svg></a>
+			<a href="https://www.instagram.com/gloweeing" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    			<path class="contact-icon" fill="#2B3F38" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+			</svg></a>
+			<a href="https://www.pinterest.com/chloeeeing/" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    			<path class="contact-icon"  fill="#2B3F38" d="M13,16.2C12.2,16.2 11.43,15.86 10.88,15.28L9.93,18.5L9.86,18.69L9.83,18.67C9.64,19 9.29,19.2 8.9,19.2C8.29,19.2 7.8,18.71 7.8,18.1C7.8,18.05 7.81,18 7.81,17.95H7.8L7.85,17.77L9.7,12.21C9.7,12.21 9.5,11.59 9.5,10.73C9.5,9 10.42,8.5 11.16,8.5C11.91,8.5 12.58,8.76 12.58,9.81C12.58,11.15 11.69,11.84 11.69,12.81C11.69,13.55 12.29,14.16 13.03,14.16C15.37,14.16 16.2,12.4 16.2,10.75C16.2,8.57 14.32,6.8 12,6.8C9.68,6.8 7.8,8.57 7.8,10.75C7.8,11.42 8,12.09 8.34,12.68C8.43,12.84 8.5,13 8.5,13.2A1,1 0 0,1 7.5,14.2C7.13,14.2 6.79,14 6.62,13.7C6.08,12.81 5.8,11.79 5.8,10.75C5.8,7.47 8.58,4.8 12,4.8C15.42,4.8 18.2,7.47 18.2,10.75C18.2,13.37 16.57,16.2 13,16.2M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+			</svg></a>
+			<a href="https://medium.com/@chloeng" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    			<path class="contact-icon" fill="#2B3F38" d="M21.93,6.62L15.89,16.47L11.57,9.43L15,3.84C15.17,3.58 15.5,3.47 15.78,3.55L21.93,6.62M22,19.78C22,20.35 21.5,20.57 20.89,20.26L16.18,17.91L22,8.41V19.78M9,19.94C9,20.5 8.57,20.76 8.07,20.5L2.55,17.76C2.25,17.6 2,17.2 2,16.86V4.14C2,3.69 2.33,3.5 2.74,3.68L8.7,6.66L9,7.12V19.94M15.29,17.46L10,14.81V8.81L15.29,17.46Z" />
+			</svg></a>
+			<div id="email">NGKCHLOE@GMAIL.COM</div>
+		</div>
+		<div class="minitext-h" id="copyright">
+			&copy CHLOE NG 2017
+		</div>
+	</footer>
+</body>
