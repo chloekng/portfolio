@@ -150,17 +150,16 @@ html {
 }
 */
 a:link {
-	color: #474B51;
+	color: #FC9218;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #474B51;
+	color: #FC9218;
 	text-decoration: none;
 }
 
 a:hover {
-
 	transition: .3s;
 }
 
