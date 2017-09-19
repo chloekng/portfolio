@@ -1029,12 +1029,13 @@ fill: #90B224;*/
 
 .project-nav {
 	position: fixed;
-	top: 5%;
+	bottom: 10%;
 /*	maybe when it hits the scroll it turns into a fixed pos */
 	display: inline-block;
 	width: 10%;
 	padding-top: 1%;
-	color: #476E61;
+	left: 90%;
+	z-index: 10000;
 }
 
 #project-nav-top {
@@ -1047,7 +1048,7 @@ fill: #90B224;*/
 
 
 #project-nav-top:hover {
-	color: #B5CB3F;
+	color: #FC9218;
 	transition: .3s;
 }
 
