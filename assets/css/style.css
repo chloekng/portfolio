@@ -534,8 +534,13 @@ fill: #90B224;*/
 
 #fulldive {
 	height: 100%;
-	margin-top: 8%;
 }
+
+#fulldive.column-left {
+	margin-top: 8%;
+
+}
+
 
 
 #fulldive-overlaybg {
@@ -586,8 +591,12 @@ fill: #90B224;*/
 
 #fulldivemobile {
 	height: 100%;
+}
+
+#fulldivemobile.column-right {
 	margin-top: 15%;
 }
+
 
 
 #fulldivemobile-overlaybg {
@@ -692,6 +701,9 @@ fill: #90B224;*/
 
 #wingit {
 	height: 100%;
+}
+
+#wingit.column-right {
 	margin-top: 8%;
 }
 
@@ -1080,14 +1092,14 @@ fill: #90B224;*/
     position: fixed;
     top: 15px;
     right: 35px;
-    color: #90B224;
+/*    color: #90B224;*/
     font-size: 40px;
     transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #476E61;
+    color: #FC9218;
     text-decoration: none;
     cursor: pointer;
 }

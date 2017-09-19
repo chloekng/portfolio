@@ -1,18 +1,6 @@
 $(document).ready(function(){
 
 
-// Hiding Things
-	// $('#fulldive-overlay').hide();
-	$('#beyondsmartphones-overlay').hide();
-	$('#trackslash-overlay').hide();
-	$('#wingit-overlay').hide();
-	$('#twinkle-overlay').hide();
-	$('#dayrise-overlay').hide();
-	$('#taug-overlay').hide();
-	$('#joybook-overlay').hide();
-	$('#hkcafe-overlay').hide();
-	$('#lasercut-overlay').hide();
-	$('.project-nav').hide();
 
 // Navigation
 	$('#navhome').hover(function() {
@@ -26,70 +14,6 @@ $(document).ready(function(){
 	});
 
 
-
-
-// Project Hovers
-	// $('#fulldive').hover(function() {
-	// 	$('#fulldive-overlay').stop(true, true).fadeIn(400);
-	// }, function(){
-	// 	$('#fulldive-overlay').stop(true, true).fadeOut(400);
-	// });
-
-	$('#beyondsmartphones').hover(function() {
-		$('#beyondsmartphones-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#beyondsmartphones-overlay').stop(true, true).fadeOut(400);
-	});
-
-	$('#trackslash').hover(function() {
-		$('#trackslash-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#trackslash-overlay').stop(true, true).fadeOut(400);
-	});
-
-
-	$('#wingit').hover(function() {
-		$('#wingit-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#wingit-overlay').stop(true, true).fadeOut(400);
-	});
-
-	$('#twinkle').hover(function() {
-		$('#twinkle-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#twinkle-overlay').stop(true, true).fadeOut(400);
-	});
-
-	$('#dayrise').hover(function() {
-		$('#dayrise-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#dayrise-overlay').stop(true, true).fadeOut(400);
-	});
-
-	$('#taug').hover(function() {
-		$('#taug-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#taug-overlay').stop(true, true).fadeOut(400);
-	});
-
-	$('#joybook').hover(function() {
-		$('#joybook-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#joybook-overlay').stop(true, true).fadeOut(400);
-	});
-
-	$('#hkcafe').hover(function() {
-		$('#hkcafe-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#hkcafe-overlay').stop(true, true).fadeOut(400);
-	});
-
-
-	$('#lasercut').hover(function() {
-		$('#lasercut-overlay').stop(true, true).fadeIn(400);
-	}, function(){
-		$('#lasercut-overlay').stop(true, true).fadeOut(400);
-	});
 
 // Cutie Animation
 
