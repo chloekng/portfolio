@@ -631,7 +631,7 @@ fill: #90B224;*/
 
 
 
-#overlaybg {
+#fulldive-overlaybg {
 	background: #00173D; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #80D6E3 , #5CA2C7); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #80D6E3, #5CA2C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
