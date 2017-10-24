@@ -40,18 +40,19 @@ html {
 	letter-spacing: .02em;
 	display: inline-block;
 	position: relative;
+	color: #F77A43;
 
 }
 
 .h3::after {
   	content: "";
-  	height: 1.1em;
-  	background: #FC9218;
+  	height: 1.2em;
+  	background: #F77A43;
   	display: block;
   	width: 100%;
   	position: absolute;
-  	bottom: 5px;
-  	opacity: .6;
+  	bottom: .3em;
+  	opacity: .3;
   	z-index: -100;
 }
 
@@ -114,6 +115,8 @@ html {
 	letter-spacing: .1em;
 }
 
+
+
 .minitext-h-w {
 	font-size: 12px;
 	line-height: 150%;
@@ -171,8 +174,8 @@ a:link {
 	position: relative;
 	background-size: auto 200%;
 	background-position: right;
-	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #FC9218 50%, #FC9218 100%); /* Chrome 10-25, Safari 5.1-6 */
-	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #FC9218 50%, #FC9218 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #F77A43 50%, #F77A43 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #F77A43 50%, #F77A43 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .5s;
@@ -181,7 +184,7 @@ a:link {
 a::after {
   content: "";
   height: .25em;
-  background: #FC9218;
+  background: #F77A43;
   display: block;
   width: 100%;
   position: absolute;
@@ -264,8 +267,9 @@ a:hover {
 .navitem {
 	float: right;
 	position: relative;
-	width: 6em;
+	width: 5.5em;
 	text-align: center;
+	margin: 0 .5em 0 .5em;
 }
 
 .navitem::after {
@@ -274,7 +278,7 @@ a:hover {
 
 
 .navitem-name {
-	color: #474B51;
+	color: #F77A43;
 }
 
 
@@ -297,13 +301,13 @@ a:hover {
 .navitem:hover .navitem-name::before,
 .navitem:focus .navitem-name::before {
 	transform: scale3d(1,1,1);
-	background: #FDAF35;
+	background: #F77A43;
 
 
 }
 
 .navitem:hover .navitem-name {
-	color: #FC9218;
+	color: #F77A43;
 	transition: .3s;
 }
 
@@ -330,6 +334,7 @@ a:hover {
 	float: left;
 }
 
+
 #email {
 	display: inline-block;
 	margin-top: -10px;
@@ -343,12 +348,28 @@ a:hover {
 	padding-top: 3px;
 }
 
-a svg:hover .contact-icon {
-	
-/*	contact icon hover!!
-fill: #90B224;*/
+
+.contact-icon::after {
+	transform: scale3d(0,1,1);
+	transform-origin: 0% 50%;
+	transition: transform 0.5s;
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+
+
+a svg:hover .contact-icon {	
+/*	contact icon hover!!*/
+	fill: #F77A43;
 	transition: .3s;
 }
+
+.contact-icon:hover::after {
+	transition: .3s;
+	transform: scale3d(1,1,1);
+
+}
+
 
 
 /*Animation*/
@@ -1137,7 +1158,7 @@ fill: #90B224;*/
 
 
 #project-nav-top:hover {
-	color: #FC9218;
+	color: #F77A43;
 	transition: .3s;
 }
 
@@ -1189,7 +1210,7 @@ fill: #90B224;*/
 
 .close:hover,
 .close:focus {
-    color: #FC9218;
+    color: #F77A43;
     text-decoration: none;
     cursor: pointer;
 }
