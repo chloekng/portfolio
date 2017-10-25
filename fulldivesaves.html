@@ -28,7 +28,7 @@
 			<div class="h1">Saving on Fulldive - <p class="h2"> making content aggregation less overwhelming</p></div>
 			<br>
 			<div class="bodytext">
-				<p>As Fulldive <a href="fulldivemobile.html">evolved to become a content aggregation app</a>, we realized that we needed to be able to sort content. A drawback of aggregating content from all over is that it can overwhelm the user. To answer this need, I designed a new feature &mdash; Saving &mdash; on Fulldive.</p>
+				<p>Fulldive is a <a href="fulldivemobile.html">content aggregator</a> that organizes and curates content from all over. It's target audience includes people who are interested in taking control of and streamlining their content consumption. The old bookmarking and tagging features on our platform were lacking, exposing a general problem with content categorization. To address this need, I designed a new feature &mdash; Saving &mdash; on Fulldive.</p>
 				<br>
 			</div>
 	</div>
@@ -40,10 +40,22 @@
 				<p class="h3">ROLE</p>
 				<p>I led the design for this feature, collaborating with the co-founder, our design manager (Grant), and the CTO.</p>
 				<br>
+				<p class="h3">PROBLEMS</p>
+				<ol>
+					<li>The old bookmarking feature displayed all saved content on the same page, which made looking for old posts difficult.</li>
+					<br>
+					<li>The old tag system wasn't being used, as users found no reason to be tagging a post. As our platform lacked a content creation aspect, people didn't have motivation to be tagging to get views. </li>
+					<br>
+					<li>Since people weren't tagging, our content categorization wasn't granular enough. Users wanted to be able to discover and find content more specifically than what we were providing them. </li>
+				</ol>
+				<br>
 				<p class="h3">GOALS</p>
 				<ol>
-					<li>Develop a system for sorting content</li>
-					<li>Design a compelling use case for people to be sorting content</li>
+					<li>Help people easily sort through their saved content</li>
+					<Br>
+					<li>Help people find more specific content</li>
+					<Br>
+					<li>Help the engineers get the information needed to sort and categorize specific content</li>
 				</ol>
 				<Br>
 			</div>
@@ -54,8 +66,16 @@
 				<p class="minitext">Consolidating our bookmarks and tags system into one save feature.</p>
 				<Br>
 				<p class="h3">RESEARCH</p>
-					<p>While conducting user testing, we received feedback from users concerned about  </p>
-					<p class="h2">How can we make content aggregation less overwhelming?</p>
+					<p>To see how we could better categorize content, I conducted competitive analysis on platforms such as Twitter, Facebook, Instagram, and Tumblr to see how they approached filtering mass amounts of content. I also talked to several people to understand how they usually searched for content.</p>
+					<br>
+<!-- 					<p>Some key takeaways I identified:</p>
+					<ul>
+						<li>Many people </li>
+						<br>
+						<li></li>
+
+					</ul> -->
+<!-- 					<p class="h2">How can we make content aggregation less overwhelming?</p>
 						<p>As a content aggregator app that draws from all sorts of sources, we knew that organization on our platform was key to helping users navigate content. Our initial solution to this was a tagging system.</p>
 						<br>
 					<p class="h2">Why do people tag content? &mdash; to sort it for themselves and others.</p>
@@ -69,27 +89,27 @@
 					<p class="h2">Bookmarking and tagging come from similar motivations.</p>
 						<p>For Tumblr, tagging happens when a post is generated or reblogged onto a person's blog. Fulldive, as more of a consumption platform than a sharing platform, had no such function. The motivation for tagging to curate and share that was on other platforms didn't exist on ours. As I looked at the problem though, I realized that tagging comes from a similar motivation as bookmarking. Both involve saving a piece of content to refer to later. We had a bookmark feature, we had a tagging system &mdash; why not combine them? Conveniently, we also had validation this worked &mdash; Pinterest is essentially this.</p>
 						<br> 
-						<p>I talked with the co-founders and the design team about combining our tag system with bookmarks. They were onboard, so I got to designing.</p>
+						<p>I talked with the co-founders and the design team about combining our tag system with bookmarks. They were onboard, so I got to designing.</p> -->
 				<br>
 				<p class="h3">ITERATION</p>
-					<P class="h2">Designing with a plan</P>
+<!-- 					<P class="h2">Designing with a plan</P>
 						<p>To help guide my design process and make sure that I was comprehensive, I first made a list of all the components I needed to consider. In addition to the saving flow, I needed to consider a new icon, where people's saves lived, how public saves should be, how tag pages may change, how new tags might be created, how saving in-video would work...among other things. I made a quick checklist on Trello that I could update and refer back to.</p>
 						<Br>
 						<p>I first tackled the big stuff, such as the primary flow and the main pages tags would live in. Having the checklist was really handy in making sure that I had a holistic vision of the feature.</p>
-						<br>
+						<br> -->
 						<img class="writeup-img" src="assets/img/saveonfeed-1.png">
 						<p class="minitext">Initial explorations for the save on feed flow. In hindsight, I wish I did this at a lower fidelity so that I wasn't so bogged down thinking about visual details when I needed to be focusing on the user flow.</p>
 						<Br>
 						<img class="writeup-img" src="assets/img/bookmarkstags-1.png">
 						<p class="minitext">Initial explorations for how combining bookmarks and tags would change existing tag and bookmark pages.</p>
 						<br>
-						<p class="h2">Making intentional design decisions</p>
+<!-- 						<p class="h2">Making intentional design decisions</p>
 						<p>I presented my designs to the co-founders and the design team. This meeting was an opportunity for me to surface some higher-level questions and decisions that influenced the design.</p>
 						<br>
 						<p>For example, we were framing saving from a personal motivation. How does that influence the publicness of tags and vice versa? We decided to allow people to save privately with the caveat that their private saves won't be sorted into tags. We considered allowing private saves to tags, but it was too complicated (especially development wise) for our current needs. I also added a toggle to the tags page so people could filter for posts they've saved. </p>
 						<br>
 						<p>In addition, we were using people's personal tags to categorize content. It's likely that people may tag things incorrectly, or simply based on personal whim. We decided that we would categorize content based on a critical mass of tags rather than all tags. That is, a piece of content tagged "#virtualreality" 5x, "#technology" 3x, and "#wowthisiscool" 1x would be categorized under "#virtualreality" and "#technology" in our backend. It will still show up in the "#wowthisiscool" tag page, but greatly deprioritized. Therefore, a content's categorization depends on a crowdsourced consensus.</p>
-						<br>
+						<br> -->
 					<p class="h2">Revising the initial design</p>
 						<p>With a clear idea on higher-level decisions, I began getting into the details of the design. For saving on feed, I came up with a detailed flow flushing out mechanics to present to the engineers.</p>
 						<br>
