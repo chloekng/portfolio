@@ -77,11 +77,21 @@ html {
 
 }
 
-.highlight {
-	background: #00173D; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, rgba(128,214,227,0.8) , rgba(92,162,199,.8)); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, rgba(128,214,227,0.8), rgba(92,162,199,.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	height: 50%;
+span {
+	position: relative;
+}
+
+
+.highlight::after {
+	content: " ";
+  	height: .2em;
+  	background: #F77A43;
+  	display: block;
+  	width: 100%;
+  	position: absolute;
+  	bottom: 7px;
+  	opacity: .6;
+  	z-index: -100;
 
 }
 
@@ -194,7 +204,7 @@ a::after {
 }
 
 a:visited {
-	color: #000000;
+/*	color: #000000;*/
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
@@ -1785,6 +1795,13 @@ Project Page - HkCafe*/
 }
 
 
+.project-writeup {
+	padding: 0% 2.5% 0% 2.5%;
+	width: 95%;
+
+}
+
+
 
 }
 
@@ -1818,6 +1835,7 @@ Project Page - HkCafe*/
 .column-right {
 	height: 250px;
 }
+
 
 /*About Page*/
 
@@ -1899,6 +1917,12 @@ Project Page - HkCafe*/
 
 .project-next {
 	margin-bottom: 10%;
+}
+
+.project-writeup {
+	padding: 0% 15% 0% 15%;
+	width: 70%;
+
 }
 
 
