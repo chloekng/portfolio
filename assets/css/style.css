@@ -183,7 +183,7 @@ a:link {
 
 a::after {
   content: "";
-  height: .25em;
+  height: .1em;
   background: #F77A43;
   display: block;
   width: 100%;
@@ -798,6 +798,7 @@ a svg:hover .contact-icon {
     background-position: left;
 
 }
+
 
 
 #fulldivesaves:hover #fulldivesaves-overlaybg {
