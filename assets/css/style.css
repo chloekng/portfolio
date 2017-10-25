@@ -84,12 +84,12 @@ span {
 
 .highlight::after {
 	content: " ";
-  	height: .2em;
+  	height: .25em;
   	background: #F77A43;
   	display: block;
   	width: 100%;
   	position: absolute;
-  	bottom: 7px;
+  	bottom: .04em;
   	opacity: .6;
   	z-index: -100;
 
