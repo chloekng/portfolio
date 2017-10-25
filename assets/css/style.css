@@ -77,7 +77,7 @@ html {
 
 }
 
-span {
+/*span {
 	position: relative;
 }
 
@@ -93,7 +93,7 @@ span {
   	opacity: .6;
   	z-index: -100;
 
-}
+}*/
 
 .bodytext-h {
 	font-size: 20px;
