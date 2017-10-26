@@ -4,8 +4,6 @@
 	<title>Chloe Ng - Saving on Fulldive</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-    <script src="assets/js/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 </head>
@@ -17,14 +15,32 @@
 	<nav class="h3 menu">
 		<a class="navhome" href="index.html"><img id="navhome" src="assets/img/homecutie.svg"></a>
 		<a class="navitem" href="about.html">
-			<span class="navitem-name">ABOUT</span></a>
+			<span class="navitem-name">About</span></a>
 		<a class="navitem" href="fun.html">
-			<span class="navitem-name">FUN</span></a>
+			<span class="navitem-name">Fun</span></a>
 		<a class="navitem" id="navitem-active" href="index.html">
-			<span class="navitem-name">WORK</span></a>
+			<span class="navitem-name">Work</span></a>
 	</nav>
+	<div class="sidebar-l">
+		<a class="h4" href="#fdsaves-role">Role</a>
+		<br><a class="h4" href="#fdsaves-problems">Problems</a>
+		<br><a class="h4" href="#fdsaves-goals">Goals</a>
+		<br><a class="h4" href="#fdsaves-research">Research</a>
+		<br><a class="h4" href="#fdsaves-iteration">Iteration</a>
+		<br><a class="h4" href="#fdsaves-interaction">Interaction</a>
+		<br><a class="h4" href="#fdsaves-result">Result</a>
+
+	</div>
+	<div class="sidebar-r">
+		<a class="navitem h4" href="index.html">
+			<span class="navitem-name">Work</a></span><br>
+		<a class="navitem h4" href="fun.html">
+			<span class="navitem-name">Fun</a></span><br>
+		<a class="navitem h4" href="about.html">
+			<span class="navitem-name">About</a></span><br>
+	</div>
 	<div class="project-writeup clearfix">
-			<div class="project-nav" id="project-nav-top">&ShortUpArrow;</div>
+	<!-- 		<div class="project-nav" id="project-nav-top">&ShortUpArrow;</div> -->
 			<div class="h1">Saving on Fulldive - <p class="h2"> making content aggregation less overwhelming</p></div>
 			<br>
 			<div class="bodytext">
@@ -37,10 +53,10 @@
 			<div class="bodytext">
 				<p class="minitext">With Saving, posts can be saved to specific tags. This lets people easily find their previously saved content and gives us data to categorize content.</p>
 				<br>
-				<p class="h3">ROLE</p>
+				<p class="h3" id="fdsaves-role">ROLE</p>
 				<p>I led the design for this feature, collaborating with the co-founder, our design manager (Grant), and the CTO.</p>
 				<br>
-				<p class="h3">PROBLEMS</p>
+				<p class="h3" id="fdsaves-problems">PROBLEMS</p>
 				<ol>
 					<li>The old bookmarking feature displayed all saved content on the same page, which made looking for old posts difficult.</li>
 					<br>
@@ -49,7 +65,7 @@
 					<li>Since people weren't tagging, our content categorization wasn't granular enough. Users wanted to be able to discover and find content more specifically than what we were providing them. </li>
 				</ol>
 				<br>
-				<p class="h3">GOALS</p>
+				<p class="h3" id="fdsaves-goals">GOALS</p>
 				<ol>
 					<li>Help people easily sort through their saved content</li>
 					<Br>
@@ -65,7 +81,7 @@
 			<div class="bodytext">
 				<p class="minitext">Consolidating our bookmarks and tags system into one save feature.</p>
 				<Br>
-				<p class="h3">RESEARCH</p>
+				<p class="h3" id="fdsaves-research">RESEARCH</p>
 					<p>To see how we could better categorize content, I conducted competitive analysis on platforms such as Twitter, Facebook, Instagram, and Tumblr to see how they approached filtering mass amounts of content. I also talked to several people to understand how they usually searched for content.</p>
 					<br>
 <!-- 					<p>Some key takeaways I identified:</p>
@@ -91,14 +107,16 @@
 						<br> 
 						<p>I talked with the co-founders and the design team about combining our tag system with bookmarks. They were onboard, so I got to designing.</p> -->
 				<br>
-				<p class="h3">ITERATION</p>
+				<p class="h3" id="fdsaves-iteration">ITERATION</p>
+						<Br>
+						<Br>
 <!-- 					<P class="h2">Designing with a plan</P>
 						<p>To help guide my design process and make sure that I was comprehensive, I first made a list of all the components I needed to consider. In addition to the saving flow, I needed to consider a new icon, where people's saves lived, how public saves should be, how tag pages may change, how new tags might be created, how saving in-video would work...among other things. I made a quick checklist on Trello that I could update and refer back to.</p>
 						<Br>
 						<p>I first tackled the big stuff, such as the primary flow and the main pages tags would live in. Having the checklist was really handy in making sure that I had a holistic vision of the feature.</p>
 						<br> -->
 						<img class="writeup-img" src="assets/img/saveonfeed-1.png">
-						<p class="minitext">Initial explorations for the save on feed flow. In hindsight, I wish I did this at a lower fidelity so that I wasn't so bogged down thinking about visual details when I needed to be focusing on the user flow.</p>
+						<p class="minitext">Initial explorations for the save on feed flow.</p>
 						<Br>
 						<img class="writeup-img" src="assets/img/bookmarkstags-1.png">
 						<p class="minitext">Initial explorations for how combining bookmarks and tags would change existing tag and bookmark pages.</p>
@@ -136,7 +154,7 @@
 					<img class="writeup-img" src="assets/img/fdsaves-flow2-breakdown.png">
 					<p class="minitext">Some key changes from the initial flow.</p>
 					<br>
-					<p class="h3">INTERACTION</p>
+					<p class="h3" id="fdsaves-interaction">INTERACTION</p>
 						<p class="h2">Communicating design intention clearly</p>
 						<p>To better communicate the flow with engineers, I made some interactions on Principle.</p> 
 						<br>
@@ -155,13 +173,14 @@
 						<video class="writeup-img" src="assets/img/fdsaves-video.mp4" autoplay=true loop=true></video>
 						<p class="minitext">The blue tags are ones the person has saved to a video. While a tap leads to the tag page, a long press allows them to unsave the video. If their's is the only tag of that name on the video, then the tag is completely removed. If others have tagged the video the same name, then the tag just fades color to gray. </p>
 						<br>
-					<p class="h3">RESULT</p>
+					<p class="h3" id="fdsaves-result">RESULT</p>
 						<p>After much discussion between the co-founders, the design team, and the CTO, we came to a consensus on this design. In one last meeting, I presented the final flow and interactions and got the go-ahead to export all the assets to Zeplin where it's currently awaiting development.</p>
 						<br>
 						<p>Designing this feature challenged me to think broadly in terms of how the decisions we made influenced user behavior but also in detail in terms of the design itself. Talking to the CTO was helpful in understanding what sort of things engineers need to consider when developing. I'm excited to see where this goes once it's launched.</p>
 						<Br>
 				</div>
 			</div>
+
 
 <!-- Project Next -->
 	<br></Br>
@@ -195,4 +214,6 @@
 			&copy CHLOE NG 2017
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="assets/js/script.js"></script>
 </body>

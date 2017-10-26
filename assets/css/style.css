@@ -44,20 +44,19 @@ img {
 	letter-spacing: .02em;
 	display: inline-block;
 	position: relative;
-	color: #F77A43;
 
 }
 
 .h3::after {
   	content: "";
-  	height: 1.2em;
+  	height: .25em;
   	background: #F77A43;
   	display: block;
   	width: 100%;
   	position: absolute;
   	bottom: .3em;
-  	opacity: .3;
   	z-index: -100;
+  	opacity: .6;
 }
 
 .h4 {
@@ -122,16 +121,6 @@ img {
 	letter-spacing: .1em;
 }
 
-
-/*
-.minitext-h-w {
-	font-size: 12px;
-	line-height: 150%;
-	color: white;
-	font-weight: 400;
-	letter-spacing: .3em;
-}*/
-
 .subheader {
 	font-size: 36px;
 	line-height: 150%;
@@ -167,13 +156,7 @@ img {
 /*    filter: drop-shadow(4px 4px 10px #474B51)*/
 }
 
-/*.project-title {
-	font-size: 60px;
-	font-weight: 500;
-	color: #2B3F38;
-	padding-bottom: 5%;
-}
-*/
+
 a:link {
 	color: #000000;
 	text-decoration: none;
@@ -525,6 +508,7 @@ a svg:hover .contact-icon {
 
 /*Oranges*/
 
+
 #isorange1 {
 	width: 4%;
 	top: 50%;
@@ -532,6 +516,7 @@ a svg:hover .contact-icon {
 	margin: 16% 0 0 26%;
 	animation: floating 3s ease-in infinite;
 	animation-direction: reverse;
+	z-index: 10000000;
 
 }
 
@@ -540,7 +525,7 @@ a svg:hover .contact-icon {
 	top: 50%;
 	left: 50%;
 	margin: 20% 0 0 25%;
-	z-index: 200;
+	z-index: 20000000;
 	animation: wiggleb 5s linear infinite;
 }
 
@@ -549,7 +534,7 @@ a svg:hover .contact-icon {
 	top: 50%;
 	left: 50%;
 	margin: 14% 0 0 23%;
-	z-index: 100;
+	z-index: 10000000;
 	animation: floating 2s linear infinite;
 }
 
@@ -558,7 +543,7 @@ a svg:hover .contact-icon {
 	top: 50%;
 	left: 50%;
 	margin: 22% 0 0 19%;
-	z-index: 110;
+	z-index: 11000000;
 	animation: floating 3s linear infinite;
 
 }
@@ -568,7 +553,7 @@ a svg:hover .contact-icon {
 	top: 50%;
 	left: 50%;
 	margin: 20% 0 0 16.5%;
-	z-index: 90;
+	z-index: 9000000;
 	animation: wigglea 5s linear infinite;
 }
 
@@ -577,7 +562,7 @@ a svg:hover .contact-icon {
 	top: 50%;
 	left: 50%;
 	margin: 16.5% 0 0 16%;
-	z-index: 80;
+	z-index: 8000000;
 	animation: wigglea 4s infinite;
 	animation-direction: reverse;
 }
