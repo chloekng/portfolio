@@ -15,6 +15,10 @@ html {
 	font-size: 2vw;
 }
 
+img {
+	z-index: 10000;
+}
+
 
 /*Text Styles*/
 
@@ -56,6 +60,18 @@ html {
   	z-index: -100;
 }
 
+.h4 {
+	font-size: 12px;
+	margin: .75em 0 .75em 0;
+	font-weight: 400;
+	line-height: 1em;
+	letter-spacing: .02em;
+}
+
+.h4::after {
+	display: none;
+}
+
 .bodytext {
 	font-size: 16px;
 	font-weight: 400;
@@ -76,24 +92,6 @@ html {
 	opacity: .6;
 
 }
-
-/*span {
-	position: relative;
-}
-
-
-.highlight::after {
-	content: " ";
-  	height: .25em;
-  	background: #F77A43;
-  	display: block;
-  	width: 100%;
-  	position: absolute;
-  	bottom: .04em;
-  	opacity: .6;
-  	z-index: -100;
-
-}*/
 
 .bodytext-h {
 	font-size: 20px;
@@ -119,21 +117,20 @@ html {
 
 .minitext-h {
 	font-size: 12px;
-	line-height: 150%;
-	color: #474B51;
-	font-weight: 400;
+	line-height: 1.75em;
+	font-weight: 500;
 	letter-spacing: .1em;
 }
 
 
-
+/*
 .minitext-h-w {
 	font-size: 12px;
 	line-height: 150%;
 	color: white;
 	font-weight: 400;
 	letter-spacing: .3em;
-}
+}*/
 
 .subheader {
 	font-size: 36px;
@@ -199,7 +196,6 @@ a::after {
   width: 100%;
   position: absolute;
   bottom: 7px;
-  opacity: .6;
   z-index: -100;
 }
 
@@ -281,6 +277,12 @@ a:hover {
 	text-align: center;
 	margin: 0 .5em 0 .5em;
 }
+
+.sidebar-r .navitem {
+	text-align: right;
+	width: 4em;
+}
+
 
 .navitem::after {
 	display: none;
@@ -1141,23 +1143,45 @@ a svg:hover .contact-icon {
 	animation: fadeInUp 1.5s;
 }
 
-.project-left {
+.sidebar-l {
+	position: fixed;
+	width: 13%;
+	left: 10%;
+	float: left;
+	bottom: 10%;
+	z-index: 100;
+	display: none;
+
+}
+
+.sidebar-r {
+	position: fixed;
+	width: 13%;
+	top: 10%;
+	right: 10%;
+	float: right;
+	z-index: 100;
+	text-align: right;
+	display: none;
+}
+
+/*.project-left {
 	display: inline-block;
 	width: 10%;
 	position: absolute;
 	padding-top: 1%;
-}
-
+}*/
+/*
 .project-nav {
 	position: fixed;
 	bottom: 10%;
-/*	maybe when it hits the scroll it turns into a fixed pos */
+	maybe when it hits the scroll it turns into a fixed pos 
 	display: inline-block;
 	width: 10%;
 	padding-top: 1%;
 	left: 90%;
 	z-index: 10000;
-}
+}*/
 
 #project-nav-top {
 	cursor: pointer;

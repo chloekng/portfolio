@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 // Project Image
 
-	var modalImg = document.getElementById('img-overlaid');
+	let modalImg = document.getElementById('img-overlaid');
 
 
 
@@ -53,10 +53,10 @@ $(document).ready(function(){
 
 	});
 
-	var span = document.getElementsByClassName("close")[0];
+	let imgOverlay = document.getElementsByClassName("close")[0];
 
 
-	span.onclick = function() { 
+	imgOverlay.onclick = function() { 
   		$('#img-overlay').hide();
   		$('body').removeClass('noscroll');
 	}
@@ -66,20 +66,17 @@ $(document).ready(function(){
 // Project Scroll
 
 
-	window.onscroll = function(ev) {
-    	if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 350) {
-        	$('.project-nav').hide();
-    	}
-
-    	else if (document.body.scrollTop >= 600) {
-    		$('.project-nav').show();
-    	}
-
-    	else {
-    		$('.project-nav').hide();
-    	}
-
-	};
+	window.onscroll = function(event) {
+		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
+			$('.sidebar-l').css('display', 'none');
+		} else if (window.pageYOffset >= 600) {
+			$('.sidebar-l').css('display', 'block');
+			$('.sidebar-r').css('display', 'block');			
+		} else if (window.pageYOffset < 600) {
+			$('.sidebar-l').css('display', 'none');
+			$('.sidebar-r').css('display', 'none');			
+		}
+	}
 
 
 
@@ -117,20 +114,20 @@ $(document).ready(function(){
 
 //Slides
 
-	var slideIndex = 0;
-	carousel();
+	// var slideIndex = 0;
+	// carousel();
 
-	function carousel() {
-	    var i;
-	    var x = document.getElementsByClassName('slides');
-	    for (i = 0; i < x.length; i++) {
-	      x[i].style.display = 'none'; 
-	    }
-	    slideIndex++;
-	    if (slideIndex > x.length) {slideIndex = 1} 
-	    x[slideIndex-1].style.display = 'block'; 
-	    setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
+	// function carousel() {
+	//     var i;
+	//     var x = document.getElementsByClassName('slides');
+	//     for (i = 0; i < x.length; i++) {
+	//       x[i].style.display = 'none'; 
+	//     }
+	//     slideIndex++;
+	//     if (slideIndex > x.length) {slideIndex = 1} 
+	//     x[slideIndex-1].style.display = 'block'; 
+	//     setTimeout(carousel, 2000); // Change image every 2 seconds
+	// }
 
 
 
