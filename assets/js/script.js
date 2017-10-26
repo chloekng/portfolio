@@ -69,10 +69,10 @@ $(document).ready(function(){
 	window.onscroll = function(event) {
 		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
 			$('.sidebar-l').css('display', 'none');
-		} else if (window.pageYOffset >= 600) {
+		} else if (window.pageYOffset >= window.innerHeight) {
 			$('.sidebar-l').css('display', 'block');
 			$('.sidebar-r').css('display', 'block');			
-		} else if (window.pageYOffset < 600) {
+		} else if (window.pageYOffset < window.innerHeight) {
 			$('.sidebar-l').css('display', 'none');
 			$('.sidebar-r').css('display', 'none');			
 		}
