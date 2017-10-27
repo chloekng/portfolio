@@ -168,7 +168,7 @@ a:link {
 	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #F77A43 50%, #F77A43 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: .5s;
+    transition: .3s;
 }
 
 a::after {
@@ -190,7 +190,7 @@ a:visited {
 }
 
 a:hover {
-	background-position: left;
+	background-position: left !important;
 }
 
 /*a:active {

@@ -66,6 +66,47 @@ $(document).ready(function(){
 // Project Scroll
 
 
+
+	$('#project-nav-top').click(function(){
+ 		$('html, body').animate({scrollTop : 0},800);
+	});
+
+
+// window.scrollTo(x, y)
+
+	var projHeading = document.querySelectorAll('.project-writeup .h3');
+	var projSide = [];
+	var headingPos = [];
+
+
+	//making sidebar-l
+	for (let i = 0; i < (projHeading.length-1); i++) {
+
+		//getting the position & pushing to array
+		headingPos.push($(projHeading[i]).offset().top);
+
+		//creating sidebar element
+		let newHeading = document.createElement('a');
+		let newBreak = document.createElement('br');
+		newHeading.className = 'h4';
+		let newHeadingText = document.createTextNode(projHeading[i].innerHTML);
+
+
+		//setting link destination
+		newHeading.href = '#' + projHeading[i].id;
+
+		//attaching to the appropriate things
+		newHeading.append(newHeadingText);
+		$('.sidebar-l').append(newHeading, newBreak);
+		projSide.push(newHeading);
+
+
+
+	}
+
+console.log(projSide);
+
+	//getting sidenav to appear
 	window.onscroll = function(event) {
 		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
 			$('.sidebar-l').css('display', 'none');
@@ -76,21 +117,18 @@ $(document).ready(function(){
 			$('.sidebar-l').css('display', 'none');
 			$('.sidebar-r').css('display', 'none');			
 		}
+
+		for (let i = 0; i < (projSide.length); i++) {
+			if (window.pageYOffset > headingPos[i]) {
+				$(projSide[i]).css('background-position', 'left');
+			} else if (window.pageYOffset < headingPos[i]) {
+				$(projSide[i]).css('background-position', 'right');
+			} 
+		}
 	}
 
 
 
-	$('#project-nav-top').click(function(){
- 		$('html, body').animate({scrollTop : 0},800);
-	});
-
-
-//pseudocode for section scroll
-//get the scroll positions for each anchor
-//then attach each to menu elements? 
-//once scroll position is hit 
-//attach a class to change the css of that element
-//once 
 
 // Smooth Scroll
 
