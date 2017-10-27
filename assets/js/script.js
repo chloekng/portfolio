@@ -85,6 +85,13 @@ $(document).ready(function(){
 	});
 
 
+//pseudocode for section scroll
+//get the scroll positions for each anchor
+//then attach each to menu elements? 
+//once scroll position is hit 
+//attach a class to change the css of that element
+//once 
+
 // Smooth Scroll
 
   // Add smooth scrolling to all links
