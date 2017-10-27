@@ -4,8 +4,6 @@
 	<title>Chloe Ng - Fulldive Mobile</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-    <script src="assets/js/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 </head>
@@ -23,8 +21,16 @@
 		<a class="navitem" id="navitem-active" href="index.html">
 			<span class="navitem-name">Work</span></a>
 	</nav>
+	<div class="sidebar-l"></div>
+	<div class="sidebar-r">
+		<a class="navitem h4" href="index.html">
+			<span class="navitem-name">Work</a></span><br>
+		<a class="navitem h4" href="fun.html">
+			<span class="navitem-name">Fun</a></span><br>
+		<a class="navitem h4" href="about.html">
+			<span class="navitem-name">About</a></span><br>
+	</div>
 	<div class="project-writeup clearfix">
-			<div class="project-nav" id="project-nav-top">&ShortUpArrow;</div>
 			<div class="h1">Fulldive Mobile - <p class="h2"> defining our app beyond mobile VR </p></div>
 			<br>
 			<div class="bodytext">
@@ -39,14 +45,14 @@
 			<div class="bodytext">
 				<p class="minitext">Key screens from left to right: homepage (credit to Anna), inside a content feed (me), video player (collaboration between Grant & I), saving system (me)</p>
 				<br>
-				<p class="h3">ROLE</p>
+				<p class="h3" id="fd-role">ROLE</p>
 				<p class="h2">From high-level product vision...</p>
 				<p>Over summer 2016, I worked as Fulldive's second product designer, kicking off initial work on the mobile component to our VR platform. This involved conducting foundational user research, creating our first wireframes, and running our first round of usability testing. During these first few months, our product vision evolved extensively. The result of these first couple months are documented below.</p>
 				<br>
 				<p class="h2">...to detailed UX flows</p>
 				<p>In January 2017, I joined our three person design team full-time. I worked closely with Grant, our Design Manager, and Anna, a fellow product designer, to dig deep into all the details of the app. Some specific components I contributed include the feed view, <a href="fulldivesaves.html">the saving system</a>, refinements for our video player, and incorporating upvotes/downvotes.</p>
 				<br>
-				<p class="h3">GOALS</p>
+				<p class="h3" id="fd-goals">GOALS</p>
 				<p>Create a mobile version of the mobile VR platform.</p>
 				<br>
 				<p>Dig deep into what value we're providing our users, and how we can better serve our users.</p>
@@ -59,7 +65,7 @@
 	<div class="project-writeup" clearfix>
 			<div class="bodytext">
 				<Br>
-				<p class="h3">FULLDIVE BEYOND VR</p>
+				<p class="h3" id="fd-problem">PROBLEM</p>
 					<p class="h2">How can Fulldive approach content curation in a unique manner that brings new value to our users?</p>
 						<p>As we grew our userbase, users began requesting a mobile (flat) component to Fulldive so they could browse 360 videos even without a headset. The need for a headset drastically limits VR’s uses, as it’s still not conventional to use a headset in open public like it is to use a mobile phone. By creating a non-VR component to Fulldive, we could increase users’ time with the app. </p>
 						<br>
@@ -67,7 +73,7 @@
 						<br>
 						<p>Our co-founders were excited about the technical possibility of automatically crawling people's watch history. By getting people to sync their accounts with Fulldive, we could provide a fairly accurate picture of what was top watched content among a group of people. The design team had doubts though. There was risk of alienating our current userbase, prevailing concerns about privacy, and questions of the value that was actually provided with such a feature. I realized that we needed user research in order to move forward strategically.</p>
 						<Br>
-				<p class="h3">USER RESEARCH</p>
+				<p class="h3" id="fd-userresearch">USER RESEARCH</p>
 					<P class="h2">Are people interested in what their friends are watching?</P>
 						<p>Unfortunately, as with many startups, we didn't have much of a budget for user research. I got resourceful and reached out to connections to ask them about their online media consumption and sharing practices. Luckily, they fell into our target audience of younger people who rely on their mobile phones for most of their content. I conducted 5 hour-long interviews, and sent out a survey that gathered 42 responses over a week.</p>
 						<Br>
@@ -107,7 +113,7 @@
 						<br>
 						<p>Nevertheless, we moved forward with this initial vision. Though we had our doubts, we figured we would learn the most by getting a product out in front of people and getting feedback.</p>
 						<Br>
-					<p class="h3">FIRST ITERATION</p>
+					<p class="h3" id="fd-firstiteration">FIRST ITERATION</p>
 						<p class="h2">Sketches, sketches, sketches</p>
 						<p>Grant and I dug deep into sketching and ideation for Fulldive Mobile. Sketches helped us quickly consider various possible layouts. To get a holistic view of the app, I mapped the overall information architecture of the app on our wall. This was useful in helping our team discuss together and get on the same page.</p>
 						<br>
@@ -129,17 +135,17 @@
 					<br>
 				<div class="writeup-subsection">
 					<p class="h2">I would like more control over what I share. I personally prefer not to have my content automatically shared.</p>
-					<p class="h3">Natalia</p>
+					<p class="minitext">Natalia</p>
 				</div>
 				<br>
 				<div class="writeup-subsection">
 					<p class="h2">It's a cool idea...other social media sites can create clutter...but I think people are being more careful about what they're sharing nowadays.</p>
-					<p class="h3">Brian</p>
+					<p class="minitext">Brian</p>
 				</div>
 				<Br>
 				<div class="writeup-subsection">
 					<p class="h2">[Fulldive] gathers content from your social media in a very customizable way. It makes it more efficient to interact with people and see what's going on without having to go through 5 different apps. </p>
-					<p class="h3">Ken</p>
+					<p class="minitext">Ken</p>
 				</div>
 				<Br>
 				<p>Combined with the doubts that we had from our initial user research, we knew that we needed to clarify our app's vision and really make sure we were solving a problem worth solving. </p>
@@ -151,7 +157,7 @@
 			<div class="bodytext">
 				<p class="minitext">How our app changed after we clarified our product direction.</p>
 				<br>
-				<p class="h3">A NEW DIRECTION FOR FULLDIVE MOBILE</p>
+				<p class="h3" id="fd-seconditeration">SECOND ITERATION</p>
 				<p class="h2">People need an app that can help them keep up to date on all the content they are interested in, across all different platforms, whether from their friends or their personal interests.</p>
 				<p>At this point, we knew our app was missing something. After much conversation across the company, we decided to revisit Fulldive Mobile's problem statement and refine it. Our user research, data on our current users, usability test results, and general feedback made us realize how our app could serve a more prevalent need &mdash; <span class="bodytext-b"> aggregating and decluttering online content</span>. We pared the overly general value proposition of our app to specific problem statements that we were solving for:</p>
 				<Br>
@@ -173,21 +179,21 @@
 					<Br>
 					<div class="writeup-subsection">
 						<p class="h2">It's pretty convenient, I have a feeling that my life will get easier. I'm pretty sure I would actually use it as it has filters to generate actual sources.</p>
-						<p class="h3">Trevor</p>
+						<p class="minitext">Trevor</p>
 					</div>
 					<br>
 					<div class="writeup-subsection">
 						<p class="h2">I can see using this over reddit because while reddit has people submitting links from different sources, no one has to do any submitting and it aggregates it for you. I can just get all my sports sites in one deck and don't have to visit multiple sites, which seems pretty useful.</p>
-						<p class="h3">Shoumik</p>
+						<p class="minitext">Shoumik</p>
 					</div>
 					<br>
 					<div class="writeup-subsection">
 						<p class="h2">If the app was developed, I'm pretty sure I would download it because of the trending everywhere and the narrowing down on my interests.</p>
-						<p class="h3">Jenna</p>
+						<p class="minitext">Jenna</p>
 					</div>
 					<br>
 <!-- 				screen collage? -->
-				<p class="h3">LAUNCH</p>
+				<p class="h3" id="fd-launch">LAUNCH</p>
 				<p class="h2">Making the MVP of Fulldive Mobile</p>
 					<p>Though we were all excited about Fulldive Mobile's future vision, we now faced the challenge of getting buyin from our current users. Given that our users go to Fulldive VR in order to find quality VR content and media in one place, it only made sense for Fulldive Mobile to take this a step further. However, we also knew that people primarily associated our app with virtual reality. Opening our app to other content may be confusing for them, or make them feel like their content was being diluted. We decided to launch our updates incrementally to ease people into it.</p>
 					<Br>
@@ -201,7 +207,7 @@
 			<div class="bodytext">
 				<p class="minitext">We also got a nice comment from Rahul. Thanks, Rahul!</p>
 				<Br>
-				<p class="h3">REFLECTION</p>
+				<p class="h3" id="fd-reflection">REFLECTION</p>
 				<p class="h2">Advocating for people</p>
 					<p>Making mobile was a huge project &mdash; not necessarily due to number of screens, but due to a disconnect between what we were designing and what our users were saying. I learned firsthand that design is as much about advocating for people through solid user research as it is about getting into the nitty gritty UX of a flow. You can't design a good UX if you don't know who you're designing for!</p>
 				<br>
@@ -243,4 +249,6 @@
 			&copy CHLOE NG 2017
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="assets/js/script.js"></script>
 </body>

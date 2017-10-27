@@ -23,8 +23,16 @@
 		<a class="navitem" id="navitem-active" href="index.html">
 			<span class="navitem-name">Work</span></a>
 	</nav>
+	<div class="sidebar-l"></div>
+	<div class="sidebar-r">
+		<a class="navitem h4" href="index.html">
+			<span class="navitem-name">Work</a></span><br>
+		<a class="navitem h4" href="fun.html">
+			<span class="navitem-name">Fun</a></span><br>
+		<a class="navitem h4" href="about.html">
+			<span class="navitem-name">About</a></span><br>
+	</div>
 	<div class="project-writeup clearfix">
-			<div class="project-nav" id="project-nav-top">&ShortUpArrow;</div>
 			<div class="h1">Wing It - <p class="h2"> getting people through the airport stress-free</p></div>
 			<br>
 			<div class="bodytext">
@@ -39,10 +47,10 @@
 			<div class="bodytext">
 				<p class="minitext">High-fidelity work by Kate Lee. Interactions added by me after the project.</p>
 				<br>
-				<p class="h3">ROLE</p>
+				<p class="h3" id="wingit-role">ROLE</p>
 				<p>I worked with four other designers to bring Wing It to life. We followed a diverge/converge method, where we individually did work over the week and then met up to converge on the best solution. I conducted user research, drew wireframes, and mocked up mid-fidelity screens &mdash; contributing extensively to the quests, rewards, and search functions. I also took lead on the usability testing phase of our project, facilitating 5 usability tests and coming up with solutions to problems raised. After the project, I added interactions to some of our primary flows.</p>
 				<br>
-				<p class="h3">GOALS</p>
+				<p class="h3" id="wingit-goals">GOALS</p>
 				<p class="h2">Gamifying the air travel experience</p>
 				<p>Fly Fleet is an air travel app that helps guide people through the airport by providing crowdsourced information. They were interested in seeing how gamification can make pain points of traveling more enjoyable.</p>
 				<br>
@@ -63,7 +71,7 @@
 			<div class="bodytext">
 				<p class="minitext">Just looking at this picture makes me feel stressed.</p>
 				<br>
-				<p class="h3">USER RESEARCH</p>
+				<p class="h3" id="wingit-research">USER RESEARCH</p>
 					<p class="h2">We interviewed 25 people on their air travel experiences</p>
 					<p>We kicked off the project by interviewing twenty five people on their air travel experiences. Here are our insights.</p> 
 					<br>
@@ -112,7 +120,7 @@
 		<div class="bodytext">
 			<p class="minitext">Some wireframes for the first prototype that I made.</p>
 			<br>
-			<p class="h3">DEFINING WING IT </p>
+			<p class="h3" id="wingit-define">DEFINING WING IT</p>
 			<p class="h2">Instead of telling people what to do and forcing attention, we should be providing information relevant to their context.</p>
 			<p>In a one-week sprint, we diverged and converged to come up with a first iteration of our app. This first iteration focused on planning, guiding users through preparing for air travel all the way through to the airport gate. However, early feedback was not positive and the app felt "heavy-handed."</p>
 			<br>
@@ -138,7 +146,7 @@
 			<p class="h2">People have a lot of time to kill in the airport</p>
 			<p>We also envisioned Quests that could be completed when someone's just sitting and waiting, like watching ads or promotional episodes.</p>
 			<br>
-			<p class="h3">ITERATIONS</p>
+			<p class="h3" id="wingit-iterations">ITERATIONS</p>
 			<p>Now with a clearer idea of our app in mind, we dove into iterating and user testing. In this process, we used methods such as RITE testing, think-aloud user testing, and retrospective recall. We also referred back to heuristics. Below are some of the decisions we made.</p>
 			<br>
 			<p class="h2">Quests Landing</p>
@@ -147,13 +155,13 @@
 			<img class="writeup-img" src="assets/img/wingit-questlanding.png">
 				<br></br>
 				<ul> 
-					<li><p class="h3">Variation 1</p><p>Our initial categorizations were pretty rudimentary. We knew that location would be particularly important for travelers weighed down by luggage, so a majority of the screen is taken up by a map</p></li>
+					<li><p>Variation 1</p><p>Our initial categorizations were pretty rudimentary. We knew that location would be particularly important for travelers weighed down by luggage, so a majority of the screen is taken up by a map</p></li>
 					<br>
-					<li><p class="h3">Variation 2</p><p>We tried a different method of displaying the categories, where users can see a preview quest of each category. Our hope was that would give users a general idea of the possibilities out there. We also began fleshing out nuanced quest categories</p></li>
+					<li><p>Variation 2</p><p>We tried a different method of displaying the categories, where users can see a preview quest of each category. Our hope was that would give users a general idea of the possibilities out there. We also began fleshing out nuanced quest categories</p></li>
 					<br>
-					<li><p class="h3">Variation 3</p><p>After AB testing, we found that users were generally open to clicking on different tabs to check out different categories. To preserve the highlighting feature that Variation 2 allowed for, we included "Featured" as a category. The top bar layout also made navigation into quest category names organic. We continued testing quest category names, and considered including images to feature quests</p></li>
+					<li><p>Variation 3</p><p>After AB testing, we found that users were generally open to clicking on different tabs to check out different categories. To preserve the highlighting feature that Variation 2 allowed for, we included "Featured" as a category. The top bar layout also made navigation into quest category names organic. We continued testing quest category names, and considered including images to feature quests</p></li>
 					<br>
-					<li><p class="h3">Variation 4</p><p>Taking a page from Google Maps, the Quests panel as a whole can be dragged up or down, such that the user has control over how central the map is on the screen. This is particularly relevant for categories such as "Simple," that don't require a user to leave their seat. To improve scanning on an already packed page, we decided against the images and instead opted for a cleaner UI where the rewards and time estimate would stand out (important decision factors for users)</p></li>
+					<li><p>Variation 4</p><p>Taking a page from Google Maps, the Quests panel as a whole can be dragged up or down, such that the user has control over how central the map is on the screen. This is particularly relevant for categories such as "Simple," that don't require a user to leave their seat. To improve scanning on an already packed page, we decided against the images and instead opted for a cleaner UI where the rewards and time estimate would stand out (important decision factors for users)</p></li>
 				</ul>
 			<br>
 			<p class="h2">Quests Flow</p>
@@ -182,7 +190,7 @@
 				<img class="writeup-img" src="assets/img/wingit-globalsearch.png">
 				<br></Br>
 				<br></Br>
-			<p class="h3">REFLECTION</p>
+			<p class="h3" id="wingit-reflection">REFLECTION</p>
 					<ul>
 						<li>It's never too early to user test and get feedback</li>
 						<br>
