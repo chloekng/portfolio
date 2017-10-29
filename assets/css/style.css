@@ -1138,7 +1138,7 @@ a svg:hover .contact-icon {
 	left: 10%;
 	float: left;
 	bottom: 10%;
-	z-index: -100;
+	z-index: 300;
 	display: none;
 
 }
