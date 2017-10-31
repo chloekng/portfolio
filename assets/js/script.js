@@ -119,10 +119,14 @@ console.log(projSide);
 		}
 
 		for (let i = 0; i < (projSide.length); i++) {
+			//set i based on position in page? 
+			//make zones based on i positions??
 			if (window.pageYOffset > headingPos[i]) {
 				$(projSide[i]).css('background-position', 'left');
+				console.log(i)
 			} else if (window.pageYOffset < headingPos[i]) {
 				$(projSide[i]).css('background-position', 'right');
+				console.log(i)
 			} 
 		}
 	}
