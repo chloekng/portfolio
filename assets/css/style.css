@@ -12,7 +12,9 @@ body {
 html {
 	min-width: 100%;
 	position: relative;
-	font-size: 2vw;
+/*	font-size: 2vw;*/
+	font-size: 16px;
+
 }
 
 :root {
@@ -27,13 +29,15 @@ img {
 /*Text Styles*/
 
 .h1 {
-	font-size: 40px;
+	font-size: 2.5rem;
+/*	font-size: 3vw;*/
 	font-weight: 500;
 	line-height: 1.75em;
 }
 
 .h2 {
-	font-size: 24px;
+	font-size: 1.5rem;
+/*	font-size: 1.9vw;*/
 	margin: .75em 0 .75em 0;
 	font-weight: 500;
 	line-height: 1.75em;
@@ -41,7 +45,8 @@ img {
 
 
 .h3 {
-	font-size: 16px;
+	font-size: 1rem;
+/*	font-size: 1.25vw;*/
 	margin: .75em 0 .75em 0;
 	font-weight: 500;
 	line-height: 1.75em;
@@ -64,7 +69,7 @@ img {
 }
 
 .h4 {
-	font-size: 12px;
+	font-size: .75em;
 	margin: .75em 0 .75em 0;
 	font-weight: 400;
 	line-height: 1em;
@@ -76,28 +81,28 @@ img {
 }
 
 .bodytext {
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: 400;
 	line-height: 2;
 
 }
 
 .bodytext-b {
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: 500;
 	line-height: 2;
 
 }
 
 .bodytext-o {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 2;
 	opacity: .6;
 
 }
 
 .bodytext-h {
-	font-size: 20px;
+	font-size: 1.25em;
 	line-height: 150%;
 	color: #2B3F38;
 	font-weight: 500;
@@ -113,20 +118,20 @@ img {
 
 
 .minitext {
-	font-size: 12px;
+	font-size: .75em;
 	line-height: 1.75em;
 	opacity: .5;
 }
 
 .minitext-h {
-	font-size: 12px;
+	font-size: .75em;
 	line-height: 1.75em;
 	font-weight: 500;
 	letter-spacing: .1em;
 }
 
 .subheader {
-	font-size: 36px;
+	font-size: 2.25em;
 	line-height: 150%;
 	color: #2B3F38;
 	font-weight: 500;
@@ -136,7 +141,7 @@ img {
 
 .home-project-misc {
 	color: white;
-	font-size: 14px;
+	font-size: .875em;
 	font-variant: small-caps;
 	transition: opacity 1s;
 	font-weight: 400;
@@ -145,7 +150,7 @@ img {
 
 .home-project-desc {
 	color: white;
-	font-size: 18px;
+	font-size: 1.125em;
 	font-weight: 300;
 	line-height: 1.5;
 	letter-spacing: .03em;
@@ -247,8 +252,8 @@ a:hover {
 
 
 #navhome {
-	height: 30px;
-	padding-bottom: 0px;
+	height: 1.875em;
+	padding-bottom: 0;
 	cursor: pointer;
 }
 
@@ -320,7 +325,7 @@ a:hover {
 /*Footer*/
 
 .footer {
-	height: 60px;
+	height: 3.75em;
 	padding: 10% 10% 5% 10%;
 	bottom: 0;
 	position: relative;
@@ -335,8 +340,8 @@ a:hover {
 
 #email {
 	display: inline-block;
-	margin-top: -10px;
-	padding-left: 10px;
+	margin-top: -.8em;
+	padding-left: .625em;
 	vertical-align: text-top;
 }
 
@@ -592,7 +597,7 @@ a svg:hover .contact-icon {
 .column-left {
 	width: 46%;
 	float: left;
-	height: 400px;
+	height: 25rem;
 	display: inline-block;
 	cursor: pointer;
 }
@@ -600,7 +605,7 @@ a svg:hover .contact-icon {
 .column-right {
 	width: 46%;
 	float: right;
-	height: 400px;
+	height: 25rem;
 	display: inline-block;
 	cursor: pointer;
 
@@ -616,7 +621,7 @@ a svg:hover .contact-icon {
 
 .home-img {
 	width: 100%;
-	height: 300px;
+	height: 18.75rem;
 	display: inline-block;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -666,7 +671,7 @@ a svg:hover .contact-icon {
 #fulldive-home-img {
 	background-image: url(../img/fulldive_home.svg);
 	position: relative;
-	height: 500px;
+	height: 31.250em;
 }
 
 #fulldive:hover #fulldive-text {
@@ -775,7 +780,7 @@ a svg:hover .contact-icon {
 #fulldivesaves-home-img {
 	background-image: url(../img/fdsaves-hero.png);
 	position: relative;
-	height: 500px;
+	height: 31.250em;
 }
 
 #fulldivesaves:hover #fulldivesaves-text {
@@ -832,7 +837,7 @@ a svg:hover .contact-icon {
 #wingit-home-img {
 	background-image: url(../img/wingit_home.png);
 	position: relative;
-	height: 500px;
+	height: 31.250em;
 	width: 100%;
 }
 
@@ -931,7 +936,7 @@ a svg:hover .contact-icon {
 #beyondsmartphones-home-img {
 	background-image: url(../img/beyondsmartphones_home.jpg);
 	position: relative;
-	height: 350px;
+	height: 21.875em;
 
 }
 
@@ -1241,7 +1246,7 @@ a svg:hover .contact-icon {
 
 
 .writeup-subsection {
-	margin-top: 30px;
+	margin-top: 1.875rem;
 	border-left: 3px solid;
 	padding-left: 4%;
 }
@@ -1835,8 +1840,8 @@ Project Page - HkCafe*/
 }
 
 #email {
-	margin-top: 0px;
-	padding-left: 0px;
+	margin-top: 0;
+	padding-left: 0;
 	vertical-align: text-top;
 	display: block;
 }
