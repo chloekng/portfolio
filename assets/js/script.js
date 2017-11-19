@@ -15,8 +15,7 @@ $(document).ready(function(){
 
 
 
-// Cutie Animation
-
+// Cutie Animationdnnq
 	$('.orange').mouseenter(function() {
 		$('.orange').css('animation', 'cutierotate 1.5s ease-in');
 		$('.orange').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',

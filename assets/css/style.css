@@ -18,7 +18,8 @@ html {
 }
 
 :root {
-	--color: #FA5812;
+	--color: #fa5812;
+	--colorRGB: 250, 88, 18;
 };
 
 img {
@@ -69,7 +70,7 @@ img {
 }
 
 .h4 {
-	font-size: .75em;
+	font-size: .7em;
 	margin: .75em 0 .75em 0;
 	font-weight: 400;
 	line-height: 1em;
@@ -81,7 +82,7 @@ img {
 }
 
 .bodytext {
-	font-size: 1em;
+	font-size: .9em;
 	font-weight: 400;
 	line-height: 2;
 
@@ -165,6 +166,10 @@ img {
 /*    filter: drop-shadow(4px 4px 10px #474B51)*/
 }
 
+.highlight {
+	background-color: rgba(var(--colorRGB), .2);
+}
+
 
 a:link {
 	text-decoration: none;
@@ -181,13 +186,14 @@ a:link {
 
 a::after {
   content: "";
-  height: .1em;
+  height: .2em;
   background: var(--color);
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 7px;
+  bottom: 5px;
   z-index: -100;
+  opacity: .8;
 }
 
 a:visited {
@@ -1224,8 +1230,9 @@ a svg:hover .contact-icon {
 #img-overlaid {
 	margin: auto;
 	display: block;
-	width: 70%;
-	padding: 5%;
+	width: 95%;
+	padding-top: 2.5%;
+/*	padding: 5%;*/
 }
 
 .close {
