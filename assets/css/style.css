@@ -69,6 +69,18 @@ img {
   	opacity: .6;
 }
 
+.h3-2 {
+	font-size: 1rem;
+/*	font-size: 1.25vw;*/
+	margin: .75em 0 .75em 0;
+	font-weight: 500;
+	line-height: 1.75em;
+	letter-spacing: .02em;
+	display: inline-block;
+	position: relative;
+
+}
+
 .h4 {
 	font-size: .7em;
 	margin: .75em 0 .75em 0;
@@ -80,6 +92,7 @@ img {
 .h4::after {
 	display: none;
 }
+
 
 .bodytext {
 	font-size: .9em;
