@@ -199,7 +199,7 @@ a:link {
 
 a::after {
   content: "";
-  height: .2em;
+  height: .15rem;
   background: var(--color);
   display: block;
   width: 100%;
@@ -607,11 +607,11 @@ a svg:hover .contact-icon {
 	width: 100%;
 }
 
-#projects-fun {
+/*#projects-fun {
 	padding: 3% 10% 5% 10%;
 	animation: fadeInUp 1.5s;
 
-}
+}*/
 
 .column-left {
 	width: 46%;
@@ -1044,52 +1044,84 @@ a svg:hover .contact-icon {
 }
 
 
-/*Project- Joybook*/
-
-#joybook {
-	background-image: url(../img/joybook_home.jpg);
-}
-
-#joybook-overlay {
-	height: 100%;
-	position: relative;
-}
-
-#joybook-overlaybg {
-	height: 100%;
-	opacity: .8;
-	background: #ffb347; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
-
-}
 
 /*Fun- HKCafe*/
 
+
 #hkcafe {
-	background-image: url(../img/hkcafe_home.jpg);
+	height: 100%;
+	border: 1px solid tomato;
+/*	margin-top: 150px;*/
 }
+
+
+#hkcafe-overlaybg {
+	height: 100%;
+	opacity: 0;
+	background: #1e3c72; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #1e3c72 , #2a5298); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #1e3c72 , #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	z-index: 1000;       
+        
+}
+
+
+#hkcafe-home-img {
+	background-image: url(../img/hkcafe_home.jpg);
+	position: relative;
+	height: 31.250em;
+}
+
+
+
+#hkcafe:hover #hkcafe-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#hkcafe-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #1e3c72 50%, #2a5298 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #1e3c72 50%, #2a5298 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+
+#hkcafe:hover #hkcafe-title {
+    background-position: left;
+
+}
+
+
+
+#hkcafe:hover #hkcafe-overlaybg {
+	opacity: .8;
+	transition: opacity .2s;
+}
+
+
 
 #hkcafe-overlay {
 	height: 100%;
 	position: relative;
 }
 
-#hkcafe-overlaybg {
-	height: 100%;
-	opacity: .9;
-	background: #1e3c72; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #1e3c72 , #2a5298); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #1e3c72 , #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-        
-}
+
 
 
 /*Fun- TAUG*/
 
 #taug {
-	background-image: url(../img/taug_home.jpg);
+/*	background-image: url(../img/taug_home.jpg);*/
+	height: 100%;
+}
+
+#taug.column-left {
+	margin-top: 8%;
 }
 
 #taug-overlay {
@@ -1099,19 +1131,60 @@ a svg:hover .contact-icon {
 
 #taug-overlaybg {
 	height: 100%;
-	opacity: .9;
+	opacity: 0;
 	background: #4CA1AF; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            
+           
+}
+
+#taug-home-img {
+	background-image: url(../img/taug_home.jpg);
+	position: relative;
+	height: 31.250em;
 
 }
+
+
+
+#taug:hover #taug-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#taug-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #4CA1AF 50%, #C4E0E5 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #4CA1AF 50%, #C4E0E5 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+
+#taug:hover #taug-title {
+    background-position: left;
+
+}
+
+
+
+#taug:hover #taug-overlaybg {
+	opacity: .8;
+	transition: opacity .2s;
+}
+
+
 
 
 /*Fun- Lasercut*/
 
 #lasercut {
-	background-image: url(../img/lasercut-home.jpg);
+/*	background-image: url(../img/lasercut-home.jpg);*/
+	height: 100%;
+	border: 1px solid tomato;
 }
 
 #lasercut-overlay {
@@ -1121,12 +1194,121 @@ a svg:hover .contact-icon {
 
 #lasercut-overlaybg {
 	height: 100%;
-	opacity: .7;
+	opacity: 0;
 	background: #f85032; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #f85032 , #e73827); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #f85032 , #e73827); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             
 
+}
+
+#lasercut-home-img {
+	background-image: url(../img/lasercut-home.jpg);
+	position: relative;
+	height: 31.250em;
+
+}
+
+
+
+#lasercut:hover #lasercut-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#lasercut-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #f85032 50%,  #e73827 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #f85032 50%, #e73827 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+
+#lasercut:hover #lasercut-title {
+    background-position: left;
+
+}
+
+
+
+#lasercut:hover #lasercut-overlaybg {
+	opacity: .8;
+	transition: opacity .2s;
+}
+
+
+
+#lasercut-overlay {
+	height: 100%;
+	position: relative;
+}
+
+/*Fun- Color Museum*/
+
+
+#colormuseum {
+/*	background-image: url(../img/taug_home.jpg);*/
+	height: 100%;
+}
+
+#colormuseum.column-right {
+	margin-top: 8%;
+}
+
+#colormuseum-overlay {
+	height: 100%;
+	position: relative;
+}
+
+#colormuseum-overlaybg {
+	height: 100%;
+	opacity: 0;
+	background: #4CA1AF; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+           
+}
+
+#colormuseum-home-img {
+	background-image: url(../img/taug_home.jpg);
+	position: relative;
+	height: 31.250em;
+
+}
+
+
+
+#colormuseum:hover #colormuseum-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#colormuseum-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #474B51 0%, #474B51 50%, #4CA1AF 50%, #C4E0E5 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #474B51 0%, #474B51 50%, #4CA1AF 50%, #C4E0E5 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+
+#colormuseum:hover #colormuseum-title {
+    background-position: left;
+
+}
+
+
+
+#colormuseum:hover #colormuseum-overlaybg {
+	opacity: .8;
+	transition: opacity .2s;
 }
 
 
