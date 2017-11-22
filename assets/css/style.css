@@ -1028,8 +1028,11 @@ a svg:hover .contact-icon {
 #lasercut {
 /*	background-image: url(../img/lasercut-home.jpg);*/
 	height: 100%;
-	margin-top: 15%;
 
+}
+
+#lasercut.column-right {
+	margin-top: 15%;
 }
 
 #lasercut-overlay {
