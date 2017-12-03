@@ -146,6 +146,7 @@ $(document).ready(function(){
   			} if (value > posA && value < posB) {
   				$(projSide[i]).css('background-position', 'left');
   			}
+  			console.log('whoop');
   		}
  
 
