@@ -282,11 +282,11 @@ a:hover {
 }
 
 .navitem {
-	float: right;
 	position: relative;
 	width: 5.5em;
 	text-align: center;
 	margin: 0 .5em 0 .5em;
+	float: right;
 }
 
 .sidebar-r .navitem {

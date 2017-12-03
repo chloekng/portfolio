@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 
 
-// Cutie Animationdnnq
+// Cutie Animation
 	$('.orange').mouseenter(function() {
 		$('.orange').css('animation', 'cutierotate 1.5s ease-in');
 		$('.orange').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
@@ -101,13 +101,21 @@ $(document).ready(function(){
 
 
 
+
+
 	}
 
-console.log(projSide);
 
-	//getting sidenav to appear
-	window.onscroll = function(event) {
-		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
+	var winHeight = $(window).height(),
+  		docHeight = $(document).height();
+  	max = docHeight - winHeight;
+
+	$(document).on('scroll', function() {
+  		var value = $(window).scrollTop();
+  		console.log("value is"+ value);
+  		console.log("max is" + max);
+
+  		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
 			$('.sidebar-l').css('display', 'none');
 		} else if (window.pageYOffset >= window.innerHeight) {
 			$('.sidebar-l').css('display', 'block');
@@ -117,18 +125,44 @@ console.log(projSide);
 			$('.sidebar-r').css('display', 'none');			
 		}
 
-		for (let i = 0; i < (projSide.length); i++) {
-			//set i based on position in page? 
-			//make zones based on i positions??
-			if (window.pageYOffset > headingPos[i]) {
+
+  		//as scroll, check value against projHeading position
+  		for (let i = 0; i < (projSide.length); i++) {
+			if (value > headingPos[i]) {
 				$(projSide[i]).css('background-position', 'left');
 				console.log(i)
-			} else if (window.pageYOffset < headingPos[i]) {
+			} else if (value < headingPos[i]) {
 				$(projSide[i]).css('background-position', 'right');
-				console.log(i)
+				console.log(i);
 			} 
-		}
-	}
+  		}
+   	});
+
+	//getting sidenav to appear
+	// window.onscroll = function(event) {
+	// 	if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
+	// 		$('.sidebar-l').css('display', 'none');
+	// 	} else if (window.pageYOffset >= window.innerHeight) {
+	// 		$('.sidebar-l').css('display', 'block');
+	// 		$('.sidebar-r').css('display', 'block');			
+	// 	} else if (window.pageYOffset < window.innerHeight) {
+	// 		$('.sidebar-l').css('display', 'none');
+	// 		$('.sidebar-r').css('display', 'none');			
+	// 	}
+
+
+	// 	// for (let i = 0; i < (projSide.length); i++) {
+	// 	// 	//set i based on position in page? 
+	// 	// 	//make zones based on i positions??
+	// 	// 	if (window.pageYOffset > headingPos[i]) {
+	// 	// 		$(projSide[i]).css('background-position', 'left');
+	// 	// 		console.log(i)
+	// 	// 	} else if (window.pageYOffset < headingPos[i]) {
+	// 	// 		$(projSide[i]).css('background-position', 'right');
+	// 	// 		console.log(i);
+	// 	// 	} 
+	// 	// }
+	// }
 
 
 
