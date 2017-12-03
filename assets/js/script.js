@@ -113,9 +113,6 @@ $(document).ready(function(){
 
 
 	$(document).on('scroll', function() {
-  		var value = $(window).scrollTop();
-  		console.log("value is"+ value);
-  		console.log("max is" + max);
 
   		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
 			$('.sidebar-l').css('display', 'none');
@@ -127,27 +124,19 @@ $(document).ready(function(){
 			$('.sidebar-r').css('display', 'none');			
 		}
 
-		var headingNumber = headingPos.length;
+		for (let i = 0; i < (projSide.length); i++) {
+			if (window.pageYOffset > headingPos[i]) {
+				//once top has passed position, move bg
+				$(projSide[i]).css('background-position', 'left');
+		 		console.log(i)
+		 	} else if (window.pageYOffset < headingPos[i]) {
+		 		$(projSide[i]).css('background-position', 'right');
+		 		console.log(i);
+		 	} 
+		 }
+		
 
-		//set up a series of zones to scroll such that from headingPos[0] to headingPos[1] such and such behvaior
-		//from headingPos[1] to headingPos[2] such and such behavior 
-		//but headingPos[3] to headingPos[4]
-		//etc etc until headingPos=[headingNumber]
-		//make a for loop to set up such zones
-		//for each i and i+ 1 until i == heading number
 
-
-  		//as scroll, check value against projHeading position
-  		for (let i = 0; i < projHeading.length; i++) {
-  			let posA = headingPos[i];
-  			let posB = headingPos[i+1];
-  			if (value < posA) {
-  				$(projSide[i]).css('background-position', 'right');
-  			} if (value > posA && value < posB) {
-  				$(projSide[i]).css('background-position', 'left');
-  			}
-  			console.log('whoop');
-  		}
  
 
 
