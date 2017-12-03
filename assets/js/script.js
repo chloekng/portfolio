@@ -132,7 +132,7 @@ $(document).ready(function(){
 		 // 		$(projSide[i]).css('background-position', 'right');
 		 // 		console.log(i);
 		 // 	} 
-		 console.log("hey");
+		 console.log(window.pageYOffset);
 			if (window.pageYOffset < headingPos[0]) {
 				$(projSide[0]).css('background-position', 'right');
 			} else if (window.pageYOffset > headingPos[0] && window.pageYOffset < headingPos[1]) {
