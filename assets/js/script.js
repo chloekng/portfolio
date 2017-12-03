@@ -112,7 +112,7 @@ $(document).ready(function(){
 
 
 
-	$(document).on('scroll', function() {
+	$(window).on('scroll', function() {
 
   		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
 			$('.sidebar-l').css('display', 'none');
@@ -124,16 +124,47 @@ $(document).ready(function(){
 			$('.sidebar-r').css('display', 'none');			
 		}
 
-		for (let i = 0; i < (projSide.length); i++) {
-			if (window.pageYOffset > headingPos[i]) {
-				//once top has passed position, move bg
-				$(projSide[i]).css('background-position', 'left');
-		 		console.log(i)
-		 	} else if (window.pageYOffset < headingPos[i]) {
-		 		$(projSide[i]).css('background-position', 'right');
-		 		console.log(i);
-		 	} 
-		 }
+		// for (let i = 0; i < (projSide.length); i++) {
+			// if (window.pageYOffset > headingPos[i]) {
+			// 	$(projSide[i]).css('background-position', 'left');
+		 // 		console.log(i)
+		 // 	} else if (window.pageYOffset < headingPos[i]) {
+		 // 		$(projSide[i]).css('background-position', 'right');
+		 // 		console.log(i);
+		 // 	} 
+			if (window.pageYOffset < headingPos[0]) {
+				$(projSide[0]).css('background-position', 'right');
+			} else if (window.pageYOffset > headingPos[0] && window.pageYOffset < headingPos[1]) {
+				$(projSide[0]).css('background-position', 'left');
+				$(projSide[1]).css('background-position', 'right');
+			} else if (window.pageYOffset > headingPos[1] && window.pageYOffset < headingPos[2]) {
+				$(projSide[1]).css('background-position', 'left');
+				$(projSide[2]).css('background-position', 'right');
+			} else if (window.pageYOffset > headingPos[2] && window.pageYOffset < headingPos[3]) {
+				$(projSide[2]).css('background-position', 'left');
+				$(projSide[3]).css('background-position', 'right');				
+			} else if (window.pageYOffset > headingPos[3] && window.pageYOffset < headingPos[4]) {
+				$(projSide[3]).css('background-position', 'left');
+				$(projSide[4]).css('background-position', 'right');	
+			} else if (window.pageYOffset > headingPos[4] && window.pageYOffset < headingPos[5]) {
+				$(projSide[4]).css('background-position', 'left');
+				$(projSide[5]).css('background-position', 'right');	
+			} else if (window.pageYOffset > headingPos[5] && window.pageYOffset < headingPos[6]) {
+				$(projSide[5]).css('background-position', 'left');
+				$(projSide[6]).css('background-position', 'right');	
+			} else if (window.pageYOffset > headingPos[6] && window.pageYOffset < headingPos[7]) {
+				$(projSide[6]).css('background-position', 'left');
+				$(projSide[7]).css('background-position', 'right');	
+			} else if (window.pageYOffset > headingPos[7] && window.pageYOffset < headingPos[8]) {
+				$(projSide[7]).css('background-position', 'left');
+				$(projSide[8]).css('background-position', 'right');	
+			} else if (window.pageYOffset > headingPos[8] && window.pageYOffset < headingPos[9]) {
+				$(projSide[8]).css('background-position', 'left');
+				$(projSide[9]).css('background-position', 'right');	
+			} else if (window.pageYOffset > headingPos[9] && window.pageYOffset < headingPos[10]) {
+				$(projSide[9]).css('background-position', 'left');
+				$(projSide[10]).css('background-position', 'right');	
+			}
 		
 
 
