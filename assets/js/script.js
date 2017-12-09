@@ -88,8 +88,8 @@ $(document).ready(function(){
 
 		//getting the position & pushing to array
 		headingPos.push($(projHeading[i]).offset().top);
-		let thisProjHeadingPos = $(projHeading[i]).offset().top;
-		projHeadingPos[$(projHeading[i]).attr('id')] = thisProjHeadingPos;
+		// let thisProjHeadingPos = $(projHeading[i]).offset().top;
+		// projHeadingPos[$(projHeading[i]).attr('id')] = thisProjHeadingPos;
 
 		//creating sidebar element
 		let newHeading = document.createElement('a');
@@ -135,7 +135,7 @@ $(document).ready(function(){
 	    $('.project-writeup .h3').each(function() {
 	        var thisSection = $(this).attr('id');
 	        var sectionTop = $(this).offset().top;
-	        var headingToChange = projHeadingPos[thisSection];
+	        // var headingToChange = projHeadingPos[thisSection];
 
 
 	        if (position >= sectionTop) {
