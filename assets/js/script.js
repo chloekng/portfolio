@@ -135,7 +135,6 @@ $(document).ready(function(){
 	    $('.project-writeup .h3').each(function() {
 	        var thisSection = $(this).attr('id');
 	        var sectionTop = $(this).offset().top;
-	        console.log(thisSection);
 	        var headingToChange = projHeadingPos[thisSection];
 
 
