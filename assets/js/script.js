@@ -112,7 +112,10 @@ $(document).ready(function(){
 
 
 
+
+
 	$(window).on('scroll', function() {
+		console.log("hey scroll");
 
 		//getting side nav to appear
   		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
@@ -124,6 +127,8 @@ $(document).ready(function(){
 			$('.sidebar-l').css('display', 'none');
 			$('.sidebar-r').css('display', 'none');			
 		}
+
+
 
 		var position = $(this).scrollTop();
 
