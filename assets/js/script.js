@@ -131,14 +131,15 @@ $(document).ready(function(){
 
 
 		var position = $(this).scrollTop();
-		console.log($(this));
 
 	    $('.project-writeup .h3').each(function() {
 	        var thisSection = $(this).attr('id');
+	        var sectionTop = $(this).offset().top;
+	        console.log(thisSection);
 	        var headingToChange = projHeadingPos[thisSection];
 
 
-	        if (position >= headingToChange) {
+	        if (position >= sectionTop) {
 	        	$('#' + thisSection).css('background-position', 'left');
 	        } else {
 	        	$('#' + thisSection).css('background-position', 'right');
