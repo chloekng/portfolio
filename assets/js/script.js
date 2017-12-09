@@ -131,6 +131,7 @@ $(document).ready(function(){
 
 
 		var position = $(this).scrollTop();
+		console.log($(this));
 
 	    $('.project-writeup .h3').each(function() {
 	        var thisSection = $(this).attr('id');
