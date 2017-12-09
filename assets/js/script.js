@@ -76,6 +76,11 @@ $(document).ready(function(){
 	var projHeading = document.querySelectorAll('.project-writeup .h3');
 	var projSide = [];
 	var headingPos = [];
+	var projHeadingPos = {};
+		
+	// projHeading.each(function() {
+ //    	projHeadingPos[ $(this).attr('id') ] = $('#navigation > ul > li > a[href=#' + $(this).attr('id') + ']');
+	// });
 
 
 	//making sidebar-l
@@ -83,11 +88,14 @@ $(document).ready(function(){
 
 		//getting the position & pushing to array
 		headingPos.push($(projHeading[i]).offset().top);
+		let thisProjHeadingPos = $(projHeading[i]).offset().top;
+		projHeadingPos[$(projHeading[i]).attr('id')] = thisProjHeadingPos;
 
 		//creating sidebar element
 		let newHeading = document.createElement('a');
 		let newBreak = document.createElement('br');
 		newHeading.className = 'h4';
+		newHeading.id = projHeading[i].id;
 		let newHeadingText = document.createTextNode(projHeading[i].innerHTML);
 
 
@@ -100,20 +108,13 @@ $(document).ready(function(){
 		projSide.push(newHeading);
 
 
-
-
-
 	}
-
-
-	var winHeight = $(window).height(),
-  		docHeight = $(document).height();
-  	max = docHeight - winHeight;
 
 
 
 	$(window).on('scroll', function() {
 
+		//getting side nav to appear
   		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
 			$('.sidebar-l').css('display', 'none');
 		} else if (window.pageYOffset >= window.innerHeight) {
@@ -124,111 +125,39 @@ $(document).ready(function(){
 			$('.sidebar-r').css('display', 'none');			
 		}
 
-		for (let i = 0; i < (projSide.length); i++) {
-		//set i based on position in page? 
-		//make zones based on i positions??
-		if (window.pageYOffset > headingPos[i]) {
-		 		$(projSide[i]).css('background-position', 'left');
-				console.log(i)
-		 	} else if (window.pageYOffset < headingPos[i]) {
-		 		$(projSide[i]).css('background-position', 'right');
-		 		console.log(i);
-		 	} 
-		 }
+		var position = $(this).scrollTop();
 
+	    $('.project-writeup .h3').each(function() {
+	        var thisSection = $(this).attr('id');
+	        var headingToChange = projHeadingPos[thisSection];
+
+
+	        if (position >= headingToChange) {
+	        	$('#' + thisSection).css('background-position', 'left');
+	        } else {
+	        	$('#' + thisSection).css('background-position', 'right');
+
+	        }
+	    });
 
 
 		// for (let i = 0; i < (projSide.length); i++) {
-			// if (window.pageYOffset > headingPos[i]) {
-			// 	$(projSide[i]).css('background-position', 'left');
-		 // 		console.log(i)
-		 // 	} else if (window.pageYOffset < headingPos[i]) {
-		 // 		$(projSide[i]).css('background-position', 'right');
-		 // 		console.log(i);
-		 // 	} 
-		 // console.log(headingPos);
-		 // console.log(window.pageYOffset);
-			// if (window.pageYOffset < headingPos[0]) {
-			// 	$(projSide[0]).css('background-position', 'right');
-			// 	console.log("zero");
-			// } else if (window.pageYOffset > headingPos[0] && window.pageYOffset < headingPos[1]) {
-			// 	$(projSide[0]).css('background-position', 'left');
-			// 	$(projSide[1]).css('background-position', 'right');
-			// 	console.log("one");
-			// } else if (window.pageYOffset > headingPos[1] && window.pageYOffset < headingPos[2]) {
-			// 	$(projSide[1]).css('background-position', 'left');
-			// 	$(projSide[2]).css('background-position', 'right');
-			// 	console.log("two");
-			// } else if (window.pageYOffset > headingPos[2] && window.pageYOffset < headingPos[3]) {
-			// 	$(projSide[2]).css('background-position', 'left');
-			// 	$(projSide[3]).css('background-position', 'right');	
-			// 	console.log("three");			
-			// } else if (window.pageYOffset > headingPos[3] && window.pageYOffset < headingPos[4]) {
-			// 	$(projSide[3]).css('background-position', 'left');
-			// 	$(projSide[4]).css('background-position', 'right');	
-			// 	console.log("four");
-			// } else if (window.pageYOffset > headingPos[4] && window.pageYOffset < headingPos[5]) {
-			// 	$(projSide[4]).css('background-position', 'left');
-			// 	$(projSide[5]).css('background-position', 'right');	
-			// 	console.log("five");
-			// } else if (window.pageYOffset > headingPos[5] && window.pageYOffset < headingPos[6]) {
-			// 	$(projSide[5]).css('background-position', 'left');
-			// 	$(projSide[6]).css('background-position', 'right');	
-			// 	console.log("six");
-			// } else if (window.pageYOffset > headingPos[6] && window.pageYOffset < headingPos[7]) {
-			// 	$(projSide[6]).css('background-position', 'left');
-			// 	$(projSide[7]).css('background-position', 'right');	
-			// 	console.log("seven");
-			// } else if (window.pageYOffset > headingPos[7] && window.pageYOffset < headingPos[8]) {
-			// 	$(projSide[7]).css('background-position', 'left');
-			// 	$(projSide[8]).css('background-position', 'right');	
-			// 	console.log("eight");
-			// } else if (window.pageYOffset > headingPos[8] && window.pageYOffset < headingPos[9]) {
-			// 	$(projSide[8]).css('background-position', 'left');
-			// 	$(projSide[9]).css('background-position', 'right');	
-			// 	console.log("nine");
-			// } else if (window.pageYOffset > headingPos[9] && window.pageYOffset < headingPos[10]) {
-			// 	$(projSide[9]).css('background-position', 'left');
-			// 	$(projSide[10]).css('background-position', 'right');
-			// 	console.log("ten");	
-			// }
-	
+		// //set i based on position in page? 
+		// //make zones based on i positions??
+		// 	if (window.pageYOffset > headingPos[i]) {
+		// 	 		$(projSide[i]).css('background-position', 'left');
+		// 			console.log(i)
+		// 	 	} else if (window.pageYOffset < headingPos[i]) {
+		// 	 		$(projSide[i]).css('background-position', 'right');
+		// 	 		console.log(i);
+		// 	 	} 
+		// 	 }
 
-			// if (value > headingPos[i]) {
-			// 	$(projSide[i]).css('background-position', 'left');
-			// 	console.log(i)
-			// } else if (value < headingPos[i]) {
-			// 	$(projSide[i]).css('background-position', 'right');
-			// 	console.log(i);
+
 
   		
    	});
 
-	//getting sidenav to appear
-	// window.onscroll = function(event) {
-	// 	if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
-	// 		$('.sidebar-l').css('display', 'none');
-	// 	} else if (window.pageYOffset >= window.innerHeight) {
-	// 		$('.sidebar-l').css('display', 'block');
-	// 		$('.sidebar-r').css('display', 'block');			
-	// 	} else if (window.pageYOffset < window.innerHeight) {
-	// 		$('.sidebar-l').css('display', 'none');
-	// 		$('.sidebar-r').css('display', 'none');			
-	// 	}
-
-
-	// 	// for (let i = 0; i < (projSide.length); i++) {
-	// 	// 	//set i based on position in page? 
-	// 	// 	//make zones based on i positions??
-	// 	// 	if (window.pageYOffset > headingPos[i]) {
-	// 	// 		$(projSide[i]).css('background-position', 'left');
-	// 	// 		console.log(i)
-	// 	// 	} else if (window.pageYOffset < headingPos[i]) {
-	// 	// 		$(projSide[i]).css('background-position', 'right');
-	// 	// 		console.log(i);
-	// 	// 	} 
-	// 	// }
-	// }
 
 
 
