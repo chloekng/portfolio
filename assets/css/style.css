@@ -674,7 +674,7 @@ a svg:hover .contact-icon {
 	height: 100%;
 }
 
-#fulldive.column-left {
+#fulldive.column-right {
 	margin-top: 8%;
 
 }
@@ -731,10 +731,6 @@ a svg:hover .contact-icon {
 	height: 100%;
 }
 
-#fulldivemobile.column-right {
-	margin-top: 15%;
-}
-
 
 
 #fulldivemobile-overlaybg {
@@ -787,6 +783,10 @@ a svg:hover .contact-icon {
 #fulldivesaves {
 	height: 100%;
 /*	margin-top: 150px;*/
+}
+
+#fulldivesaves.column-right {
+	margin-top: 15%;
 }
 
 
@@ -842,7 +842,7 @@ a svg:hover .contact-icon {
 	height: 100%;
 }
 
-#wingit.column-right {
+#wingit.column-left {
 	margin-top: 8%;
 }
 
@@ -1304,8 +1304,8 @@ a svg:hover .contact-icon {
 
 
 .persona-img {
-	width: 100px;
-	height: 100px;	
+	width: 60px;
+	height: 60px;	
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
