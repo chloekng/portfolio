@@ -250,6 +250,7 @@ $('#hamburger').on('click', function(event) {
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
+
       });
     } // End if
   });
