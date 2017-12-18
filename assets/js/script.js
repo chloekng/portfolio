@@ -165,15 +165,60 @@ $(document).ready(function(){
    	});
 
 //sidebar-r
+
+var hamburgerMenuMake = function(menuLink, menuItem) {
+
+	let burgerLink = document.createElement('a');
+	burgerLink.href = menuLink;
+	burgerLink.className = 'navitem h3';
+
+	let burgerSpan = document.createElement('span');
+	burgerSpan.className = 'navitem-name';
+
+
+	let burgerText = document.createTextNode(menuItem)
+	burgerSpan.append(burgerText);
+	burgerLink.append(burgerSpan);
+	console.log(burgerLink);
+
+	return burgerLink;
+
+}
+
+
+var hamburgerMenu = false; 
+var menuOpen = false;
+
 $('#hamburger').on('click', function(event) {
-	event.preventDefault();
-	console.log("hamburger");
-	$('#hamburger').css('fill', 'var(--color)');
-	$('#hamburger').css('animation', 'burgerrotate .5s ease-in');
+	//if no hamburgermenu yet, make hamburger menu
+	//if there is a hamburger menu & menu is open
 
+	if (hamburgerMenu === false && menuOpen === false)  {
+		let menuLinkArray = ['index.html', 'fun.html', 'about.html'];
+		let menuItemArray = ['Work', 'Fun', 'About'];
 
-	let burgerLinkOne = document.createElement('a')
-	let burgerText = document.createTextNode('Work');
+		$('#hamburger').css('fill', 'var(--color)');
+		$('#hamburger').css('animation', 'burgerrotate .3s ease-in');
+
+		for (let i = 0; i < menuLinkArray.length; i++) {
+			let newBreak = document.createElement('br');
+			$('.sidebar-r').append(newBreak, hamburgerMenuMake(menuLinkArray[i], menuItemArray[i]));
+		}
+
+		hamburgerMenu = true;
+		menuOpen = true;
+
+	} else if (hamburgerMenu === true && menuOpen === true) {
+		$('.sidebar-r a').remove();
+		$('.sidebar-r br:not(:first)').remove();
+
+		hamburgerMenu = false;
+		menuOpen = false;
+
+		$('#hamburger').css('animation', 'burgerrotateleave .3s ease-in');
+		$('#hamburger').css('fill', 'black');
+
+	}
 
 
 })
