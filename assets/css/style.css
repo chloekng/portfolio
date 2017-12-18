@@ -343,6 +343,24 @@ a:hover {
 
 }
 
+#hamburger {
+	width: 20%;
+	height: 20%;
+	cursor: pointer;
+	transition: .3s;
+      
+
+}
+
+.hamburger-line {
+	height: 0px;
+  	border: 1em solid black;
+  	width: 2em;
+  	padding: 1em;
+/*  	display: block;
+  	position: absolute;*/
+}
+
 /*Footer*/
 
 .footer {
@@ -1905,6 +1923,31 @@ a svg:hover .contact-icon {
     transform: none;
   }
 }
+
+@keyframes burgerrotate {
+	0% {
+		transform: rotate(0deg);
+		animation-timing-function: ease-out;
+	}
+	
+	100% {
+		transform: rotate(180deg);
+		animation-timing-function: ease-out;
+	}			
+}
+
+@-webkit-keyframes burgerrotate {
+	0% {
+		transform: rotate(0deg);
+		animation-timing-function: ease-out;
+	}
+	
+	100% {
+		transform: rotate(180deg);
+		animation-timing-function: ease-out;
+	}			
+}
+
 
 /*Responsive*/
 

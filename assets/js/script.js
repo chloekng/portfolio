@@ -87,9 +87,9 @@ $(document).ready(function(){
 	for (let i = 0; i < (projHeading.length-1); i++) {
 
 		//getting the position & pushing to array
-		headingPos.push($(projHeading[i]).offset().top);
-		let thisProjHeadingPos = $(projHeading[i]).offset().top;
-		projHeadingPos[$(projHeading[i]).attr('id')] = thisProjHeadingPos;
+		// headingPos.push($(projHeading[i]).offset().top);
+		// let thisProjHeadingPos = $(projHeading[i]).offset().top;
+		// projHeadingPos[$(projHeading[i]).attr('id')] = thisProjHeadingPos;
 
 		//creating sidebar element
 		let newHeading = document.createElement('a');
@@ -164,6 +164,20 @@ $(document).ready(function(){
   		
    	});
 
+//sidebar-r
+$('#hamburger').on('click', function(event) {
+	event.preventDefault();
+	console.log("hamburger");
+	$('#hamburger').css('fill', 'var(--color)');
+	$('#hamburger').css('animation', 'burgerrotate .5s ease-in');
+
+
+	let burgerLinkOne = document.createElement('a')
+	let burgerText = document.createTextNode('Work');
+
+
+})
+
 
 
 
@@ -173,18 +187,20 @@ $(document).ready(function(){
   // Add smooth scrolling to all links
   $('a').on('click', function(event) {
 
+
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== '') {
       // Prevent default anchor click behavior
       event.preventDefault();
 
       // Store hash
-      var hash = this.hash;
+      var hash = this.getAttribute('id');
+      console.log(hash);
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $('#' + hash + '.h3').offset().top
       }, 3000, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
