@@ -14,13 +14,26 @@
 		<img id="img-overlaid">
 		<span class="close">&times;</span>		
 	</div>
-	<nav class="minitext-h" id="menu">
-		<a href="index.html"><img id="navhome" src="assets/img/homecutie.svg"></a>
-		<a class="navitem" href="about.html">About</a>
-		<a class="navitem" href="fun.html">Fun</a>
-		<a class="navitem" href="index.html">Work</a>
+	<nav class="h3 menu">
+		<a class="navhome" href="index.html"><img id="navhome" src="assets/img/homecutie.svg"></a>
+		<a class="navitem" href="about.html">
+			<span class="navitem-name">About</span></a>
+		<a class="navitem" href="fun.html">
+			<span class="navitem-name">Fun</span></a>
+		<a class="navitem" id="navitem-active" href="index.html">
+			<span class="navitem-name">Work</span></a>
 	</nav>
-	<div class="project-writeup clearfix" id="project-writeup-header">
+	<div class="sidebar-l"></div>
+	<div class="sidebar-r">
+		<a class="navitem h4" href="index.html">
+			<span class="navitem-name">Work</a></span><br>
+		<a class="navitem h4" href="fun.html">
+			<span class="navitem-name">Fun</a></span><br>
+		<a class="navitem h4" href="about.html">
+			<span class="navitem-name">About</a></span><br>
+	</div>
+
+<!-- 	<div class="project-writeup clearfix" id="project-writeup-header">
 		<div class="project-left">
 			<div class="project-role minitext"><div class="minitext-h">ROLE</div>Product Designer <br> Brand Designer</div>
 			<div class="project-team minitext"><div class="minitext-h"><br>TEAM</div>Madeline Chong <br> Tim Greeno <br>Claire Lee <br> Pablo Magallanes <br> Beth Marrone   <br> </div>
@@ -30,221 +43,79 @@
 			<div class="bodytext">Track & Slash is a gamified fitness app that uses people's real life fitness progress to level up their character in a multiplayer game. Through features such as battling friends, Track & Slash is a flexible and social way of staying in shape.</div>
 			<div class="project-hero" id="trackslash-hero"></div>
 		</div>
-	</div>
+	</div> -->
 	<div class="project-writeup clearfix">
-		<div class="project-nav minitext">
-			<p><a class="project-nav-item" href="#trackslash-challenge">Challenge</a></p>
-			<p><a class="project-nav-item" href="#trackslash-solution">Solution</a></p>
-			<p><a class="project-nav-item" href="#trackslash-personas">Personas</a></p>
-			<p><a class="project-nav-item" href="#trackslash-competitive">Competitors</a></p>
-			<p><a class="project-nav-item" href="#trackslash-userstories">User Stories</a></p>
-			<p><a class="project-nav-item" href="#trackslash-decisions">Key Decisions</a></p>
-			<p><a class="project-nav-item" href="#trackslash-highfidelity">High Fidelity</a></p>
-			<p><a class="project-nav-item" href="#trackslash-branding">Branding</a></p>
-			<p><a class="project-nav-item" href="#trackslash-reflection">Reflection</a></p>
-			<div class="minitext-h" id="project-nav-top">&ShortUpArrow; TOP</div>
-		</div>
-
-		<div class="project-right clearfix">
+		<div class="h1">Track & Slash - <p class="h2"> combining fitness tracking and RPGs</p></div>
 			<div class="writeup-section">
-				<div class="subheader" id="trackslash-challenge">Challenge</div>
+				<Br>
 				<div class="bodytext">
-					<p>Our team's goal was to come up with a feasible product pitch within 10 weeks in our Product Management class. Given that we were all new to product management, being primarily engineers and designers, this was a daunting challenge.</p> 
-					<div class="bigtext">Working on a fitness goal isn't easy or fun without motivation, sufficient support, and tangible results.</div>
-					<p>Our team envisioned a product that could combine the fun of RPGs with fitness tracking. Gamification could be a motivator for getting into fitness.</p>
-					<p>As the chief user experience designer, my focus was creating a first pass at a cohesive app experience that demonstrated the value that our concept could bring to users. </p> 
-				</div>
-			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="trackslash-solution">Solution</div>
-				<div class="bodytext">
-					<p>Track & Slash, the fitness RPG that makes slashing through your calories fun! Earn points for your fitness to spend on customizing your character's appearance and abilities. Use your hard earned abilities to face off against your friends in battles!</p>
-				</div>
-				<br>
-				<div class="bodytext-h">Daily Fitness Challenges</div>
-					<p class="bodytext">Personal fitness challenges encourage retention and improvement</p>
+					<p>I teamed up with Beth, Tim, Claire, and Madeline to create a concept app combining fitness tracking and RPGs. <span class="highlight">Our project won first place for Panel's Choice and second place for People's Choice in a product design pitch competition at UC Berkeley.</span></p> 
 					<br>
-					<p class="clearfix">
-						<video id="trackslash-animate-1" src="assets/img/trackslash-anim-challfit.mp4" autoplay=true loop=true></video>
-					</p>
-				<div class="bodytext-h">Battle Friends</div>
-					<p class="bodytext">This aspect of the app encourages social motivations to keep fit.</p>
+					<img class="writeup-img" src="assets/img/trackslash_hero.png"><img>
+					<br><br>
+					<iframe class="writeup-img" allowFullScreen frameborder="0" height="629" mozallowfullscreen src="https://player.vimeo.com/video/247741568" webkitAllowFullScreen width="640"></iframe>
+					<Br><br>
+					<p class="h3" id="trackslashProblem">Problem</p>
+						<p class="h2">Working on a fitness goal isn't easy or fun without motivation, sufficient support, and tangible results.</p>
 					<br>
-					<p class="clearfix">
-						<video id="trackslash-animate-2" src="assets/img/fitness-battle-animate.mp4" autoplay=true loop=true></video>
-					</p>
-				<br>
-				<div class="bodytext">
-					<p class="bodytext-h">Pitch</p>
-					<p>At the end of 10 weeks, we pitched our product to our class and a panel of product managers. We won first place for Panel's Choice and second place for People's Choice out of ten projects!</p> 
-				</div>
-				<br>
-				<div class="clearfix">
-					<img class="slides" src="assets/img/trackslash_slide0.svg">
-					<img class="slides" src="assets/img/trackslash_slide1.svg">
-					<img class="slides" src="assets/img/trackslash_slide2.svg">
-					<img class="slides" src="assets/img/trackslash_slide3.svg">
-					<img class="slides" src="assets/img/trackslash_slide4.svg">				
-				</div>
-				<br>
-				<a href="https://docs.google.com/presentation/d/1REg9qRE0K-dvkaHI49xwLHq3Z8pZIj_o1vtjVL6waps/edit?usp=sharing" target="_blank"><div class="button minitext">View Full Slide Deck</div></a>
-				<br>	
-			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="trackslash-personas">Personas</div>
-				<div class="bodytext">
-					<p>We first defined the target user for our fitness app, coming up with personas to help us characterize the people we envisioned gaining value from Track & Slash.</p> 
-				</div>
-				<br>
-				<div class="writeup-subsection">
-					<div class="persona-img" id="persona-img-trackslash1"></div>
-					<div class="subsection-text">
-						<p class="minitext-h">THOMAS - FITNESS NEWBIE</p>
-						<p class="minitext">Thomas is a realtor living in New York City. He is 24 years old and has been working in real estate. He avidly enjoys playing World of Warcraft, but he noticed that he's been gaining some weight. He has tried to go to the gym a few times in the last year, but got discouraged from the lack of results. His friends are not into fitness and he doesn't own a Fitbit so getting into fitness is pretty difficult.</p>
-					</div>
-				</div>
-				<div class="writeup-subsection">
-					<div class="persona-img" id="persona-img-trackslash2"></div>
-					<div class="subsection-text">
-						<p class="minitext-h">AMY - CASUAL FITNESS</p>
-						<p class="minitext">Amy is a 27 year old wedding planner in Dallas, Texas. She has an iPhone 7 and a Fitbit which helps her keep track of her steps, but she doesn't go running or to the gym. She's been meaning to exercise more and be healthier so she can have more energy for her job, but it's difficult for her to schedule gym time in with her busy schedule. She does enjoy weekend soccer games with her friends, but she wants to figure out other ways of having fun while getting fit.</p>
-					</div>
-				</div>
-				<div class="writeup-subsection">
-					<div class="persona-img" id="persona-img-trackslash3"></div>
-					<div class="subsection-text">
-						<p class="minitext-h">BOBBY - ACTIVELY FIT</p>
-						<p class="minitext">Bobby is a 30 year old Project Manager working at Google in Mountain View. He has been going to the Google gym before he sits down at his desk every day for quite some time and uses his Fitbit and Moto X 6 to track his routine. He is pretty fit, but lately he has been plateauing in his day-to-day exercise routine. He is looking for something new he can do or use to stay fit, such as maybe competing with his co-workers at being fit.</p>
-					</div>
-				</div>
-				<br>
-				<div class="bodytext">
-					<p>By keeping these personas in mind, we were able to break the overall problem down into several smaller problems.</p>
-					<br>
-					<ul>
-						<li>I want to get fit but it's hard to keep myself motivated</li>
+					<p class="h3" id="tracklashStories">User Stories</p>
+						<Br>
+						<Br>
+						<img class="writeup-img trackslash-stories" src="assets/img/trackslash-userstory-1.png">
+						<img class="writeup-img trackslash-stories" src="assets/img/trackslash-userstory-2.png">
+						<img class="writeup-img trackslash-stories" src="assets/img/trackslash-userstory-3.png">
+						<Br>
 						<br>
-						<li>I like to stay fit, but I'm finding it difficult to track my progress/see the effects</li>
+					<p class="h3" id="trackslashFlows">User Flows</p>
+						<br><Br>
+						<img class="writeup-img" src="assets/img/trackslash-home.png">
+						<p class="minitext">Home</p>
 						<br>
-						<li>I want a way to compete with/against my friends</li>
+						<Br>
+						<img class="writeup-img" src="assets/img/trackslash-char.png">
+						<p class="minitext">Character Inventory & Shop</p>
 						<br>
-						<li>Most RPG games aren't mobile or done well on mobile</li>
+						<Br>
+						<img class="writeup-img" src="assets/img/trackslash-battle.png">
+						<p class="minitext">Battle</p>
 						<br>
-						<li>I am bored at the gym with my current workout</li>
 						<br>
-						<li>I find it difficult to find friends to work out with</li>
-					</ul> 
+						<img class="writeup-img" src="assets/img/trackslash-challenges.png">
+						<p class="minitext">Challenges</p>
+						<br>
+					<p class="h3" id="trackslashBranding">Branding</p>
+						<br>
+						<br>
+						<img class="writeup-img" src="assets/img/trackslash-branding.png">
 				</div>
 			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="trackslash-competitive">Competitive Analysis</div>
-				<div class="bodytext">
-					Track & Slash's main differentiation is its high level of fitness engagement at a lower price. Our biggest competitor would be Pokemon Go. We therefore focused features of our app that would fill weaknesses of Pokemon Go as a fitness app. Namely, Pokemon Go lacks fitness data and other features that directly promote greater fitness in its users.
-				</div>
-				<img class="writeup-img" src="assets/img/trackslash-competitiveanalysis.png">
-			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="trackslash-userstories">User Stories</div>
-				<div class="bodytext">
-					User stories helped guide our vision of the app and brainstorm features that keep user needs central. 
-				</div>
-				<img class="writeup-img trackslash-stories" src="assets/img/trackslash-userstory-1.png">
-				<img class="writeup-img trackslash-stories" src="assets/img/trackslash-userstory-2.png">
-				<img class="writeup-img trackslash-stories" src="assets/img/trackslash-userstory-3.png">
-			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="trackslash-decisions">Key Decisions</div>
-				<div class="bodytext">
-					<p>We tested on seven people in their early twenties who fit our target audience. We decided to focus on developing the character customization flow, as this was the primary feature that brought the fitness and roleplaying aspects together.  Some of our initial decisions are documented below.</p>
-					<br>
-					<p class="bodytext-h">How do we integrate fitness and RPG?</p>
-					<img class="writeup-img" src="assets/img/trackslash-homepagelayout.png">
-					<p>100% (7/7) of the people we showed these two screens to preferred the RPG character being more central.</p>
-					<br>
-					<p class="bodytext-h">How does real-life fitness translate to in-game character ability?</p>
-					<p>Fitness points buy items that imbue the character with abilities.  Therefore character items became a natural bridge between fitness points, character abilities, and character stats. This streamlined how users could use their fitness points, keeping the game lightweight and appropriate for a mobile platform. 
-					<img class="writeup-img" src="assets/img/trackslash-fitnessptcharability.png">
-					One of the benefits of this system was that even those who may not be as fit as others in real life would be able to battle on 'equal ground.' Given that lack of natural ability is often a deterrant for fitness, we didn't want our app replicating that.</p>
-				</div>
-			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="trackslash-highfidelity">High Fidelity</div>
-				<div class="bodytext">
-					<p>After talking to people, we implemented feedback into a higher fidelity clickable prototype.</p>
-					<ul>
-						<br>
-						<li>Gamers were interested in seeing numerical stats for the character equipment &#8594; we added a more detailed stats page</li>
-						<br>
-						<li>People were most excited about the competition and social aspect &#8594; we made battling with friends a priority on the homepage, and added a tier system </li>
-						<br>
-						<li>People also were interested in seeing more variety &#8594; daily challenges can provide new goals for people</li>
-					</ul>
-				</div>
-				<br>
-				<div class="bodytext-h">Clickable Prototype</div>
-					<p class="bodytext">As the lead UI/UX designer on the team, I created all the visual assets and screens. I also put together a high fidelity prototype to present as a demo.</p>
-					<iframe class="writeup-img" src="https://marvelapp.com/929c7eg?emb=1" width="250" height="600" allowTransparency="true" frameborder="0"></iframe>
-				<br>
-				<br>
-				<p class="bodytext-h">User Flow - Home
-					<img class="writeup-img" src="assets/img/trackslash-home.png">
-				</p>
-				<br>
-				<p class="bodytext-h">User Flow - Character Inventory & Shop
-					<img class="writeup-img" src="assets/img/trackslash-char.png">
-				</p>
-				<br>
-				<p class="bodytext-h">User Flow - Battle
-					<img class="writeup-img" src="assets/img/trackslash-battle.png">
-				</p>
-				<br>
-				<p class="bodytext-h">User Flow - Challenges & Fitness Points
-					<img class="writeup-img" src="assets/img/trackslash-challenges.png">
-				</p>
-				<br>
-			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="trackslash-branding">Branding</div>
-				<div class="bodytext">
-					<p>My goal for branding Track & Slash was to create something fun, playful, and high energy. I drew inspiration from games such as Orisinal, Two Dots, and Journey.
-					<img class="writeup-img" src="assets/img/trackslash-branding.png"></p>
-				</div>
-			</div>
-			<div class="writeup-section">
-				<div class="subheader" id="trackslash-reflection">Reflection</div>
-				<div class="bodytext">
-					<ul>
-						<li>Beyond usability, consider issues such as target market, retention rate, monetization, and KPI's while designing features  </li>
-						<br>
-						<li>At our pitch, one of the product designers asked us why we hadn't considered incorporating new technologies such as AR into our app. Given the current interest in AR following the success of Pokemon Go, we definitely should have considered it!</li>
-					</ul> 
-				</div>
-			</div>
-		</div>
 	</div>
+
 <!-- Project Next -->
-	<div class="project-next clearfix">
-		<div class="bigtext" id="lefttext">See More Like This</div>
-		<div class="row clearfix">
-			<div class="column-left-next" id="fulldive">
-				<a href="fulldive-writeup.html"><div id="fulldive-overlay">
-					<div class="home-project-text">
-						<div class="home-project-title">Fulldive</div>
-						<div class="home-project-misc">mobile vr ui/ux &middot; user research &middot; user testing</div>
-					</div>
-					<div id="fulldive-overlaybg"></div>
-				</div></a>
+	<br></Br>
+	<br></Br>
+	<div class="project-writeup">
+		<div class="h3" id="lefttext">Read Next</div>
+			<div id="hkcafe">
+					<a class="proj-home" href="hkcafe-writeup.html">
+					<div class="h2" id="hkcafe-title">Hong Kong Cafe</div>
+				</a>
 			</div>
-			<div class="column-right-next" id="beyondsmartphones">
-				<a href="beyondsmartphones-writeup.html"><div id="beyondsmartphones-overlay">
-					<div class="home-project-text">
-						<div class="home-project-title">Samsung Beyond Smartphones</div>
-						<div class="home-project-misc">design research &middot; journeymapping</div>
-					</div>
-					<div id="beyondsmartphones-overlaybg"></div>
-				</div></a>
+			<div id="lasercut">
+					<a class="proj-home" href="lasercut-writeup.html">
+					<div class="h2" id="lasercut-title">Lasercutting</div>
+				</a>
 			</div>
-		</div>
+			<div id="artincolor">
+					<a class="proj-home" href="artincolor.html">
+					<div class="h2" id="artincolor-title">Art In Color</div>
+				</a>
+			</div>
+			<div id="taug">
+					<a class="proj-home" href="taug-writeup.html">
+					<div class="h2" id="taug-title">Editorial</div>
+				</a>
+			</div>
 	</div>
 <!-- Footer -->
 	<footer class="footer clearfix">

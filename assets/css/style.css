@@ -1096,34 +1096,35 @@ a svg:hover .contact-icon {
 	position: relative;
 }
 
-/*Fun- Color Museum*/
+/*Fun- Art In Color*/
 
 
-#colormuseum {
+#artincolor {
 /*	background-image: url(../img/taug_home.jpg);*/
 	height: 100%;
 }
 
-#colormuseum.column-right {
+#artincolor.column-left {
 	margin-top: 8%;
 }
 
-#colormuseum-overlay {
+#artincolor-overlay {
 	height: 100%;
 	position: relative;
 }
 
-#colormuseum-overlaybg {
+#artincolor-overlaybg {
 	height: 100%;
 	opacity: 0;
-	background: #4CA1AF; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #D9B73E, #E5BF3D);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #D9B73E, #E5BF3D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
            
 }
 
-#colormuseum-home-img {
-	background-image: url(../img/taug_home.jpg);
+#artincolor-home-img {
+	background-image: url(../img/artincolor-hero.png);
 	position: relative;
 	height: 31.250em;
 
@@ -1131,32 +1132,97 @@ a svg:hover .contact-icon {
 
 
 
-#colormuseum:hover #colormuseum-text {
+#artincolor:hover #artincolor-text {
 	transition: .5s;
 	opacity: 1;
 
 }
 
-#colormuseum-title {
+#artincolor-title {
 	background-size: auto 200%;
 	background-position: right;
-	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #4CA1AF 50%, #C4E0E5 100%); /* Chrome 10-25, Safari 5.1-6 */
-	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #4CA1AF 50%, #C4E0E5 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #D9B73E 50%, #E5BF3D 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #D9B73E 50%, #E5BF3D 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .5s;
 }
 
 
-#colormuseum:hover #colormuseum-title {
+#artincolor:hover #artincolor-title {
     background-position: left;
 
 }
 
 
 
-#colormuseum:hover #colormuseum-overlaybg {
-	opacity: .8;
+#artincolor:hover #artincolor-overlaybg {
+	opacity: .9;
+	transition: opacity .2s;
+}
+
+/*Fun- Track & Slash*/
+
+
+#trackslash {
+/*	background-image: url(../img/taug_home.jpg);*/
+	height: 100%;
+}
+
+#trackslash.column-right {
+	margin-top: 8%;
+}
+
+#trackslash-overlay {
+	height: 100%;
+	position: relative;
+}
+
+#trackslash-overlaybg {
+	height: 100%;
+	opacity: 0;
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F23719, #FF7201);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F23719, #FF7201); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           
+}
+
+#trackslash-home-img {
+	background-image: url(../img/trackslash_home.svg);
+	position: relative;
+	height: 31.250em;
+
+}
+
+
+
+#trackslash:hover #trackslash-text {
+	transition: .5s;
+	opacity: 1;
+
+}
+
+#trackslash-title {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #F23719 50%, #FF7201 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #F23719 50%, #FF7201 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+
+#trackslash:hover #trackslash-title {
+    background-position: left;
+
+}
+
+
+
+#trackslash:hover #trackslash-overlaybg {
+	opacity: .9;
 	transition: opacity .2s;
 }
 
