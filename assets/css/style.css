@@ -163,26 +163,11 @@ img {
 
 }
 
-.home-project-desc {
-	color: white;
-	font-size: 1.125em;
-	font-weight: 300;
-	line-height: 1.5;
-	letter-spacing: .03em;
-	opacity: 0;
-	width: 80%;
-	position: absolute;
-	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    z-index: 2000;
-/*    filter: drop-shadow(4px 4px 10px #474B51)*/
-}
 
 .highlight {
 	background-color: rgba(var(--colorRGB), .2);
 }
+
 
 
 a:link {
@@ -265,7 +250,9 @@ a:hover {
 	box-sizing: border-box;         /* Opera/IE 8+ */
 	padding: 4% 10% 5% 10%;
 
+
 }
+
 
 .menu::after {
 	display: none;
@@ -276,6 +263,10 @@ a:hover {
 	height: 1.875em;
 	padding-bottom: 0;
 	cursor: pointer;
+/*	position: fixed;
+	top: 5%;*/
+	z-index: 1000000;
+/*	border: 1px solid tomato;*/
 }
 
 .navhome::after {
@@ -286,14 +277,31 @@ a:hover {
 	position: relative;
 	width: 5.5em;
 	text-align: center;
-	margin: 0 .5em 0 .5em;
+	margin: 0 0 0 .3em;
 	float: right;
+	height: 1.875em;
+
 }
 
-.sidebar-r .navitem {
+/*.sidebar-r .navitem {
 	text-align: right;
 	width: 4em;
 }
+*/
+
+#hamburgerMenu .navitem {
+/*	text-align: right;
+	width: 4em;
+	padding-right: 10px;*/
+	text-align: center;
+	width: 100%;
+	position: relative;
+	top: 10%;
+/*	margin-right: -10%;*/
+	z-index: 60000000000000;
+	padding: 2% 0 2% 0;
+}
+
 
 
 .navitem::after {
@@ -301,12 +309,12 @@ a:hover {
 }
 
 
-.navitem-name {
+.navitemName {
 	color: var(--color);
 }
 
 
-.navitem .navitem-name::before {
+.navitem .navitemName::before {
 	content: ' ';
 	position: absolute;
 	z-index: -1;
@@ -322,15 +330,15 @@ a:hover {
 
 }
 
-.navitem:hover .navitem-name::before,
-.navitem:focus .navitem-name::before {
+.navitem:hover .navitemName::before,
+.navitem:focus .navitemName::before {
 	transform: scale3d(1,1,1);
 	background: var(--color);
 
 
 }
 
-.navitem:hover .navitem-name {
+.navitem:hover .navitemName{
 	color: var(--color);
 	transition: .3s;
 }
@@ -344,13 +352,42 @@ a:hover {
 }
 
 #hamburger {
-	width: 50%;
-	height: 50%;
+/*	width: 1.875em;*/
+	height: 1.875em;
 	cursor: pointer;
-	transition: .3s;
+	right: 0 !important;
+/*	transition: .3s;*/
       
 
 }
+
+
+#hamburgerHome {
+	position: relative;
+	float: right;
+	z-index: 5000000000;
+	text-align: right;
+	display: inline-block;
+	background-color: rgba(255,255,255,.8);
+	height: 1.875em;
+/*	right: 10%;*/
+/*	top: 4%;*/
+}
+
+#hamburgerMenu {
+	position: fixed;
+	display: none;
+	height: 100%;
+	width: 100%;
+	z-index: 4000000000;
+	overflow-y: auto; /* Enable scroll if needed */
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+	background-color: rgba(255,255,255,.9);
+
+}
+
 
 
 /*Footer*/
@@ -693,8 +730,8 @@ a svg:hover .contact-icon {
 
 #fulldive-overlaybg {
 	background: #00173D; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #80D6E3 , #5CA2C7); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #80D6E3, #5CA2C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to left, #83DBBD , #58A288); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #83DBBD, #58A288); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	opacity: 0;
 	z-index: 1000;
 	height: 100%;
@@ -716,8 +753,8 @@ a svg:hover .contact-icon {
 #fulldive-title {
 	background-size: auto 200%;
 	background-position: right;
-	background-image: -webkit-linear-gradient(to left, #000000 0%,#000000 50%, #5CA2C7 50%, #80D6E3 100%); /* Chrome 10-25, Safari 5.1-6 */
-	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #5CA2C7 50%, #80D6E3 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: -webkit-linear-gradient(to left, #000000 0%,#000000 50%, #83DBBD 50%, #58A288 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #83DBBD 50%, #58A288 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .5s;
@@ -731,7 +768,7 @@ a svg:hover .contact-icon {
 
 
 #fulldive:hover #fulldive-overlaybg {
-	opacity: .85;
+	opacity: .4;
 	transition: opacity .2s;
 }
 
@@ -754,10 +791,11 @@ a svg:hover .contact-icon {
 }
 
 #fulldivemobile-home-img {
-	background-image: url(../img/fulldivemobile_home.png);
+	background-image: url(../img/fulldivemobile_home.svg);
 	position: relative;
 	height: 500px;
 }
+
 
 #fulldivemobile:hover #fulldivemobile-text {
 	transition: .5s;
@@ -783,7 +821,7 @@ a svg:hover .contact-icon {
 
 
 #fulldivemobile:hover #fulldivemobile-overlaybg {
-	opacity: .8;
+	opacity: .4;
 	transition: opacity .2s;
 }
 
@@ -802,8 +840,8 @@ a svg:hover .contact-icon {
 
 #fulldivesaves-overlaybg {
 	background: #00173D; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #80D6E3 , #5CA2C7); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #80D6E3, #5CA2C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to left, #FAD961 , #F76B1C); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #FAD961, #F76B1C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	opacity: 0;
 	z-index: 1000;
 	height: 100%;
@@ -825,8 +863,8 @@ a svg:hover .contact-icon {
 #fulldivesaves-title {
 	background-size: auto 200%;
 	background-position: right;
-	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #5CA2C7 50%, #80D6E3 100%); /* Chrome 10-25, Safari 5.1-6 */
-	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #5CA2C7 50%, #80D6E3 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #FAD961 50%, #F76B1C 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #FAD961 50%, #F76B1C 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .5s;
@@ -841,7 +879,7 @@ a svg:hover .contact-icon {
 
 
 #fulldivesaves:hover #fulldivesaves-overlaybg {
-	opacity: .8;
+	opacity: .4;
 	transition: opacity .2s;
 }
 
@@ -868,15 +906,15 @@ a svg:hover .contact-icon {
 
 
 #wingit-home-img {
-	background-image: url(../img/wingit_home.png);
+	background-image: url(../img/wingit_mockup.svg);
 	position: relative;
 	height: 31.250em;
 	width: 100%;
 }
 
 #wingit:hover #wingit-text {
-	transition: .5s;
-	opacity: 1;
+/*	transition: .5s;
+	opacity: 1;*/
 
 }
 
@@ -896,7 +934,7 @@ a svg:hover .contact-icon {
 }
 
 #wingit:hover #wingit-overlaybg {
-	opacity: .8;
+	opacity: .3;
 	transition: opacity .2s;
 }
 
@@ -954,7 +992,7 @@ a svg:hover .contact-icon {
 
 
 #hkcafe:hover #hkcafe-overlaybg {
-	opacity: .8;
+	opacity: .4;
 	transition: opacity .2s;
 }
 
@@ -1027,7 +1065,7 @@ a svg:hover .contact-icon {
 
 
 #taug:hover #taug-overlaybg {
-	opacity: .8;
+	opacity: .4;
 	transition: opacity .2s;
 }
 
@@ -1095,7 +1133,7 @@ a svg:hover .contact-icon {
 
 
 #lasercut:hover #lasercut-overlaybg {
-	opacity: .8;
+	opacity: .4;
 	transition: opacity .2s;
 }
 
@@ -1167,7 +1205,7 @@ a svg:hover .contact-icon {
 
 
 #artincolor:hover #artincolor-overlaybg {
-	opacity: .7;
+	opacity: .4;
 	transition: opacity .2s;
 }
 
@@ -1192,8 +1230,8 @@ a svg:hover .contact-icon {
 	height: 100%;
 	opacity: 0;
 	background: #000000;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #F23719, #FF7201);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #F23719, #FF7201); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to right, #0077A3, #A04655);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0077A3, #A04655); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
            
 }
@@ -1216,8 +1254,8 @@ a svg:hover .contact-icon {
 #trackslash-title {
 	background-size: auto 200%;
 	background-position: right;
-	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #F23719 50%, #FF7201 100%); /* Chrome 10-25, Safari 5.1-6 */
-	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #F23719 50%, #FF7201 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #0077A3 50%, #A04655 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #0077A3 50%, #A04655 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .5s;
@@ -1232,7 +1270,7 @@ a svg:hover .contact-icon {
 
 
 #trackslash:hover #trackslash-overlaybg {
-	opacity: .9;
+	opacity: .4;
 	transition: opacity .2s;
 }
 
@@ -1280,53 +1318,10 @@ a svg:hover .contact-icon {
 	top: 10%;
 	right: 10%;
 	float: right;
-	z-index: 100;
+	z-index: 500000;
 	text-align: right;
 	display: none;
 }
-
-/*.project-left {
-	display: inline-block;
-	width: 10%;
-	position: absolute;
-	padding-top: 1%;
-}*/
-/*
-.project-nav {
-	position: fixed;
-	bottom: 10%;
-	maybe when it hits the scroll it turns into a fixed pos 
-	display: inline-block;
-	width: 10%;
-	padding-top: 1%;
-	left: 90%;
-	z-index: 10000;
-}*/
-
-/*#project-nav-top {
-	cursor: pointer;
-	position: fixed;
-	width: 10%;
-	padding-top: 5%;
-
-}*/
-
-
-/*#project-nav-top:hover {
-	color: var(--color);
-	transition: .3s;
-}*/
-
-.project-right {
-	width: 80%;
-	margin: 0% 0% 5% 20%;
-	animation: fadeInUp 1.5s;
-}
-
-.writeup-section {
-	margin-bottom: 100px;
-}
-
 
 
 
@@ -1388,49 +1383,10 @@ a svg:hover .contact-icon {
 	border-radius: 3px;
 }
 
-.project-next {
-/*	width: 100%;*/
-	padding: 0% 10% 0% 10%;
-}
-
-.column-left-next {
-	width: 50%;
-	float: left;
-	height: 250px;
-	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	cursor: pointer;
-}
-
-.column-right-next {
-	width: 50%;
-	float: right;
-	height: 250px;
-	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	cursor: pointer;
-
-}
-
-/*Project Page - Fulldive*/
-
-#fulldive-hero {
-	background-image: url(../img/fulldive_home.png);
-
-}
 
 
 
 /*Project Page - WingIt*/
-
-#wingit-hero {
-	background-image: url(../img/wingit_header.jpg);
-
-}
 
 #persona-img-wingit1 {
 	background-image: url(../img/wingit-persona-grace.png);
@@ -1444,83 +1400,7 @@ a svg:hover .contact-icon {
 	background-image: url(../img/wingit-persona-alex.png);
 }
 
-#wingit-marvel {
-	width: 100%;
-}
 
-
-#wingit-animate-1 {
-	margin-left: 30%;
-	width: 40%;
-
-}
-
-#wingit-animate-2 {
-	margin-left: 30%;
-	width: 40%;
-
-}
-
-/*Project Page - Track & Slash*/
-
-#trackslash-hero {
-	background-image: url(../img/trackslash_hero.jpg);
-
-}
-
-
-#persona-img-trackslash1 {
-	background-image: url(../img/trackslash-persona-thomas.jpg);
-}
-
-#persona-img-trackslash2 {
-	background-image: url(../img/trackslash-persona-amy.jpg);
-}
-
-#persona-img-trackslash3 {
-	background-image: url(../img/trackslash-persona-bobby.jpg);
-}
-
-#trackslash-animate-1 {
-	width: 40%;
-	margin-left: 30%;
-
-}
-
-#trackslash-animate-2 {
-	width: 40%;
-	margin-left: 30%;
-
-}
-
-/*Project Page - Twinkle*/
-
-#twinkle-hero {
-	background-image: url(../img/twinkle_hero.jpg);
-
-}
-
-/*Project Page - Beyond Smartphones*/
-
-#beyondsmartphones-hero {
-	background-image: url(../img/beyondsmartphones_home.jpg);
-
-}
-
-
-/*Project Page - Dayrise*/
-
-#dayrise-hero {
-	background-image: url(../img/dayrise-hero.jpg);
-
-}
-
-/*Project Page - Joybook*/
-
-#joybook-hero {
-	background-image: url(../img/joybook_hero.jpg);
-
-}
 
 /*About*/
 
@@ -1971,7 +1851,8 @@ a svg:hover .contact-icon {
 
 .navitem {
 	padding-left: 30px;
-	padding-top: 8%;
+/*	padding-top: 8%;*/
+	padding-top: 0%;
 
 }
 
@@ -1981,8 +1862,8 @@ a svg:hover .contact-icon {
 
 
 .project-writeup {
-	padding: 0% 2.5% 0% 2.5%;
-	width: 95%;
+	padding: 0% 2% 0% 2%;
+	width: 96%;
 
 }
 
@@ -1995,9 +1876,9 @@ a svg:hover .contact-icon {
 @media screen and (max-width: 600px) {
 
 
-
 .footer {
 	padding-right: 50%;
+	padding-bottom: 5em;
 }
 
 
@@ -2023,9 +1904,9 @@ a svg:hover .contact-icon {
 }
 
 
-.sidebar-r {
+/*.sidebar-r {
 	left: -100%;
-}
+}*/
 
 
 
@@ -2070,9 +1951,13 @@ a svg:hover .contact-icon {
 
 @media screen and (max-width: 990px) {
 
-#menu {
+.menu {
 	margin-bottom: 10%;
-	margin-top: 5%;
+}
+
+#hamburgerHome {
+/*	top: 4%;*/
+/*	right: 5%;*/
 }
 
 #info {
@@ -2118,8 +2003,8 @@ a svg:hover .contact-icon {
 }
 
 .project-writeup {
-	padding: 0% 15% 0% 15%;
-	width: 70%;
+	padding: 0% 10% 0% 10%;
+	width: 80%;
 
 }
 
@@ -2128,27 +2013,27 @@ a svg:hover .contact-icon {
 
 }
 
-.sidebar-r {
+/*.sidebar-r {
 	right: 5%;
-}
+}*/
 
 
 
 
-/*About Page*/
+/*About Page - Responsive*/
 
 
 
 
 .about-right {
-	width: 55%;
-	margin-left: 20%;
+	width: 70%;
+	margin-left: 15%;
 	clear: left;
 
 }
 
 .about-left {
-	margin: 5% 0% 5% 20%;
+	margin: 5% 0% 5% 15%;
 
 }
 

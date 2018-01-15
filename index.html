@@ -18,16 +18,16 @@
 </head>
 <body>
 <!-- Hey there! This is the second website I've ever coded, so let me know how I can do better at ngkchloe@gmail.com :) Thanks and enjoy a clementine! -->
+	<div id="img-overlay">
+		<img id="img-overlaid">
+		<span class="close">&times;</span>		
+	</div>
+	<div id="hamburgerMenu"></div>
 <!-- Header -->
 	<nav class="h3 menu">
-		<img id="navhome" src="assets/img/homecutie.svg">
-		<a class="navitem" href="about.html">
-			<span class="navitem-name">About</span></a>
-		<a class="navitem" href="fun.html">
-			<span class="navitem-name">Fun</span></a>
-		<a class="navitem" id="navitem-active" href="index.html">
-			<span class="navitem-name">Work</span></a>
+		<a class="navhome" href="index.html"><img id="navhome" src="assets/img/homecutie.svg"></a>
 	</nav>
+<!-- 	<div class="sidebar-r" id="homeSidebar"></div> -->
 	<div class="clearfix" id="header">
 		<div id="animation">
 			<img class="item" id="isolaptop" src="assets/img/isolaptop.svg">
@@ -57,16 +57,19 @@
 		</div>
 	</div>
 <!-- Projects -->
-	<div id="projects" class="clearfix">						
+	<div id="projects" class="clearfix">
+
 			<div class="column-left" id="fulldivemobile">
 				<a class="proj-home" href="fulldivemobile.html">
 					<div class="home-img" id="fulldivemobile-home-img">
+						<div id="fulldivemobile-overlaybg">
 							<div class="home-project-desc" id="fulldivemobile-text">Mobile UI/UX, Product Vision, User Research, Usability Testing</div>
-							<div id="fulldivemobile-overlaybg"></div>
+						</div>
 					</div>
 					<div class="h2" id="fulldivemobile-title">Fulldive Mobile - defining our app beyond mobile VR</div>
 				</a>
 			</div>
+
 			<div class="column-right" id="fulldivesaves">
 				<a class="proj-home" href="fulldivesaves.html">
 					<div class="home-img" id="fulldivesaves-home-img">
@@ -81,8 +84,9 @@
 			<div class="column-left" id="wingit">
 				<a class="proj-home" href="wingit-writeup.html">
 					<div class="home-img" id="wingit-home-img">
-							<div class="home-project-desc" id="wingit-text">Mobile UI/UX, User Research, Usability Testing, Interaction</div>
-							<div id="wingit-overlaybg"></div>
+							<div id="wingit-overlaybg">
+								<div class="home-project-desc" id="wingit-text">Mobile UI/UX, User Research, Usability Testing, Interaction</div>		
+							</div>
 					</div>
 					<div class="h2" id="wingit-title">Wing It - gamifying and streamlining airport navigation</div>
 				</a>
@@ -90,8 +94,10 @@
 			<div class="column-right" id="fulldive">
 				<a class="proj-home" href="fulldive.html">
 					<div class="home-img" id="fulldive-home-img">
-							<div class="home-project-desc" id="fulldive-text">Mobile VR UI/UX, User Research, Usability Testing, Interaction</div>
-							<div id="fulldive-overlaybg"></div>
+							<div id="fulldive-overlaybg">
+								<div class="home-project-desc" id="fulldive-text">Mobile VR UI/UX, User Research, Usability Testing, Interaction</div>
+
+							</div>
 					</div>
 					<div class="h2" id="fulldive-title">Fulldive VR - accessible mobile VR content launcher </div>
 				</a>

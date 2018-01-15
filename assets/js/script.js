@@ -35,11 +35,284 @@ $(document).ready(function(){
 	});
 	});
 
+//MENU SHIT//
+
+// makes a hamburger 
+
+var makeHamburger = function(navBar) {
+
+	if (!$('#hamburgerHome').length) {
+		var hamburgerDiv = document.createElement("div");
+		hamburgerDiv.id = "hamburgerHome";
+		// hamburgerDiv.className = "navitem";
+
+		//creates svg of hamburger
+		var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		svg.setAttribute("viewBox", "1 0 24 24");
+		svg.setAttribute("x", "0");
+		svg.setAttribute("y", "0");
+		svg.id = "hamburger";
+		svg.setAttribute("style", "enable-background:new 0 0 24 24;");
+		svg.setAttribute("xml:space", "preserve");
+
+		//draws each of the lines of a hamburger
+		let posArray = [5, 11, 17];
+
+
+		for (let i = 0; i < 3; i++) {
+			var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+			rect.setAttribute("x", "6");
+			rect.setAttribute("y", posArray[i]);
+
+			rect.setAttribute("width", "14");
+			rect.setAttribute("height", "2");
+
+			svg.append(rect);
+
+		}
+
+		//adds break to end of hamburger
+		// let newBreak = document.createElement('br');
+		// svg.append(newBreak);
+
+		hamburgerDiv.append(svg);
+		console.log(hamburgerDiv);
+
+		//appends hamburger 
+		navBar.append(hamburgerDiv);
+
+	}
+}
+
+
+//makes a menu item
+
+var makeMenuItem = function(menuLink, navBar, menuItem) {
+
+
+	let navLink = document.createElement('a');
+	navLink.className = 'navitem';
+	navLink.href = menuLink + '.html';
+
+	let navSpan = document.createElement('span');
+	navSpan.className = 'navitemName';
+	navSpan.innerHTML = menuItem;
+
+	navLink.append(navSpan);
+
+	navBar.append(navLink);
+
+
+}
+
+//puts the menu items into navbar 
+
+var makeMenuItems = function(navBar) {
+	let menuLinkArray = ['about', 'fun', 'index'];
+	let menuItemArray = ['About', 'Fun', 'Work'];
+
+	for (let i = 0; i < (menuLinkArray.length); i++) {
+		makeMenuItem(menuLinkArray[i], navBar, menuItemArray[i])
+	}
+
+}
+
+//makes list version of menu items
+
+var hamburgerMenuList = function(menuLink, menuItem) {
+
+	for (let i = 0; i < 3; i++) {
+		let burgerLink = document.createElement('a');
+		burgerLink.href = menuLink + '.html';
+		burgerLink.className = 'navitem h3';
+
+		let burgerSpan = document.createElement('span');
+
+
+		let burgerText = document.createTextNode(menuItem)
+		burgerSpan.append(burgerText);
+		burgerLink.append(burgerSpan);
+
+		return burgerLink;
+
+	}
+
+
+}
+
+
+//creates a navbar
+
+var navBar = document.querySelector('.menu');
+
+
+//responsive menu
+ 
+if ($(window).width() <= 600) {
+
+	makeMenuItems(navBar);	
+	makeHamburger(navBar);
+
+	//hide menu items when screen is small
+	$('.menu .navitem').css('display', 'none');
+
+	//scroll behavior for when screen is small - hamburger should never disappear
+	$(window).on('scroll', function() {
+
+		if ($(window).scrollTop() === 0) {
+			$('#hamburgerHome').css('position', 'relative');
+			$('#hamburgerHome').css('top', '0%');
+			$('#hamburgerHome').css('right', '0%');
+
+		} else {
+			$('#hamburgerHome').css('position', 'fixed');
+			$('#hamburgerHome').css('top', '4%');
+			$('#hamburgerHome').css('right', '10%');
+		}
+
+	});
+
+
+//when screen is large
+} else {
+
+	makeMenuItems(navBar);	
+	makeHamburger(navBar);
+
+	$('#hamburgerHome').css('display', 'none');
+
+
+	//scroll behavior for when screen is large - hamburger appears & disappears when scrolled up
+	$(window).on('scroll', function() {
+
+		if ($(window).scrollTop() <= 40) {
+
+			//hide hamburger when screen is large
+			$('#hamburgerHome').css('display', 'none');
+
+			$('#hamburgerHome').css('position', 'relative');
+			$('#hamburgerHome').css('top', '0%');
+			$('#hamburgerHome').css('right', '0%');
+
+		} else {
+			$('#hamburgerHome').css('display', 'block');
+			$('#hamburgerHome').css('position', 'fixed');
+			$('#hamburgerHome').css('top', '4%');
+			$('#hamburgerHome').css('right', '10%');
+		}
+
+
+	});
+
+
+
+}
+
+
+//sidebar-l behavior
+$(window).on('scroll', function() {
+	console.log("hey scroll");
+
+	//getting side nav to appear
+	if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
+		$('.sidebar-l').css('display', 'none');
+
+	} else if (window.pageYOffset >= window.innerHeight) {
+
+		$('.sidebar-l').css('display', 'block');
+
+		
+	} else if (window.pageYOffset < window.innerHeight) {
+		$('.sidebar-l').css('display', 'none');
+	}
+
+
+	var position = $(this).scrollTop();
+
+    $('.project-writeup .h3').each(function() {
+        var thisSection = $(this).attr('id');
+        var sectionTop = $(this).offset().top;
+        // var headingToChange = projHeadingPos[thisSection];
+
+
+        if (position >= sectionTop) {
+        	$('#' + thisSection).css('background-position', 'left');
+        } else {
+        	$('#' + thisSection).css('background-position', 'right');
+
+        }
+    });
+});
+
+
+//hamburger menu behavior
+var hamburgerMenu = false; 
+var menuOpen = false;
+
+$('#hamburger').on('click', function(event) {
+
+	//if the hamburger menu isn't open
+	if (hamburgerMenu === false && menuOpen === false)  {
+
+
+		$('#hamburger').css('fill', 'var(--color)');
+		$('#hamburger').css('animation', 'burgerrotate .3s ease-in');
+
+		var menuLinkArray = ['index', 'fun', 'about'];
+		var menuItemArray = ['Work', 'Fun', 'About'];
+
+
+
+		//making hamburger list
+		for (let i = 0; i < menuLinkArray.length; i++) {
+			let newBreak = document.createElement('br');
+			$('#hamburgerMenu').append(newBreak, hamburgerMenuList(menuLinkArray[i], menuItemArray[i]));
+		}
+
+		// $('#hamburgerHome').css('background-color', 'rgba(255,255,255,.8)');
+		// $('#hamburgerHome').css('height', '100%');
+		// $('#hamburgerHome').css('width', '100%');
+		// $('').css('margin-right', '-10%');
+
+		$('#hamburgerMenu').css('display', 'block');
+		$('body').addClass('noscroll');
+
+		hamburgerMenu = true;
+		menuOpen = true;
+
+
+
+	//if hamburger menu is open and clicked on 
+	} else if (hamburgerMenu === true && menuOpen === true) {
+		// $('.sidebar-r a').remove();
+		// $('.sidebar-r br:not(:first)').remove();
+
+		$('#hamburgerMenu a').remove();
+		$('#hamburgerMenu br').remove();
+
+
+		hamburgerMenu = false;
+		menuOpen = false;
+
+		$('#hamburger').css('animation', 'burgerrotateleave .3s ease-in');
+		$('#hamburger').css('fill', 'black');
+		$('body').removeClass('noscroll');
+		$('#hamburgerMenu').css('display', 'none');
+		// $('#hamburgerM').css('height', '1.875em');
+
+	}
+
+
+})
+
+
+
+//TODO: make hamburger menu functional
+//TODO: integrate hamburger menu with sidebar menu
 
 // Project Image
 
 	let modalImg = document.getElementById('img-overlaid');
-
 
 
 	$('.writeup-img').click(function() {
@@ -62,25 +335,16 @@ $(document).ready(function(){
 
 
 
-// Project Scroll
 
 
+// // Project Scroll
 
-	$('#project-nav-top').click(function(){
- 		$('html, body').animate({scrollTop : 0},800);
-	});
-
-
-// window.scrollTo(x, y)
 
 	var projHeading = document.querySelectorAll('.project-writeup .h3');
 	var projSide = [];
 	var headingPos = [];
 	var projHeadingPos = {};
-		
-	// projHeading.each(function() {
- //    	projHeadingPos[ $(this).attr('id') ] = $('#navigation > ul > li > a[href=#' + $(this).attr('id') + ']');
-	// });
+	
 
 
 	//making sidebar-l
@@ -113,115 +377,6 @@ $(document).ready(function(){
 
 
 
-
-	$(window).on('scroll', function() {
-		console.log("hey scroll");
-
-		//getting side nav to appear
-  		if ((window.pageYOffset + 300) > (document.body.offsetHeight - window.innerHeight)) {
-			$('.sidebar-l').css('display', 'none');
-		} else if (window.pageYOffset >= window.innerHeight) {
-			$('.sidebar-l').css('display', 'block');
-			$('.sidebar-r').css('display', 'block');			
-		} else if (window.pageYOffset < window.innerHeight) {
-			$('.sidebar-l').css('display', 'none');
-			$('.sidebar-r').css('display', 'none');			
-		}
-
-
-
-		var position = $(this).scrollTop();
-
-	    $('.project-writeup .h3').each(function() {
-	        var thisSection = $(this).attr('id');
-	        var sectionTop = $(this).offset().top;
-	        // var headingToChange = projHeadingPos[thisSection];
-
-
-	        if (position >= sectionTop) {
-	        	$('#' + thisSection).css('background-position', 'left');
-	        } else {
-	        	$('#' + thisSection).css('background-position', 'right');
-
-	        }
-	    });
-
-
-		// for (let i = 0; i < (projSide.length); i++) {
-		// //set i based on position in page? 
-		// //make zones based on i positions??
-		// 	if (window.pageYOffset > headingPos[i]) {
-		// 	 		$(projSide[i]).css('background-position', 'left');
-		// 			console.log(i)
-		// 	 	} else if (window.pageYOffset < headingPos[i]) {
-		// 	 		$(projSide[i]).css('background-position', 'right');
-		// 	 		console.log(i);
-		// 	 	} 
-		// 	 }
-
-
-
-  		
-   	});
-
-//sidebar-r
-
-var hamburgerMenuMake = function(menuLink, menuItem) {
-
-	let burgerLink = document.createElement('a');
-	burgerLink.href = menuLink;
-	burgerLink.className = 'navitem h3';
-
-	let burgerSpan = document.createElement('span');
-	burgerSpan.className = 'navitem-name';
-
-
-	let burgerText = document.createTextNode(menuItem)
-	burgerSpan.append(burgerText);
-	burgerLink.append(burgerSpan);
-	console.log(burgerLink);
-
-	return burgerLink;
-
-}
-
-
-var hamburgerMenu = false; 
-var menuOpen = false;
-
-$('#hamburger').on('click', function(event) {
-	//if no hamburgermenu yet, make hamburger menu
-	//if there is a hamburger menu & menu is open
-
-	if (hamburgerMenu === false && menuOpen === false)  {
-		let menuLinkArray = ['index.html', 'fun.html', 'about.html'];
-		let menuItemArray = ['Work', 'Fun', 'About'];
-
-		$('#hamburger').css('fill', 'var(--color)');
-		$('#hamburger').css('animation', 'burgerrotate .3s ease-in');
-
-		for (let i = 0; i < menuLinkArray.length; i++) {
-			let newBreak = document.createElement('br');
-			$('.sidebar-r').append(newBreak, hamburgerMenuMake(menuLinkArray[i], menuItemArray[i]));
-		}
-
-		hamburgerMenu = true;
-		menuOpen = true;
-
-	} else if (hamburgerMenu === true && menuOpen === true) {
-		$('.sidebar-r a').remove();
-		$('.sidebar-r br:not(:first)').remove();
-
-		hamburgerMenu = false;
-		menuOpen = false;
-
-		$('#hamburger').css('animation', 'burgerrotateleave .3s ease-in');
-		$('#hamburger').css('fill', 'black');
-
-	}
-
-
-})
 
 
 
