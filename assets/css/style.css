@@ -708,6 +708,7 @@ a svg:hover .contact-icon {
 }
 
 
+
 .proj-home:hover .home-img {
 	filter: drop-shadow(4px 4px 10px #e6e6e6);
 	transition: .5s;
@@ -719,7 +720,11 @@ a svg:hover .contact-icon {
 	display: none;
 }
 
-
+.overlaybg {
+	opacity: 0;
+	z-index: 1000;
+	height: 100%;
+}
 
 
 
@@ -736,29 +741,26 @@ a svg:hover .contact-icon {
 
 
 
-#fulldive-overlaybg {
+#fulldive .overlaybg {
 	background: #00173D; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #83DBBD , #58A288); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #83DBBD, #58A288); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	opacity: 0;
-	z-index: 1000;
-	height: 100%;
 
 }
 
-#fulldive-home-img {
+#fulldive .home-img {
 	background-image: url(../img/fulldive_home.svg);
 	position: relative;
 	height: 31.250em;
 }
 
-#fulldive:hover #fulldive-text {
+/*#fulldive:hover #fulldive-text {
 	transition: .5s;
 	opacity: 1;
 
-}
+}*/
 
-#fulldive-title {
+#fulldive .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%,#000000 50%, #83DBBD 50%, #58A288 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -769,13 +771,13 @@ a svg:hover .contact-icon {
 }
 
 
-#fulldive:hover #fulldive-title {
+#fulldive:hover .h2 {
     background-position: left;
 
 }
 
 
-#fulldive:hover #fulldive-overlaybg {
+#fulldive:hover .overlaybg {
 	opacity: .4;
 	transition: opacity .2s;
 }
@@ -788,17 +790,15 @@ a svg:hover .contact-icon {
 
 
 
-#fulldivemobile-overlaybg {
+#fulldivemobile .overlaybg {
 	background: #00173D; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #80D6E3 , #5CA2C7); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #80D6E3, #5CA2C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	opacity: 0;
-	z-index: 1000;
-	height: 100%;
 
 }
 
-#fulldivemobile-home-img {
+
+#fulldivemobile .home-img {
 	background-image: url(../img/fulldivemobile_home.svg);
 	position: relative;
 	height: 500px;
@@ -808,10 +808,13 @@ a svg:hover .contact-icon {
 #fulldivemobile:hover #fulldivemobile-text {
 	transition: .5s;
 	opacity: 1;
+	border: 1px solid tomato;
+	position: relative;
+	top: 50%;
 
 }
 
-#fulldivemobile-title {
+#fulldivemobile .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #5CA2C7 50%, #80D6E3 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -821,14 +824,20 @@ a svg:hover .contact-icon {
     transition: .5s;
 }
 
+/*#fulldivemobile-title:after {
+	content: 'Mobile UI/UX';
+	font-size: .6em;
+	margin-left: 2.5%;
+}*/
 
-#fulldivemobile:hover #fulldivemobile-title {
+
+#fulldivemobile:hover .h2 {
     background-position: left;
 
 }
 
 
-#fulldivemobile:hover #fulldivemobile-overlaybg {
+#fulldivemobile:hover .overlaybg {
 	opacity: .4;
 	transition: opacity .2s;
 }
@@ -846,17 +855,14 @@ a svg:hover .contact-icon {
 }
 
 
-#fulldivesaves-overlaybg {
+#fulldivesaves .overlaybg {
 	background: #00173D; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #FAD961 , #F76B1C); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #FAD961, #F76B1C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	opacity: 0;
-	z-index: 1000;
-	height: 100%;
 
 }
 
-#fulldivesaves-home-img {
+#fulldivesaves .home-img {
 	background-image: url(../img/fdsaves-hero.png);
 	position: relative;
 	height: 31.250em;
@@ -868,7 +874,7 @@ a svg:hover .contact-icon {
 
 }
 
-#fulldivesaves-title {
+#fulldivesaves .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #FAD961 50%, #F76B1C 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -879,14 +885,14 @@ a svg:hover .contact-icon {
 }
 
 
-#fulldivesaves:hover #fulldivesaves-title {
+#fulldivesaves:hover .h2 {
     background-position: left;
 
 }
 
 
 
-#fulldivesaves:hover #fulldivesaves-overlaybg {
+#fulldivesaves:hover .overlaybg {
 	opacity: .4;
 	transition: opacity .2s;
 }
@@ -902,18 +908,15 @@ a svg:hover .contact-icon {
 	margin-top: 8%;
 }
 
-#wingit-overlaybg {
-	height: 100%;
-	opacity: 0;
+#wingit .overlaybg {
+
 	background: #E8CBC0; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #E8CBC0 , #636FA4); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #E8CBC0 , #636FA4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	z-index: 1000;
-
 }
 
 
-#wingit-home-img {
+#wingit .home-img {
 	background-image: url(../img/wingit_mockup.svg);
 	position: relative;
 	height: 31.250em;
@@ -926,7 +929,7 @@ a svg:hover .contact-icon {
 
 }
 
-#wingit-title {
+#wingit .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #E8CBC0 50%, #636FA4 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -936,12 +939,12 @@ a svg:hover .contact-icon {
     transition: .2s;
 }
 
-#wingit:hover #wingit-title {
+#wingit:hover .h2 {
     background-position: left;
 
 }
 
-#wingit:hover #wingit-overlaybg {
+#wingit:hover .overlaybg {
 	opacity: .3;
 	transition: opacity .2s;
 }
@@ -956,18 +959,15 @@ a svg:hover .contact-icon {
 }
 
 
-#hkcafe-overlaybg {
-	height: 100%;
-	opacity: 0;
+#hkcafe .overlaybg {
 	background: #1e3c72; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #1e3c72 , #2a5298); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #1e3c72 , #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	z-index: 1000;       
+	background: linear-gradient(to left, #1e3c72 , #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
         
 }
 
 
-#hkcafe-home-img {
+#hkcafe .home-img {
 	background-image: url(../img/hkcafe_home.jpg);
 	position: relative;
 	height: 31.250em;
@@ -975,13 +975,13 @@ a svg:hover .contact-icon {
 
 
 
-#hkcafe:hover #hkcafe-text {
+/*#hkcafe:hover #hkcafe-text {
 	transition: .5s;
 	opacity: 1;
 
 }
-
-#hkcafe-title {
+*/
+#hkcafe .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #1e3c72 50%, #2a5298 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -992,24 +992,24 @@ a svg:hover .contact-icon {
 }
 
 
-#hkcafe:hover #hkcafe-title {
+#hkcafe:hover .h2 {
     background-position: left;
 
 }
 
 
 
-#hkcafe:hover #hkcafe-overlaybg {
+#hkcafe:hover .overlaybg {
 	opacity: .4;
 	transition: opacity .2s;
 }
 
 
 
-#hkcafe-overlay {
+/*#hkcafe-overlay {
 	height: 100%;
 	position: relative;
-}
+}*/
 
 
 
@@ -1025,12 +1025,12 @@ a svg:hover .contact-icon {
 	margin-top: 8%;
 }
 
-#taug-overlay {
+/*#taug-overlay {
 	height: 100%;
 	position: relative;
 }
-
-#taug-overlaybg {
+*/
+#taug .overlaybg {
 	height: 100%;
 	opacity: 0;
 	background: #4CA1AF; /* fallback for old browsers */
@@ -1039,7 +1039,7 @@ a svg:hover .contact-icon {
            
 }
 
-#taug-home-img {
+#taug .home-img {
 	background-image: url(../img/taug_home.jpg);
 	position: relative;
 	height: 31.250em;
@@ -1048,13 +1048,13 @@ a svg:hover .contact-icon {
 
 
 
-#taug:hover #taug-text {
+/*#taug:hover #taug-text {
 	transition: .5s;
 	opacity: 1;
 
-}
+}*/
 
-#taug-title {
+#taug .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #4CA1AF 50%, #C4E0E5 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -1065,14 +1065,14 @@ a svg:hover .contact-icon {
 }
 
 
-#taug:hover #taug-title {
+#taug:hover .h2 {
     background-position: left;
 
 }
 
 
 
-#taug:hover #taug-overlaybg {
+#taug:hover .overlaybg {
 	opacity: .4;
 	transition: opacity .2s;
 }
@@ -1092,14 +1092,12 @@ a svg:hover .contact-icon {
 	margin-top: 25%;
 }
 
-#lasercut-overlay {
+/*#lasercut-overlay {
 	height: 100%;
 	position: relative;
-}
+}*/
 
-#lasercut-overlaybg {
-	height: 100%;
-	opacity: 0;
+#lasercut .overlaybg {
 	background: #f85032; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #f85032 , #e73827); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #f85032 , #e73827); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1107,7 +1105,7 @@ a svg:hover .contact-icon {
 
 }
 
-#lasercut-home-img {
+#lasercut .home-img {
 	background-image: url(../img/lasercut-home.jpg);
 	position: relative;
 	height: 31.250em;
@@ -1115,14 +1113,14 @@ a svg:hover .contact-icon {
 }
 
 
-
+/*
 #lasercut:hover #lasercut-text {
 	transition: .5s;
 	opacity: 1;
 
-}
+}*/
 
-#lasercut-title {
+#lasercut .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #f85032 50%,  #e73827 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -1133,14 +1131,14 @@ a svg:hover .contact-icon {
 }
 
 
-#lasercut:hover #lasercut-title {
+#lasercut:hover .h2 {
     background-position: left;
 
 }
 
 
 
-#lasercut:hover #lasercut-overlaybg {
+#lasercut:hover .overlaybg {
 	opacity: .4;
 	transition: opacity .2s;
 }
@@ -1164,12 +1162,12 @@ a svg:hover .contact-icon {
 	margin-top: 8%;
 }
 
-#artincolor-overlay {
+/*#artincolor-overlay {
 	height: 100%;
 	position: relative;
-}
+}*/
 
-#artincolor-overlaybg {
+#artincolor .overlaybg {
 	height: 100%;
 	opacity: 0;
 	background: #000000;  /* fallback for old browsers */
@@ -1179,7 +1177,7 @@ a svg:hover .contact-icon {
            
 }
 
-#artincolor-home-img {
+#artincolor .home-img {
 	background-image: url(../img/artincolor-hero.png);
 	position: relative;
 	height: 31.250em;
@@ -1188,13 +1186,13 @@ a svg:hover .contact-icon {
 
 
 
-#artincolor:hover #artincolor-text {
+/*#artincolor:hover #artincolor-text {
 	transition: .5s;
 	opacity: 1;
 
-}
+}*/
 
-#artincolor-title {
+#artincolor .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #D9B73E 50%, #E5BF3D 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -1205,14 +1203,14 @@ a svg:hover .contact-icon {
 }
 
 
-#artincolor:hover #artincolor-title {
+#artincolor:hover .h2 {
     background-position: left;
 
 }
 
 
 
-#artincolor:hover #artincolor-overlaybg {
+#artincolor:hover .overlaybg {
 	opacity: .4;
 	transition: opacity .2s;
 }
@@ -1229,12 +1227,12 @@ a svg:hover .contact-icon {
 	margin-top: 8%;
 }
 
-#trackslash-overlay {
+/*#trackslash-overlay {
 	height: 100%;
 	position: relative;
-}
+}*/
 
-#trackslash-overlaybg {
+#trackslash .overlaybg {
 	height: 100%;
 	opacity: 0;
 	background: #000000;  /* fallback for old browsers */
@@ -1244,7 +1242,7 @@ a svg:hover .contact-icon {
            
 }
 
-#trackslash-home-img {
+#trackslash .home-img {
 	background-image: url(../img/trackslash_home.svg);
 	position: relative;
 	height: 31.250em;
@@ -1253,13 +1251,13 @@ a svg:hover .contact-icon {
 
 
 
-#trackslash:hover #trackslash-text {
+/*#trackslash:hover #trackslash-text {
 	transition: .5s;
 	opacity: 1;
 
-}
+}*/
 
-#trackslash-title {
+#trackslash .h2 {
 	background-size: auto 200%;
 	background-position: right;
 	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #0077A3 50%, #A04655 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -1270,14 +1268,14 @@ a svg:hover .contact-icon {
 }
 
 
-#trackslash:hover #trackslash-title {
+#trackslash:hover .h2 {
     background-position: left;
 
 }
 
 
 
-#trackslash:hover #trackslash-overlaybg {
+#trackslash:hover .overlaybg {
 	opacity: .4;
 	transition: opacity .2s;
 }
@@ -1320,7 +1318,7 @@ a svg:hover .contact-icon {
 
 }
 
-.sidebar-r {
+/*.sidebar-r {
 	position: fixed;
 	width: 5%;
 	top: 10%;
@@ -1329,7 +1327,7 @@ a svg:hover .contact-icon {
 	z-index: 500000;
 	text-align: right;
 	display: none;
-}
+}*/
 
 
 
