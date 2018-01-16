@@ -312,6 +312,7 @@ $('#hamburger').on('click', function(event) {
 			$('#img-overlay').show();
 			modalImg.src = this.src;
 			$('body').addClass('noscroll');
+			$('#hamburgerHome').css('display','none');
 
 		}
 
@@ -323,6 +324,7 @@ $('#hamburger').on('click', function(event) {
 	imgOverlay.onclick = function() { 
   		$('#img-overlay').hide();
   		$('body').removeClass('noscroll');
+  		$('#hamburgerHome').css('display','block');
 	}
 
 
