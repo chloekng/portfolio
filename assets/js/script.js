@@ -262,17 +262,13 @@ $('#hamburger').on('click', function(event) {
 		var menuItemArray = ['Work', 'Fun', 'About'];
 
 
-
 		//making hamburger list
 		for (let i = 0; i < menuLinkArray.length; i++) {
 			let newBreak = document.createElement('br');
-			$('#hamburgerMenu').append(newBreak, hamburgerMenuList(menuLinkArray[i], menuItemArray[i]));
+			$('#hamburgerMenuList').append(newBreak, hamburgerMenuList(menuLinkArray[i], menuItemArray[i]));
 		}
 
-		// $('#hamburgerHome').css('background-color', 'rgba(255,255,255,.8)');
-		// $('#hamburgerHome').css('height', '100%');
-		// $('#hamburgerHome').css('width', '100%');
-		// $('').css('margin-right', '-10%');
+		$('#hamburgerMenu').append($('#hamburgerMenuList'));
 
 		$('#hamburgerMenu').css('display', 'block');
 		$('body').addClass('noscroll');
@@ -284,8 +280,6 @@ $('#hamburger').on('click', function(event) {
 
 	//if hamburger menu is open and clicked on 
 	} else if (hamburgerMenu === true && menuOpen === true) {
-		// $('.sidebar-r a').remove();
-		// $('.sidebar-r br:not(:first)').remove();
 
 		$('#hamburgerMenu a').remove();
 		$('#hamburgerMenu br').remove();
@@ -298,17 +292,12 @@ $('#hamburger').on('click', function(event) {
 		$('#hamburger').css('fill', 'black');
 		$('body').removeClass('noscroll');
 		$('#hamburgerMenu').css('display', 'none');
-		// $('#hamburgerM').css('height', '1.875em');
 
 	}
 
 
 })
 
-
-
-//TODO: make hamburger menu functional
-//TODO: integrate hamburger menu with sidebar menu
 
 // Project Image
 

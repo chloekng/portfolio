@@ -388,6 +388,11 @@ a:hover {
 
 }
 
+#hamburgerMenuList {
+	position: relative;
+	top: 25%;
+}
+
 
 
 /*Footer*/
