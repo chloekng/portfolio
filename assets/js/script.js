@@ -256,7 +256,9 @@ $('#hamburger').on('click', function(event) {
 
 
 		$('#hamburger').css('fill', 'var(--color)');
-		$('#hamburger').css('animation', 'burgerrotate .3s ease-in');
+		$('#hamburger').css('transform', 'rotate(90deg)');
+		$('#hamburger').css('transition', '.3s');
+
 
 		var menuLinkArray = ['index', 'fun', 'about'];
 		var menuItemArray = ['Work', 'Fun', 'About'];
@@ -288,7 +290,8 @@ $('#hamburger').on('click', function(event) {
 		hamburgerMenu = false;
 		menuOpen = false;
 
-		$('#hamburger').css('animation', 'burgerrotateleave .3s ease-in');
+		$('#hamburger').css('transform', 'rotate(0deg)');
+		$('#hamburger').css('transition', '.3s');
 		$('#hamburger').css('fill', 'black');
 		$('body').removeClass('noscroll');
 		$('#hamburgerMenu').css('display', 'none');
