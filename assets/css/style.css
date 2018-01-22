@@ -407,10 +407,12 @@ a:hover {
 	position: relative;
 	display: block;
 
+
 }
 
 #contact {
 	float: left;
+
 }
 
 
@@ -448,6 +450,11 @@ a svg:hover .contact-icon {
 .contact-icon:hover::after {
 	transition: .3s;
 	transform: scale3d(1,1,1);
+
+}
+
+.contact-icon:first-child {
+	margin-left: -2px;
 
 }
 

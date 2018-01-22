@@ -414,6 +414,7 @@ for (let i = 0; i < (footerLinkArray.length); i++) {
 
 
 	let svgContact = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+
 	svgContact.setAttribute('viewBox', '0 0 24 24');
 	svgContact.setAttribute('width', '28px');
 	svgContact.setAttribute('height', '24px');
