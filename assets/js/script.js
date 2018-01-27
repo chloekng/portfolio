@@ -92,7 +92,7 @@ var makeMenuItem = function(menuLink, navBar, menuItem) {
 
 	let navLink = document.createElement('a');
 	navLink.className = 'navitem';
-	navLink.href = menuLink + '.html';
+	navLink.href = menuLink;
 
 	let navSpan = document.createElement('span');
 	navSpan.className = 'navitemName';
