@@ -123,7 +123,7 @@ var hamburgerMenuList = function(menuLink, menuItem) {
 
 	for (let i = 0; i < 3; i++) {
 		let burgerLink = document.createElement('a');
-		burgerLink.href = menuLink + '.html';
+		burgerLink.href = menuLink;
 		burgerLink.className = 'navitem h3';
 
 		let burgerSpan = document.createElement('span');
