@@ -56,7 +56,7 @@
 			<div class="bodytext">
 				<p class="h3" id="beyondsmartphonesResearch">User Research</p>
 					<p class="h2">Designing for Pregnancy</p>
-					<p>Through ethnographic research and observational studies, we found that pregnancy was a time of anxiety for many parents. We quickly realized that we weren't just designing for parents, but also doctors. It was a challenge juggling different stakeholders in a specialized and high stakes context that we didn't have much prior knowledge in. However, we saw the potential to solve many pain points in this area. <span class="highlight">We read up on FDA regulations, talked to labor & delivery nurses, interviewed doctors at UCSF, and asked mothers what their needs were.</span></p>
+					<p>Through ethnographic research and observational studies, we found that pregnancy was a time of anxiety for many parents. It was a challenge juggling different stakeholders in a specialized and high stakes context that we didn't have much prior knowledge in. However, we saw the potential to solve many pain points in this area. <span class="highlight">We read up on FDA regulations, talked to labor & delivery nurses, interviewed doctors at UCSF, and asked mothers what their needs were.</span></p>
 					<Br>
 					<ul>
 						<div class="writeup-subsection">
@@ -64,19 +64,21 @@
 							<p class="minitext">Mother</p>
 						</div>
 						<Br>
-						<li><span class="bodytext-b">For mothers -</span> first time parents face many anxieties regarding their baby's well-being</li>
+						<li><span class="bodytext-b">For parents -</span> first time parents face many anxieties regarding their baby's well-being</li>
 						<br>
-						<li><span class="bodytext-b">For mothers -</span> parents want to make sure they're taking the right steps to care for their baby during pregnancy (via counting kicks, staying hydrated, etc)</li>
+						<li><span class="bodytext-b">For parents -</span> parents want to make sure they're taking the right steps to care for their baby during pregnancy (via counting kicks, staying hydrated, etc)</li>
 						<br>
 						<div class="writeup-subsection">
 							<p class="h3-2">The worry that my fetus/baby is okay can be a bit of a struggle between doctor appointments sometimes, and having some way to monitor things would be great!</p>
 							<p class="minitext">Mother</p>
 						</div>
 						<br>
-						<li><span class="bodytext-b">For mothers -</span> doctors and nurses aren't always available to answer their questions, especially between appointments</li>
+						<li><span class="bodytext-b">For parents -</span> doctors and nurses aren't always available to answer their questions, especially between appointments</li>
 						<br>
-						<li><span class="bodytext-b">For mothers -</span> high-risk cases require constant monitoring and frequent hospital visits that are costly and time consuming (up to 1-2 times a week)</li>
-						<Br>
+						<li><span class="bodytext-b">For parents -</span> high-risk cases require constant monitoring and frequent hospital visits that are costly and time consuming (up to 1-2 times a week)</li>
+<!-- 						<Br>
+						<li><span class="bodytext-b">For mothers -</span> seeing detailed information on their babies at all times could also be a cause of stress</li> -->
+						<br>
 						<div class="writeup-subsection">
 							<p class="h3-2">Doctors are human too, they can't always be on-call.</p>
 							<p class="minitext">Labor & Delivery Nurse</p>
@@ -93,10 +95,69 @@
 	<br>
 	<div class="project-writeup" clearfix>
 		<div class="bodytext">
-			<br>
-			<p class="h3" id="beyondsmartphoneDefine">Framing the Problem</p>
-			<p>asdfasdf</p>
-			<br>
+<!-- 			<br> -->
+			<p class="h3" id="beyondsmartphoneProblem">Problem</p>
+				<p>We approached solving these pain points in three main ways:</p>
+				<ol>
+					<br>
+					<li>How might we provide parents peace of mind during pregnancy?</li>
+					<br>
+					<li>How might we help doctors collect relevant and accurate fetal heart rate data?</li>
+					<br>
+					<li>How might we facilitate better remote communication between parents and experts?</li>
+				</ol>
+				<br>
+			<p class="h3" id="beyondsmartphoneIdeation">Ideation</p>
+				<p>To find a solution to these three main questions, we generated 450 concepts. Through needs analysis and concept clustering, we settled on the concept of <span class="highlight">Fitbit for Embryos</span>. The fitbit for embryos would involve a stretchable, wearable belt for pregnant mothers to wear. Electrodes in the belt provides detailed data on the baby to parents and doctors via a companion software app. Our team split in two to tackle both the hardware and software aspects.</p>
+				<Br>
+		</div>
+	</div>
+	<img class="writeup-img" src="assets/img/beyondsmartphones-fitbit.png">
+	<div class="project-writeup" clearfix>
+		<div class="bodytext">
+			<p class="minitext">The fetal heart rate monitoring belt tracks real-time data to provide parents peace of mind and doctors detailed information.</p>
+			<Br>
+			<p class="h3" id="beyondsmartphoneCompetitiveAnalysis">Competitive Analysis</p>
+				<Br>
+				<p>To get an idea of adjacent solutions, the software team first conducted an audit of 20 pregnancy apps. We found that many focused around helping parents keep track of kick counts, providing relevant pregnancy literature, and informing parents of their baby's development via fruit sizes. </p>
+				<Br>
+			<p class="h3" id="beyondsmartphoneWireframing">Wireframing</p>
+				<br><br>
+				<img class="writeup-img" src="assets/img/beyondsmartphones-whiteboard.jpg">
+				<p class="minitext">Whiteboarding</p>
+				<Br>
+				<img class="writeup-img" src="assets/img/beyondsmartphones-wireframes1.png">
+				<p class="minitext">We used Figma to build mid-fidelity wireframes.</p>
+				<br>
+				<img class="writeup-img" src="assets/img/beyondsmartphones-wireframes2.png">
+				<p class="minitext">By working in low and mid fidelity, we were able to quickly generate concepts for user feedback.</p>
+				<br>
+				<p class="h3" id="beyondsmartphoneSolution">Solution</p>
+					<p>Our app solution involved <span class="highlight">three main components: real-time fetal monitoring data, memory keeping, and doctor communication.</span></p>
+					<br>
+					<p class="h2">Real-time Fetal Monitoring Data</p>
+					<img class="writeup-img" src="assets/img/beyondsmartphones-data.png">
+					<p class="minitext">Different ways we considered displaying data, from extremely detailed to very limited.</p>
+					<Br>
+					<p>One key design decision we kept returning to was what data to show parents. Parents were divided on the issue, with some wanting more data while others expressed concern about having too much information.</p>
+					<div class="writeup-subsection">
+						<p class="h3-2">I actually don't want to know that much information regarding my baby because it would stress me out. I want to go about my job without having my baby's status constantly on my mind.</p>
+						<p class="minitext">Aileen, teacher and mother of 3</p>
+					</div>
+					<div class="writeup-subsection">
+						<p class="h3-2">I know some moms express concern about this but I would love if I could easily check my baby's heart rate. Not as a diagnostic if I think something is wrong, more just for the fun of it.</p>
+						<p class="minitext">Willa, mother of 2</p>
+					</div>
+					<div class="writeup-subsection">
+						<p class="h3-2">I would be concerned giving parents that sort of information. With ECG charts, data can be very complex and require professional interpretation. That sort of information would stress patients out unnecessarily.</p>
+						<p class="minitext">Doctor at UCSF</p>
+					</div>
+					<Br>
+<!-- 					<p>We felt that Willa tapped upon a good insight in her response. </p> -->
+					<br>
+					<p class="h2">Memory Keeping</p>
+
+
 		</div>
 	</div>
 
