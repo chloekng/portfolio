@@ -304,28 +304,28 @@ $('#hamburger').on('click', function(event) {
 
 // Project Image
 
-	let modalImg = document.getElementById('img-overlaid');
+let modalImg = document.getElementById('img-overlaid');
 
 
-	$('.writeup-img').click(function() {
-		if ($(window).width() > 800) {
-			$('#img-overlay').show();
-			modalImg.src = this.src;
-			$('body').addClass('noscroll');
-			$('#hamburgerHome').css('display','none');
+$('.writeup-img').click(function() {
+	if ($(window).width() > 800) {
+		$('#img-overlay').show();
+		modalImg.src = this.src;
+		$('body').addClass('noscroll');
+		$('#hamburgerHome').css('display','none');
 
-		}
-
-	});
-
-	let imgOverlay = document.getElementsByClassName("close")[0];
-
-
-	imgOverlay.onclick = function() { 
-  		$('#img-overlay').hide();
-  		$('body').removeClass('noscroll');
-  		$('#hamburgerHome').css('display','block');
 	}
+
+});
+
+let imgOverlay = document.getElementsByClassName("close")[0];
+
+
+imgOverlay.onclick = function() { 
+		$('#img-overlay').hide();
+		$('body').removeClass('noscroll');
+		$('#hamburgerHome').css('display','block');
+}
 
 
 
@@ -334,69 +334,69 @@ $('#hamburger').on('click', function(event) {
 // // Project Scroll
 
 
-	var projHeading = document.querySelectorAll('.project-writeup .h3');
-	var projSide = [];
-	var headingPos = [];
-	var projHeadingPos = {};
-	
+var projHeading = document.querySelectorAll('.project-writeup .h3');
+var projSide = [];
+var headingPos = [];
+var projHeadingPos = {};
 
 
-	//making sidebar-l
-	for (let i = 0; i < (projHeading.length-1); i++) {
 
-		//getting the position & pushing to array
-		// headingPos.push($(projHeading[i]).offset().top);
-		// let thisProjHeadingPos = $(projHeading[i]).offset().top;
-		// projHeadingPos[$(projHeading[i]).attr('id')] = thisProjHeadingPos;
+//making sidebar-l
+for (let i = 0; i < (projHeading.length-1); i++) {
 
-		//creating sidebar element
-		let newHeading = document.createElement('a');
-		let newBreak = document.createElement('br');
-		newHeading.className = 'h4';
-		newHeading.id = projHeading[i].id;
-		let newHeadingText = document.createTextNode(projHeading[i].innerHTML);
+	//getting the position & pushing to array
+	// headingPos.push($(projHeading[i]).offset().top);
+	// let thisProjHeadingPos = $(projHeading[i]).offset().top;
+	// projHeadingPos[$(projHeading[i]).attr('id')] = thisProjHeadingPos;
 
-
-		//setting link destination
-		newHeading.href = '#' + projHeading[i].id;
-
-		//attaching to the appropriate things
-		newHeading.append(newHeadingText);
-		$('.sidebar-l').append(newHeading, newBreak);
-		projSide.push(newHeading);
+	//creating sidebar element
+	let newHeading = document.createElement('a');
+	let newBreak = document.createElement('br');
+	newHeading.className = 'h4';
+	newHeading.id = projHeading[i].id;
+	let newHeadingText = document.createTextNode(projHeading[i].innerHTML);
 
 
-	}
+	//setting link destination
+	newHeading.href = '#' + projHeading[i].id;
+
+	//attaching to the appropriate things
+	newHeading.append(newHeadingText);
+	$('.sidebar-l').append(newHeading, newBreak);
+	projSide.push(newHeading);
+
+
+}
 
 
 
 // Smooth Scroll
 
-  // Add smooth scrolling to all links
-  $('a').on('click', function(event) {
+// Add smooth scrolling to all links
+$('a').on('click', function(event) {
 
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== '') {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== '') {
+  // Prevent default anchor click behavior
+  event.preventDefault();
 
-      // Store hash
-      var hash = this.getAttribute('id');
-      console.log(hash);
+  // Store hash
+  var hash = this.getAttribute('id');
+  console.log(hash);
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $('#' + hash + '.h3').offset().top
-      }, 3000, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $('#' + hash + '.h3').offset().top
+  }, 3000, function(){
 
-      });
-    } // End if
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+
   });
+} // End if
+});
 
 
 

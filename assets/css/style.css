@@ -2059,10 +2059,9 @@ a svg:hover .contact-icon {
 	margin-top: 8%;
 }
 
-#lasercut .column-right {
-	margin-top: 8%;
+#lasercut.column-right {
+	margin-top: 25%;
 }
-
 
 .column-left-next {
 	width: 100%;
