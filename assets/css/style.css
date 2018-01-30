@@ -958,6 +958,58 @@ a svg:hover .contact-icon {
 }
 
 
+/*Project- Samsung Beyond Smartphones*/
+
+#beyondsmartphones {
+	height: 100%;
+}
+
+#beyondsmartphones.column-left {
+	margin-top: 8%;
+}
+
+#beyondsmartphones .overlaybg {
+
+	background: #E8CBC0; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #fceabb , #f8b500); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #fceabb , #f8b500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+#beyondsmartphones .home-img {
+	background-image: url(../img/beyondsmartphones_home.svg);
+	position: relative;
+	height: 31.250em;
+	width: 100%;
+}
+
+#beyondsmartphones:hover #beyondsmartphones-text {
+/*	transition: .5s;
+	opacity: 1;*/
+
+}
+
+#beyondsmartphones .h2 {
+	background-size: auto 200%;
+	background-position: right;
+	background-image: -webkit-linear-gradient(to left, #000000 0%, #000000 50%, #fceabb 50%, #f8b500 100%); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to left, #000000 0%, #000000 50%, #fceabb 50%, #f8b500 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .2s;
+}
+
+#beyondsmartphones:hover .h2 {
+    background-position: left;
+
+}
+
+#beyondsmartphones:hover .overlaybg {
+	opacity: .3;
+	transition: opacity .2s;
+}
+
+
 
 /*Fun- HKCafe*/
 
