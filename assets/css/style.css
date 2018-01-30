@@ -859,7 +859,7 @@ a svg:hover .contact-icon {
 }
 
 #fulldivesaves.column-right {
-	margin-top: 15%;
+	margin-top: 25%;
 }
 
 
@@ -2056,6 +2056,10 @@ a svg:hover .contact-icon {
 }
 
 #fulldivemobile.column-right {
+	margin-top: 8%;
+}
+
+#lasercut .column-right {
 	margin-top: 8%;
 }
 
