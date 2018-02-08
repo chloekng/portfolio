@@ -430,7 +430,10 @@ a:hover {
 	padding-top: 3px;
 }
 
+/*.contact-icon {
+	margin: 0 2px 0 2px;
 
+}*/
 
 .contact-icon::after {
 	transform: scale3d(0,1,1);
