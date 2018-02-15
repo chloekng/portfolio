@@ -169,8 +169,8 @@ img {
 	background-color: rgba(var(--colorRGB), .3);
 }
 
-body ::-moz-selection { background: rgba(var(--colorRGB), .3); }
-body ::selection { background: rgba(var(--colorRGB), .3); }
+body ::-moz-selection { background-color: rgba(var(--colorRGB), .3); }
+body ::selection { background-color: rgba(var(--colorRGB), .3); }
 
 
 a:link {
