@@ -29,6 +29,10 @@ img {
 	z-index: 10000;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+}
+
 
 /*Text Styles*/
 
