@@ -109,7 +109,7 @@ var makeMenuItem = function(menuLink, navBar, menuItem) {
 
 var makeMenuItems = function(navBar) {
 	let menuLinkArray = ['about', 'fun', 'index'];
-	let menuItemArray = ['About', 'Fun', 'Work'];
+	let menuItemArray = ['About', 'Fun', 'Home'];
 
 	for (let i = 0; i < (menuLinkArray.length); i++) {
 		makeMenuItem(menuLinkArray[i], navBar, menuItemArray[i])
@@ -261,7 +261,7 @@ $('#hamburger').on('click', function(event) {
 
 
 		var menuLinkArray = ['index', 'fun', 'about'];
-		var menuItemArray = ['Work', 'Fun', 'About'];
+		var menuItemArray = ['Home', 'Fun', 'About'];
 
 
 		//making hamburger list
